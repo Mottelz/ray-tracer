@@ -38,6 +38,7 @@ void draw(cimg_library::CImg<float> &image, int w, int h, glm::vec3 color) {
     image(w, h, 2) = color.b*255;
 }
 
+//clips a vec3
 glm::vec3 clip(glm::vec3 vec, float lo, float hi) {
     vec.x = (vec.x > hi) ? hi : vec.x;
     vec.y = (vec.y > hi) ? hi : vec.y;
@@ -49,3 +50,19 @@ glm::vec3 clip(glm::vec3 vec, float lo, float hi) {
     
     return vec;
 };
+
+
+
+//returns true if p1 is closer to p0
+bool is_closer(const glm::vec3 p0, const glm::vec3 p1, const glm::vec3 p2) {
+    if ((glm::distance(p0, p1) > glm::distance(p0, p2))) {
+        return false;
+    }
+    return true;
+};
+
+
+
+
+
+

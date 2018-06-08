@@ -1,6 +1,7 @@
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
+#define show_pic FALSE //Display the image with CImg when done
 
 std::string scene = "scene1.txt";
 
@@ -11,8 +12,7 @@ int main(int argc, const char * argv[]) {
     std::vector<Light*> lights; //init empty vector of lights
     Camera* cam; //init camera
     std::ofstream log;
-    log.open(get_name("/Users/mottelzirkind/Desktop/log ",".txt"));
-    
+    log.open(get_name("/Users/mottelzirkind/Desktop/results/log ",".txt"));
     
     //Load the scene
     if(!load_scene(scene, things, lights, cam)) {
@@ -46,10 +46,7 @@ int main(int argc, const char * argv[]) {
                     if (!hit.contact) {
                         hit = t_hit;
                     } else {
-                        glm::vec3 distA, distB;
-                        distA = hit.pos - r.org;
-                        distB = t_hit.pos - r.org;
-                        if (glm::length(distA) > glm::length(distB)) {
+                        if (is_closer(r.org, t_hit.pos, hit.pos)) {
                             hit = t_hit;
                         }
                     }
@@ -59,34 +56,30 @@ int main(int argc, const char * argv[]) {
             
             if(hit.contact){
                 log << "HIT! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n";
-                for (auto &light : lights) {
-                    //Create the shadow ray (points from object to light).
+                glm::vec3 colour = things[hit.thing] -> getColour();
+                for (int i = 0; i < lights.size(); i++) {
+                    //Create the shadow ray.
+                    glm::vec3 light_pos = lights[i] -> getPosition();
                     Ray sr;
-                    glm::vec3 light_pos = light -> getPosition();
-                    sr.org = hit.pos;
+                    sr.org = light_pos;
                     sr.dir = hit.pos - light_pos;
                     sr.dir = glm::normalize(sr.dir);
                     bool in_shadow = false;
                     
-                    
                     //Loop through objects and check if one is closer.
-                    for (auto &thing : things) {
-                        Intersect temp_hit = thing -> intersect(sr);
+                    for (int m = 0; m < things.size(); m++) {
+                        Intersect temp_hit = things[m] -> intersect(sr);
                         if (temp_hit.contact) {
-                            glm::vec3 distA, distB;
-                            distA = sr.org - light_pos;
-                            distB = temp_hit.pos - light_pos;
-                            if (glm::length(distA) > glm::length(distB)) {
+                            if (is_closer(light_pos, temp_hit.pos, hit.pos)) {
                                 in_shadow = true;
                             }
                         }
                     }
-                    glm::vec3 colour(0.5f);
-                    if (in_shadow) {
-                        colour = things[hit.thing] -> getColour();
-                    } else {
-                        colour = things[hit.thing] -> getColour(*light, hit, cam ->getPosition());
+                    
+                    if (!in_shadow) {
+                        colour += things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition());
                     }
+                    clip(colour, 0.0f, 1.0f);
                     draw(image, j, k, colour);
                 }
             } else {
@@ -99,12 +92,14 @@ int main(int argc, const char * argv[]) {
     cam -> print();
     
     //Save out the image in PNG format.
-    image.save(get_name("render ",".png"));
+    image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".png"));
+#if show_pic
     //Display the rendered image on screen
-    cimg_library::CImgDisplay main_disp(image,"Render");
-    while (!main_disp.is_closed()) {
-        main_disp.wait();
-    }
+        cimg_library::CImgDisplay main_disp(image,"Render");
+        while (!main_disp.is_closed()) {
+            main_disp.wait();
+        }
+#endif
     
     log.close();
     return 0;

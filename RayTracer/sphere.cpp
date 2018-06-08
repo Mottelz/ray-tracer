@@ -26,7 +26,7 @@ Intersect Sphere::intersect(const Ray &r) {
     
     //the bit that goes under the sqrt. If this is negative we can stop.
     float under = glm::pow(b, 2) - 4*c;
-    if (under < 0) {
+    if (under < 0.0f) {
         toRet.contact = false;
         return toRet;
     }
@@ -38,10 +38,10 @@ Intersect Sphere::intersect(const Ray &r) {
     t1 = (-b+sq)/2;
     
     //decide which to returns
-    if (t0 < glm::epsilon<float>() && t1 < glm::epsilon<float>()) {
+    if (t0 < 0.0f && t1 < 0.0f) {
         toRet.contact = false;
         return toRet;
-    } else if (t0 > glm::epsilon<float>() && t1 > glm::epsilon<float>()) {
+    } else if (t0 > 0.0f && t1 > 0.0f) {
         v = (t0 > t1) ? t1 : t0;
     } else {
         v = (t0 > t1) ? t0 : t1;
@@ -71,21 +71,20 @@ glm::vec3 Sphere::getColour() {
 glm::vec3 Sphere::getColour(const Light &light, const Intersect& hit, const glm::vec3& camPos) {
     glm::vec3 colour(1.0f);
     glm::vec3 light_vec = glm::normalize(hit.pos-light.getPosition());
-    glm::vec3 norm = glm::normalize(hit.pos-m_pos);
-    
-    
+    glm::vec3 norm = glm::normalize(m_pos-hit.pos);
     
     //Diffuse calculation
     float theta = glm::dot(light_vec,norm);
-    float diffuse = glm::max(theta, 0.0f) * m_dif;
+    glm::vec3 diffuse = glm::max(theta, 0.0f) * m_dif;
     
     //Specular calculation
-    glm::vec3 veiw_dir = glm::normalize(hit.pos - camPos);
+    glm::vec3 veiw_dir = glm::normalize(hit.pos-camPos);
     glm::vec3 reflect = glm::reflect(veiw_dir, norm);
     float alpha = glm::dot(reflect, veiw_dir);
-    float specular = glm::pow(glm::max(alpha, 0.0f), m_shi);
+    glm::vec3 specular = glm::pow(glm::max(alpha, 0.0f), m_shi) * m_spe;
     
-    colour = ((diffuse+specular) * m_amb * light.getColour()) + m_amb;
+    //Get calc colour
+    colour = (diffuse+specular) * light.getColour();
     
     //clip [0,1]
     colour = clip(colour, 0.0f, 1.0f);

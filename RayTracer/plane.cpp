@@ -60,21 +60,22 @@ glm::vec3 Plane::getColour() {
 
 glm::vec3 Plane::getColour(const Light &light, const Intersect& hit, const glm::vec3& camPos) {
     glm::vec3 colour(1.0f);
-    
     glm::vec3 light_vec = glm::normalize(hit.pos-light.getPosition());
     
     //Diffuse calculation
     float theta = glm::dot(light_vec,m_norm);
-    float diffuse = glm::max(theta, 0.0f) * m_dif;
+    glm::vec3 diffuse = glm::max(theta, 0.0f) * m_dif;
     
     //Specular calculation
-    glm::vec3 veiw_dir = glm::normalize(hit.pos - camPos);
+    glm::vec3 veiw_dir = glm::normalize(hit.pos-camPos);
     glm::vec3 reflect = glm::reflect(veiw_dir, m_norm);
     float alpha = glm::dot(reflect, veiw_dir);
-    float specular = glm::pow(glm::max(alpha, 0.0f), m_shi);
+    glm::vec3 specular = glm::pow(glm::max(alpha, 0.0f), m_shi) * m_spe;
     
-    colour = ((diffuse+specular) * m_amb * light.getColour()) + m_amb;
+    //Get calc colour
+    colour = (diffuse+specular) * light.getColour();
     
+    //clip [0,1]
     colour = clip(colour, 0.0f, 1.0f);
     
     return colour;
