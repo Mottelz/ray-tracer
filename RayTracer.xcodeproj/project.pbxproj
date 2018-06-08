@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E0CB19D20C1E61D009CDE2E /* sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0CB19B20C1E61D009CDE2E /* sphere.cpp */; };
+		9E0CB1A020C1E625009CDE2E /* plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0CB19E20C1E625009CDE2E /* plane.cpp */; };
+		9E0CB1A320C1E62D009CDE2E /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0CB1A120C1E62D009CDE2E /* camera.cpp */; };
+		9E0CB1A620C1E634009CDE2E /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E0CB1A420C1E634009CDE2E /* light.cpp */; };
+		9E4574A820BFCD3B008BDD04 /* libX11.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574A120BFC22C008BDD04 /* libX11.6.dylib */; };
+		9E45750820BFCD45008BDD04 /* libdmx.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574A920BFCD3C008BDD04 /* libdmx.1.dylib */; };
+		9E45750920BFCD45008BDD04 /* libSM.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574AA20BFCD3C008BDD04 /* libSM.6.dylib */; };
+		9E45750A20BFCD45008BDD04 /* libxcb-damage.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574AB20BFCD3C008BDD04 /* libxcb-damage.0.dylib */; };
+		9E45750B20BFCD45008BDD04 /* libX11-xcb.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574AC20BFCD3C008BDD04 /* libX11-xcb.1.dylib */; };
+		9E45750C20BFCD45008BDD04 /* libxcb-xinerama.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574AD20BFCD3C008BDD04 /* libxcb-xinerama.0.dylib */; };
+		9E45750D20BFCD45008BDD04 /* libXp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574AE20BFCD3C008BDD04 /* libXp.6.dylib */; };
+		9E45750E20BFCD45008BDD04 /* libpng12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574AF20BFCD3C008BDD04 /* libpng12.0.dylib */; };
+		9E45750F20BFCD45008BDD04 /* libcairo.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B020BFCD3C008BDD04 /* libcairo.2.dylib */; };
+		9E45751020BFCD45008BDD04 /* libglapi.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B120BFCD3C008BDD04 /* libglapi.0.dylib */; };
+		9E45751120BFCD45008BDD04 /* libxcb-dri3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B220BFCD3C008BDD04 /* libxcb-dri3.0.dylib */; };
+		9E45751220BFCD45008BDD04 /* libxcb-image.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B320BFCD3D008BDD04 /* libxcb-image.0.dylib */; };
+		9E45751320BFCD45008BDD04 /* libXvMC.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B420BFCD3D008BDD04 /* libXvMC.1.dylib */; };
+		9E45751420BFCD45008BDD04 /* libXaw6.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B520BFCD3D008BDD04 /* libXaw6.6.dylib */; };
+		9E45751520BFCD45008BDD04 /* libxkbui.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B620BFCD3D008BDD04 /* libxkbui.1.dylib */; };
+		9E45751620BFCD45008BDD04 /* libXft.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B720BFCD3D008BDD04 /* libXft.2.dylib */; };
+		9E45751720BFCD45008BDD04 /* libxcb-keysyms.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B820BFCD3D008BDD04 /* libxcb-keysyms.1.dylib */; };
+		9E45751820BFCD45008BDD04 /* libxkbfile.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574B920BFCD3D008BDD04 /* libxkbfile.1.dylib */; };
+		9E45751920BFCD45008BDD04 /* libGL.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574BA20BFCD3D008BDD04 /* libGL.1.dylib */; };
+		9E45751A20BFCD45008BDD04 /* libglut.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574BB20BFCD3D008BDD04 /* libglut.3.dylib */; };
+		9E45751B20BFCD45008BDD04 /* libpng14.14.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574BC20BFCD3D008BDD04 /* libpng14.14.dylib */; };
+		9E45751C20BFCD45008BDD04 /* libXvMCW.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574BD20BFCD3D008BDD04 /* libXvMCW.1.dylib */; };
+		9E45751D20BFCD45008BDD04 /* libXfixes.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574BE20BFCD3D008BDD04 /* libXfixes.3.dylib */; };
+		9E45751E20BFCD45008BDD04 /* libxcb-xvmc.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574BF20BFCD3E008BDD04 /* libxcb-xvmc.0.dylib */; };
+		9E45751F20BFCD45008BDD04 /* libXpm.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C020BFCD3E008BDD04 /* libXpm.4.dylib */; };
+		9E45752020BFCD45008BDD04 /* libxcb-render-util.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C120BFCD3E008BDD04 /* libxcb-render-util.0.dylib */; };
+		9E45752120BFCD45008BDD04 /* libxcb-render.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C220BFCD3E008BDD04 /* libxcb-render.0.dylib */; };
+		9E45752220BFCD45008BDD04 /* libxcb-shape.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C320BFCD3E008BDD04 /* libxcb-shape.0.dylib */; };
+		9E45752320BFCD45008BDD04 /* libXinerama.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C420BFCD3E008BDD04 /* libXinerama.1.dylib */; };
+		9E45752420BFCD45008BDD04 /* libXau.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C520BFCD3E008BDD04 /* libXau.6.dylib */; };
+		9E45752520BFCD45008BDD04 /* libXmuu.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C620BFCD3E008BDD04 /* libXmuu.1.dylib */; };
+		9E45752620BFCD45008BDD04 /* libXt.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C720BFCD3E008BDD04 /* libXt.6.dylib */; };
+		9E45752720BFCD45008BDD04 /* libxcb-composite.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C820BFCD3E008BDD04 /* libxcb-composite.0.dylib */; };
+		9E45752820BFCD45008BDD04 /* libxcb-icccm.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574C920BFCD3E008BDD04 /* libxcb-icccm.4.dylib */; };
+		9E45752920BFCD45008BDD04 /* libXt.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574CA20BFCD3E008BDD04 /* libXt.7.dylib */; };
+		9E45752A20BFCD45008BDD04 /* libXxf86misc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574CB20BFCD3F008BDD04 /* libXxf86misc.1.dylib */; };
+		9E45752B20BFCD45008BDD04 /* libFS.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574CC20BFCD3F008BDD04 /* libFS.6.dylib */; };
+		9E45752C20BFCD45008BDD04 /* libXv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574CD20BFCD3F008BDD04 /* libXv.1.dylib */; };
+		9E45752D20BFCD45008BDD04 /* libxcb-screensaver.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574CE20BFCD3F008BDD04 /* libxcb-screensaver.0.dylib */; };
+		9E45752E20BFCD45008BDD04 /* libXxf86vm.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574CF20BFCD3F008BDD04 /* libXxf86vm.1.dylib */; };
+		9E45752F20BFCD45008BDD04 /* libxcb-ewmh.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D020BFCD3F008BDD04 /* libxcb-ewmh.2.dylib */; };
+		9E45753020BFCD45008BDD04 /* libXcomposite.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D120BFCD3F008BDD04 /* libXcomposite.1.dylib */; };
+		9E45753120BFCD45008BDD04 /* libxcb-glx.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D220BFCD3F008BDD04 /* libxcb-glx.0.dylib */; };
+		9E45753220BFCD45008BDD04 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D320BFCD3F008BDD04 /* libfreetype.6.dylib */; };
+		9E45753320BFCD45008BDD04 /* libxcb-xtest.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D420BFCD3F008BDD04 /* libxcb-xtest.0.dylib */; };
+		9E45753420BFCD45008BDD04 /* libxcb-util.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D520BFCD3F008BDD04 /* libxcb-util.1.dylib */; };
+		9E45753520BFCD45008BDD04 /* libxshmfence.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D620BFCD40008BDD04 /* libxshmfence.1.dylib */; };
+		9E45753620BFCD45008BDD04 /* libfontenc.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D720BFCD40008BDD04 /* libfontenc.1.dylib */; };
+		9E45753720BFCD45008BDD04 /* libXevie.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D820BFCD40008BDD04 /* libXevie.1.dylib */; };
+		9E45753820BFCD45008BDD04 /* libXmu.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574D920BFCD40008BDD04 /* libXmu.6.dylib */; };
+		9E45753920BFCD45008BDD04 /* libxcb-xv.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574DA20BFCD40008BDD04 /* libxcb-xv.0.dylib */; };
+		9E45753A20BFCD45008BDD04 /* libpng15.15.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574DB20BFCD40008BDD04 /* libpng15.15.dylib */; };
+		9E45753B20BFCD45008BDD04 /* libGLESv2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574DC20BFCD40008BDD04 /* libGLESv2.2.dylib */; };
+		9E45753C20BFCD45008BDD04 /* libxcb-dpms.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574DD20BFCD40008BDD04 /* libxcb-dpms.0.dylib */; };
+		9E45753D20BFCD45008BDD04 /* libxcb-errors.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574DE20BFCD40008BDD04 /* libxcb-errors.0.dylib */; };
+		9E45753E20BFCD45008BDD04 /* libxcb-shm.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574DF20BFCD41008BDD04 /* libxcb-shm.0.dylib */; };
+		9E45753F20BFCD45008BDD04 /* libcairo-script-interpreter.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E020BFCD41008BDD04 /* libcairo-script-interpreter.2.dylib */; };
+		9E45754020BFCD45008BDD04 /* libICE.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E120BFCD41008BDD04 /* libICE.6.dylib */; };
+		9E45754120BFCD45008BDD04 /* libxcb-sync.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E220BFCD41008BDD04 /* libxcb-sync.1.dylib */; };
+		9E45754220BFCD45008BDD04 /* libfontconfig.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E320BFCD41008BDD04 /* libfontconfig.1.dylib */; };
+		9E45754320BFCD45008BDD04 /* libAppleWM.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E420BFCD41008BDD04 /* libAppleWM.7.dylib */; };
+		9E45754420BFCD45008BDD04 /* libXrandr.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E520BFCD42008BDD04 /* libXrandr.2.dylib */; };
+		9E45754520BFCD45008BDD04 /* libXRes.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E620BFCD42008BDD04 /* libXRes.1.dylib */; };
+		9E45754620BFCD45008BDD04 /* libXaw3d.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E720BFCD42008BDD04 /* libXaw3d.8.dylib */; };
+		9E45754720BFCD45008BDD04 /* libxcb-dri2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E820BFCD42008BDD04 /* libxcb-dri2.0.dylib */; };
+		9E45754820BFCD45008BDD04 /* libxcb-xf86dri.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574E920BFCD42008BDD04 /* libxcb-xf86dri.0.dylib */; };
+		9E45754920BFCD45008BDD04 /* libXext.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574EA20BFCD42008BDD04 /* libXext.6.dylib */; };
+		9E45754A20BFCD45008BDD04 /* libXaw8.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574EB20BFCD42008BDD04 /* libXaw8.8.dylib */; };
+		9E45754B20BFCD45008BDD04 /* libGLESv1_CM.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574EC20BFCD42008BDD04 /* libGLESv1_CM.1.dylib */; };
+		9E45754C20BFCD45008BDD04 /* libXpresent.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574ED20BFCD42008BDD04 /* libXpresent.1.dylib */; };
+		9E45754D20BFCD45008BDD04 /* libxcb-res.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574EE20BFCD42008BDD04 /* libxcb-res.0.dylib */; };
+		9E45754E20BFCD45008BDD04 /* libxcb.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574EF20BFCD43008BDD04 /* libxcb.1.dylib */; };
+		9E45754F20BFCD45008BDD04 /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F020BFCD43008BDD04 /* libpixman-1.0.dylib */; };
+		9E45755020BFCD45008BDD04 /* libXfontcache.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F120BFCD43008BDD04 /* libXfontcache.1.dylib */; };
+		9E45755120BFCD45008BDD04 /* libXplugin.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F220BFCD43008BDD04 /* libXplugin.1.dylib */; };
+		9E45755220BFCD45008BDD04 /* libxcb-cursor.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F320BFCD43008BDD04 /* libxcb-cursor.0.dylib */; };
+		9E45755320BFCD45008BDD04 /* libxcb-xfixes.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F420BFCD43008BDD04 /* libxcb-xfixes.0.dylib */; };
+		9E45755420BFCD45008BDD04 /* libXTrap.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F520BFCD43008BDD04 /* libXTrap.6.dylib */; };
+		9E45755520BFCD45008BDD04 /* libXss.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F620BFCD43008BDD04 /* libXss.1.dylib */; };
+		9E45755620BFCD45008BDD04 /* libOSMesa.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F720BFCD43008BDD04 /* libOSMesa.8.dylib */; };
+		9E45755720BFCD45008BDD04 /* libxcb-randr.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F820BFCD44008BDD04 /* libxcb-randr.0.dylib */; };
+		9E45755820BFCD45008BDD04 /* libGLU.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574F920BFCD44008BDD04 /* libGLU.1.dylib */; };
+		9E45755920BFCD45008BDD04 /* libXdamage.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574FA20BFCD44008BDD04 /* libXdamage.1.dylib */; };
+		9E45755A20BFCD45008BDD04 /* libxcb-present.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574FB20BFCD44008BDD04 /* libxcb-present.0.dylib */; };
+		9E45755B20BFCD45008BDD04 /* libXdmcp.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574FC20BFCD44008BDD04 /* libXdmcp.6.dylib */; };
+		9E45755C20BFCD45008BDD04 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574FD20BFCD44008BDD04 /* libpng16.16.dylib */; };
+		9E45755D20BFCD45008BDD04 /* libxcb-xkb.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574FE20BFCD44008BDD04 /* libxcb-xkb.1.dylib */; };
+		9E45755E20BFCD45008BDD04 /* libXfont.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4574FF20BFCD44008BDD04 /* libXfont.1.dylib */; };
+		9E45755F20BFCD45008BDD04 /* libXrender.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750020BFCD44008BDD04 /* libXrender.1.dylib */; };
+		9E45756020BFCD45008BDD04 /* libXtst.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750120BFCD44008BDD04 /* libXtst.6.dylib */; };
+		9E45756120BFCD45008BDD04 /* libXcursor.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750220BFCD45008BDD04 /* libXcursor.1.dylib */; };
+		9E45756220BFCD45008BDD04 /* libXfont2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750320BFCD45008BDD04 /* libXfont2.2.dylib */; };
+		9E45756320BFCD45008BDD04 /* libxcb-record.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750420BFCD45008BDD04 /* libxcb-record.0.dylib */; };
+		9E45756420BFCD45008BDD04 /* libXi.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750520BFCD45008BDD04 /* libXi.6.dylib */; };
+		9E45756520BFCD45008BDD04 /* libXaw7.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750620BFCD45008BDD04 /* libXaw7.7.dylib */; };
+		9E45756620BFCD45008BDD04 /* libpng.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45750720BFCD45008BDD04 /* libpng.3.dylib */; };
+		9E45756820BFCE0F008BDD04 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45756720BFCE0F008BDD04 /* libpng16.16.dylib */; };
+		9E45756A20BFCE28008BDD04 /* libjpeg.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45756920BFCE28008BDD04 /* libjpeg.9.dylib */; };
+		9E5258D020C0DC1400A56A52 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5258CE20C0DC1300A56A52 /* util.cpp */; };
+		9E64275820C4E6B400ADEA14 /* scene2.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EA36E1220C1CFAF0034FCAD /* scene2.txt */; };
+		9E64275920C4E6B400ADEA14 /* scene3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EA36E1520C1CFAF0034FCAD /* scene3.txt */; };
+		9E64275A20C4E6B400ADEA14 /* scene4.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EA36E1320C1CFAF0034FCAD /* scene4.txt */; };
+		9E64275B20C4E6B400ADEA14 /* scene5.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EA36E1420C1CFAF0034FCAD /* scene5.txt */; };
+		9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C275D20C71B900062B56A /* sceneload.cpp */; };
+		9EA36E1620C1D6990034FCAD /* scene1.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EA36E1120C1CFAF0034FCAD /* scene1.txt */; };
+		9EE2D44520BFAA830040D125 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2D44420BFAA830040D125 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9EE2D43F20BFAA830040D125 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				9E64275820C4E6B400ADEA14 /* scene2.txt in CopyFiles */,
+				9E64275920C4E6B400ADEA14 /* scene3.txt in CopyFiles */,
+				9E64275A20C4E6B400ADEA14 /* scene4.txt in CopyFiles */,
+				9E64275B20C4E6B400ADEA14 /* scene5.txt in CopyFiles */,
+				9EA36E1620C1D6990034FCAD /* scene1.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9E0CB19420C1E2FB009CDE2E /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		9E0CB19920C1E501009CDE2E /* structs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = structs.h; sourceTree = "<group>"; };
+		9E0CB19B20C1E61D009CDE2E /* sphere.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sphere.cpp; sourceTree = "<group>"; };
+		9E0CB19C20C1E61D009CDE2E /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		9E0CB19E20C1E625009CDE2E /* plane.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plane.cpp; sourceTree = "<group>"; };
+		9E0CB19F20C1E625009CDE2E /* plane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plane.h; sourceTree = "<group>"; };
+		9E0CB1A120C1E62D009CDE2E /* camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		9E0CB1A220C1E62D009CDE2E /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		9E0CB1A420C1E634009CDE2E /* light.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = light.cpp; sourceTree = "<group>"; };
+		9E0CB1A520C1E634009CDE2E /* light.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = light.h; sourceTree = "<group>"; };
+		9E4574A120BFC22C008BDD04 /* libX11.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libX11.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libX11.6.dylib; sourceTree = "<group>"; };
+		9E4574A620BFCD1E008BDD04 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = ../../../../../../../../../../opt/X11/lib; sourceTree = "<group>"; };
+		9E4574A920BFCD3C008BDD04 /* libdmx.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdmx.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libdmx.1.dylib; sourceTree = "<group>"; };
+		9E4574AA20BFCD3C008BDD04 /* libSM.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSM.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libSM.6.dylib; sourceTree = "<group>"; };
+		9E4574AB20BFCD3C008BDD04 /* libxcb-damage.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-damage.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-damage.0.dylib"; sourceTree = "<group>"; };
+		9E4574AC20BFCD3C008BDD04 /* libX11-xcb.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libX11-xcb.1.dylib"; path = "../../../../../../../../../../opt/X11/lib/libX11-xcb.1.dylib"; sourceTree = "<group>"; };
+		9E4574AD20BFCD3C008BDD04 /* libxcb-xinerama.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xinerama.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-xinerama.0.dylib"; sourceTree = "<group>"; };
+		9E4574AE20BFCD3C008BDD04 /* libXp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXp.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXp.6.dylib; sourceTree = "<group>"; };
+		9E4574AF20BFCD3C008BDD04 /* libpng12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng12.0.dylib; path = ../../../../../../../../../../opt/X11/lib/libpng12.0.dylib; sourceTree = "<group>"; };
+		9E4574B020BFCD3C008BDD04 /* libcairo.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcairo.2.dylib; path = ../../../../../../../../../../opt/X11/lib/libcairo.2.dylib; sourceTree = "<group>"; };
+		9E4574B120BFCD3C008BDD04 /* libglapi.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglapi.0.dylib; path = ../../../../../../../../../../opt/X11/lib/libglapi.0.dylib; sourceTree = "<group>"; };
+		9E4574B220BFCD3C008BDD04 /* libxcb-dri3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-dri3.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-dri3.0.dylib"; sourceTree = "<group>"; };
+		9E4574B320BFCD3D008BDD04 /* libxcb-image.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-image.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-image.0.dylib"; sourceTree = "<group>"; };
+		9E4574B420BFCD3D008BDD04 /* libXvMC.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMC.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXvMC.1.dylib; sourceTree = "<group>"; };
+		9E4574B520BFCD3D008BDD04 /* libXaw6.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw6.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXaw6.6.dylib; sourceTree = "<group>"; };
+		9E4574B620BFCD3D008BDD04 /* libxkbui.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbui.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libxkbui.1.dylib; sourceTree = "<group>"; };
+		9E4574B720BFCD3D008BDD04 /* libXft.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXft.2.dylib; path = ../../../../../../../../../../opt/X11/lib/libXft.2.dylib; sourceTree = "<group>"; };
+		9E4574B820BFCD3D008BDD04 /* libxcb-keysyms.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-keysyms.1.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-keysyms.1.dylib"; sourceTree = "<group>"; };
+		9E4574B920BFCD3D008BDD04 /* libxkbfile.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxkbfile.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libxkbfile.1.dylib; sourceTree = "<group>"; };
+		9E4574BA20BFCD3D008BDD04 /* libGL.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGL.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libGL.1.dylib; sourceTree = "<group>"; };
+		9E4574BB20BFCD3D008BDD04 /* libglut.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.dylib; path = ../../../../../../../../../../opt/X11/lib/libglut.3.dylib; sourceTree = "<group>"; };
+		9E4574BC20BFCD3D008BDD04 /* libpng14.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng14.14.dylib; path = ../../../../../../../../../../opt/X11/lib/libpng14.14.dylib; sourceTree = "<group>"; };
+		9E4574BD20BFCD3D008BDD04 /* libXvMCW.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXvMCW.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXvMCW.1.dylib; sourceTree = "<group>"; };
+		9E4574BE20BFCD3D008BDD04 /* libXfixes.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfixes.3.dylib; path = ../../../../../../../../../../opt/X11/lib/libXfixes.3.dylib; sourceTree = "<group>"; };
+		9E4574BF20BFCD3E008BDD04 /* libxcb-xvmc.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xvmc.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-xvmc.0.dylib"; sourceTree = "<group>"; };
+		9E4574C020BFCD3E008BDD04 /* libXpm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXpm.4.dylib; path = ../../../../../../../../../../opt/X11/lib/libXpm.4.dylib; sourceTree = "<group>"; };
+		9E4574C120BFCD3E008BDD04 /* libxcb-render-util.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render-util.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-render-util.0.dylib"; sourceTree = "<group>"; };
+		9E4574C220BFCD3E008BDD04 /* libxcb-render.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-render.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-render.0.dylib"; sourceTree = "<group>"; };
+		9E4574C320BFCD3E008BDD04 /* libxcb-shape.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shape.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-shape.0.dylib"; sourceTree = "<group>"; };
+		9E4574C420BFCD3E008BDD04 /* libXinerama.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXinerama.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXinerama.1.dylib; sourceTree = "<group>"; };
+		9E4574C520BFCD3E008BDD04 /* libXau.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXau.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXau.6.dylib; sourceTree = "<group>"; };
+		9E4574C620BFCD3E008BDD04 /* libXmuu.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmuu.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXmuu.1.dylib; sourceTree = "<group>"; };
+		9E4574C720BFCD3E008BDD04 /* libXt.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXt.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXt.6.dylib; sourceTree = "<group>"; };
+		9E4574C820BFCD3E008BDD04 /* libxcb-composite.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-composite.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-composite.0.dylib"; sourceTree = "<group>"; };
+		9E4574C920BFCD3E008BDD04 /* libxcb-icccm.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-icccm.4.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-icccm.4.dylib"; sourceTree = "<group>"; };
+		9E4574CA20BFCD3E008BDD04 /* libXt.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXt.7.dylib; path = ../../../../../../../../../../opt/X11/lib/libXt.7.dylib; sourceTree = "<group>"; };
+		9E4574CB20BFCD3F008BDD04 /* libXxf86misc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86misc.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXxf86misc.1.dylib; sourceTree = "<group>"; };
+		9E4574CC20BFCD3F008BDD04 /* libFS.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libFS.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libFS.6.dylib; sourceTree = "<group>"; };
+		9E4574CD20BFCD3F008BDD04 /* libXv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXv.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXv.1.dylib; sourceTree = "<group>"; };
+		9E4574CE20BFCD3F008BDD04 /* libxcb-screensaver.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-screensaver.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-screensaver.0.dylib"; sourceTree = "<group>"; };
+		9E4574CF20BFCD3F008BDD04 /* libXxf86vm.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXxf86vm.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXxf86vm.1.dylib; sourceTree = "<group>"; };
+		9E4574D020BFCD3F008BDD04 /* libxcb-ewmh.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-ewmh.2.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-ewmh.2.dylib"; sourceTree = "<group>"; };
+		9E4574D120BFCD3F008BDD04 /* libXcomposite.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcomposite.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXcomposite.1.dylib; sourceTree = "<group>"; };
+		9E4574D220BFCD3F008BDD04 /* libxcb-glx.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-glx.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-glx.0.dylib"; sourceTree = "<group>"; };
+		9E4574D320BFCD3F008BDD04 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libfreetype.6.dylib; sourceTree = "<group>"; };
+		9E4574D420BFCD3F008BDD04 /* libxcb-xtest.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xtest.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-xtest.0.dylib"; sourceTree = "<group>"; };
+		9E4574D520BFCD3F008BDD04 /* libxcb-util.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-util.1.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-util.1.dylib"; sourceTree = "<group>"; };
+		9E4574D620BFCD40008BDD04 /* libxshmfence.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxshmfence.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libxshmfence.1.dylib; sourceTree = "<group>"; };
+		9E4574D720BFCD40008BDD04 /* libfontenc.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontenc.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libfontenc.1.dylib; sourceTree = "<group>"; };
+		9E4574D820BFCD40008BDD04 /* libXevie.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXevie.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXevie.1.dylib; sourceTree = "<group>"; };
+		9E4574D920BFCD40008BDD04 /* libXmu.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXmu.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXmu.6.dylib; sourceTree = "<group>"; };
+		9E4574DA20BFCD40008BDD04 /* libxcb-xv.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xv.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-xv.0.dylib"; sourceTree = "<group>"; };
+		9E4574DB20BFCD40008BDD04 /* libpng15.15.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng15.15.dylib; path = ../../../../../../../../../../opt/X11/lib/libpng15.15.dylib; sourceTree = "<group>"; };
+		9E4574DC20BFCD40008BDD04 /* libGLESv2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLESv2.2.dylib; path = ../../../../../../../../../../opt/X11/lib/libGLESv2.2.dylib; sourceTree = "<group>"; };
+		9E4574DD20BFCD40008BDD04 /* libxcb-dpms.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-dpms.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-dpms.0.dylib"; sourceTree = "<group>"; };
+		9E4574DE20BFCD40008BDD04 /* libxcb-errors.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-errors.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-errors.0.dylib"; sourceTree = "<group>"; };
+		9E4574DF20BFCD41008BDD04 /* libxcb-shm.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-shm.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-shm.0.dylib"; sourceTree = "<group>"; };
+		9E4574E020BFCD41008BDD04 /* libcairo-script-interpreter.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libcairo-script-interpreter.2.dylib"; path = "../../../../../../../../../../opt/X11/lib/libcairo-script-interpreter.2.dylib"; sourceTree = "<group>"; };
+		9E4574E120BFCD41008BDD04 /* libICE.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libICE.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libICE.6.dylib; sourceTree = "<group>"; };
+		9E4574E220BFCD41008BDD04 /* libxcb-sync.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-sync.1.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-sync.1.dylib"; sourceTree = "<group>"; };
+		9E4574E320BFCD41008BDD04 /* libfontconfig.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfontconfig.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libfontconfig.1.dylib; sourceTree = "<group>"; };
+		9E4574E420BFCD41008BDD04 /* libAppleWM.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAppleWM.7.dylib; path = ../../../../../../../../../../opt/X11/lib/libAppleWM.7.dylib; sourceTree = "<group>"; };
+		9E4574E520BFCD42008BDD04 /* libXrandr.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrandr.2.dylib; path = ../../../../../../../../../../opt/X11/lib/libXrandr.2.dylib; sourceTree = "<group>"; };
+		9E4574E620BFCD42008BDD04 /* libXRes.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXRes.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXRes.1.dylib; sourceTree = "<group>"; };
+		9E4574E720BFCD42008BDD04 /* libXaw3d.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw3d.8.dylib; path = ../../../../../../../../../../opt/X11/lib/libXaw3d.8.dylib; sourceTree = "<group>"; };
+		9E4574E820BFCD42008BDD04 /* libxcb-dri2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-dri2.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-dri2.0.dylib"; sourceTree = "<group>"; };
+		9E4574E920BFCD42008BDD04 /* libxcb-xf86dri.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xf86dri.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-xf86dri.0.dylib"; sourceTree = "<group>"; };
+		9E4574EA20BFCD42008BDD04 /* libXext.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXext.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXext.6.dylib; sourceTree = "<group>"; };
+		9E4574EB20BFCD42008BDD04 /* libXaw8.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw8.8.dylib; path = ../../../../../../../../../../opt/X11/lib/libXaw8.8.dylib; sourceTree = "<group>"; };
+		9E4574EC20BFCD42008BDD04 /* libGLESv1_CM.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLESv1_CM.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libGLESv1_CM.1.dylib; sourceTree = "<group>"; };
+		9E4574ED20BFCD42008BDD04 /* libXpresent.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXpresent.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXpresent.1.dylib; sourceTree = "<group>"; };
+		9E4574EE20BFCD42008BDD04 /* libxcb-res.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-res.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-res.0.dylib"; sourceTree = "<group>"; };
+		9E4574EF20BFCD43008BDD04 /* libxcb.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxcb.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libxcb.1.dylib; sourceTree = "<group>"; };
+		9E4574F020BFCD43008BDD04 /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libpixman-1.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libpixman-1.0.dylib"; sourceTree = "<group>"; };
+		9E4574F120BFCD43008BDD04 /* libXfontcache.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfontcache.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXfontcache.1.dylib; sourceTree = "<group>"; };
+		9E4574F220BFCD43008BDD04 /* libXplugin.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXplugin.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXplugin.1.dylib; sourceTree = "<group>"; };
+		9E4574F320BFCD43008BDD04 /* libxcb-cursor.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-cursor.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-cursor.0.dylib"; sourceTree = "<group>"; };
+		9E4574F420BFCD43008BDD04 /* libxcb-xfixes.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xfixes.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-xfixes.0.dylib"; sourceTree = "<group>"; };
+		9E4574F520BFCD43008BDD04 /* libXTrap.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXTrap.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXTrap.6.dylib; sourceTree = "<group>"; };
+		9E4574F620BFCD43008BDD04 /* libXss.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXss.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXss.1.dylib; sourceTree = "<group>"; };
+		9E4574F720BFCD43008BDD04 /* libOSMesa.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libOSMesa.8.dylib; path = ../../../../../../../../../../opt/X11/lib/libOSMesa.8.dylib; sourceTree = "<group>"; };
+		9E4574F820BFCD44008BDD04 /* libxcb-randr.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-randr.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-randr.0.dylib"; sourceTree = "<group>"; };
+		9E4574F920BFCD44008BDD04 /* libGLU.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLU.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libGLU.1.dylib; sourceTree = "<group>"; };
+		9E4574FA20BFCD44008BDD04 /* libXdamage.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdamage.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXdamage.1.dylib; sourceTree = "<group>"; };
+		9E4574FB20BFCD44008BDD04 /* libxcb-present.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-present.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-present.0.dylib"; sourceTree = "<group>"; };
+		9E4574FC20BFCD44008BDD04 /* libXdmcp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXdmcp.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXdmcp.6.dylib; sourceTree = "<group>"; };
+		9E4574FD20BFCD44008BDD04 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ../../../../../../../../../../opt/X11/lib/libpng16.16.dylib; sourceTree = "<group>"; };
+		9E4574FE20BFCD44008BDD04 /* libxcb-xkb.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-xkb.1.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-xkb.1.dylib"; sourceTree = "<group>"; };
+		9E4574FF20BFCD44008BDD04 /* libXfont.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfont.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXfont.1.dylib; sourceTree = "<group>"; };
+		9E45750020BFCD44008BDD04 /* libXrender.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXrender.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXrender.1.dylib; sourceTree = "<group>"; };
+		9E45750120BFCD44008BDD04 /* libXtst.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXtst.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXtst.6.dylib; sourceTree = "<group>"; };
+		9E45750220BFCD45008BDD04 /* libXcursor.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXcursor.1.dylib; path = ../../../../../../../../../../opt/X11/lib/libXcursor.1.dylib; sourceTree = "<group>"; };
+		9E45750320BFCD45008BDD04 /* libXfont2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXfont2.2.dylib; path = ../../../../../../../../../../opt/X11/lib/libXfont2.2.dylib; sourceTree = "<group>"; };
+		9E45750420BFCD45008BDD04 /* libxcb-record.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libxcb-record.0.dylib"; path = "../../../../../../../../../../opt/X11/lib/libxcb-record.0.dylib"; sourceTree = "<group>"; };
+		9E45750520BFCD45008BDD04 /* libXi.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXi.6.dylib; path = ../../../../../../../../../../opt/X11/lib/libXi.6.dylib; sourceTree = "<group>"; };
+		9E45750620BFCD45008BDD04 /* libXaw7.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libXaw7.7.dylib; path = ../../../../../../../../../../opt/X11/lib/libXaw7.7.dylib; sourceTree = "<group>"; };
+		9E45750720BFCD45008BDD04 /* libpng.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng.3.dylib; path = ../../../../../../../../../../opt/X11/lib/libpng.3.dylib; sourceTree = "<group>"; };
+		9E45756720BFCE0F008BDD04 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ../../../../../../../../../../usr/local/Cellar/libpng/1.6.34/lib/libpng16.16.dylib; sourceTree = "<group>"; };
+		9E45756920BFCE28008BDD04 /* libjpeg.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.9.dylib; path = ../../../../../../../../../../usr/local/Cellar/jpeg/9c/lib/libjpeg.9.dylib; sourceTree = "<group>"; };
+		9E5258CE20C0DC1300A56A52 /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		9E5258D120C0DCA900A56A52 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9E6C275D20C71B900062B56A /* sceneload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sceneload.cpp; sourceTree = "<group>"; };
+		9E6C275E20C71B900062B56A /* sceneload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sceneload.h; sourceTree = "<group>"; };
+		9EA36E1120C1CFAF0034FCAD /* scene1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene1.txt; sourceTree = "<group>"; };
+		9EA36E1220C1CFAF0034FCAD /* scene2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene2.txt; sourceTree = "<group>"; };
+		9EA36E1320C1CFAF0034FCAD /* scene4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene4.txt; sourceTree = "<group>"; };
+		9EA36E1420C1CFAF0034FCAD /* scene5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene5.txt; sourceTree = "<group>"; };
+		9EA36E1520C1CFAF0034FCAD /* scene3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene3.txt; sourceTree = "<group>"; };
+		9EE2D44120BFAA830040D125 /* RayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracer; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE2D44420BFAA830040D125 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9EE2D44B20BFAEEA0040D125 /* libs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libs.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EE2D43E20BFAA830040D125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E45756A20BFCE28008BDD04 /* libjpeg.9.dylib in Frameworks */,
+				9E45756820BFCE0F008BDD04 /* libpng16.16.dylib in Frameworks */,
+				9E45750820BFCD45008BDD04 /* libdmx.1.dylib in Frameworks */,
+				9E45750920BFCD45008BDD04 /* libSM.6.dylib in Frameworks */,
+				9E45750A20BFCD45008BDD04 /* libxcb-damage.0.dylib in Frameworks */,
+				9E45750B20BFCD45008BDD04 /* libX11-xcb.1.dylib in Frameworks */,
+				9E45750C20BFCD45008BDD04 /* libxcb-xinerama.0.dylib in Frameworks */,
+				9E45750D20BFCD45008BDD04 /* libXp.6.dylib in Frameworks */,
+				9E45750E20BFCD45008BDD04 /* libpng12.0.dylib in Frameworks */,
+				9E45750F20BFCD45008BDD04 /* libcairo.2.dylib in Frameworks */,
+				9E45751020BFCD45008BDD04 /* libglapi.0.dylib in Frameworks */,
+				9E45751120BFCD45008BDD04 /* libxcb-dri3.0.dylib in Frameworks */,
+				9E45751220BFCD45008BDD04 /* libxcb-image.0.dylib in Frameworks */,
+				9E45751320BFCD45008BDD04 /* libXvMC.1.dylib in Frameworks */,
+				9E45751420BFCD45008BDD04 /* libXaw6.6.dylib in Frameworks */,
+				9E45751520BFCD45008BDD04 /* libxkbui.1.dylib in Frameworks */,
+				9E45751620BFCD45008BDD04 /* libXft.2.dylib in Frameworks */,
+				9E45751720BFCD45008BDD04 /* libxcb-keysyms.1.dylib in Frameworks */,
+				9E45751820BFCD45008BDD04 /* libxkbfile.1.dylib in Frameworks */,
+				9E45751920BFCD45008BDD04 /* libGL.1.dylib in Frameworks */,
+				9E45751A20BFCD45008BDD04 /* libglut.3.dylib in Frameworks */,
+				9E45751B20BFCD45008BDD04 /* libpng14.14.dylib in Frameworks */,
+				9E45751C20BFCD45008BDD04 /* libXvMCW.1.dylib in Frameworks */,
+				9E45751D20BFCD45008BDD04 /* libXfixes.3.dylib in Frameworks */,
+				9E45751E20BFCD45008BDD04 /* libxcb-xvmc.0.dylib in Frameworks */,
+				9E45751F20BFCD45008BDD04 /* libXpm.4.dylib in Frameworks */,
+				9E45752020BFCD45008BDD04 /* libxcb-render-util.0.dylib in Frameworks */,
+				9E45752120BFCD45008BDD04 /* libxcb-render.0.dylib in Frameworks */,
+				9E45752220BFCD45008BDD04 /* libxcb-shape.0.dylib in Frameworks */,
+				9E45752320BFCD45008BDD04 /* libXinerama.1.dylib in Frameworks */,
+				9E45752420BFCD45008BDD04 /* libXau.6.dylib in Frameworks */,
+				9E45752520BFCD45008BDD04 /* libXmuu.1.dylib in Frameworks */,
+				9E45752620BFCD45008BDD04 /* libXt.6.dylib in Frameworks */,
+				9E45752720BFCD45008BDD04 /* libxcb-composite.0.dylib in Frameworks */,
+				9E45752820BFCD45008BDD04 /* libxcb-icccm.4.dylib in Frameworks */,
+				9E45752920BFCD45008BDD04 /* libXt.7.dylib in Frameworks */,
+				9E45752A20BFCD45008BDD04 /* libXxf86misc.1.dylib in Frameworks */,
+				9E45752B20BFCD45008BDD04 /* libFS.6.dylib in Frameworks */,
+				9E45752C20BFCD45008BDD04 /* libXv.1.dylib in Frameworks */,
+				9E45752D20BFCD45008BDD04 /* libxcb-screensaver.0.dylib in Frameworks */,
+				9E45752E20BFCD45008BDD04 /* libXxf86vm.1.dylib in Frameworks */,
+				9E45752F20BFCD45008BDD04 /* libxcb-ewmh.2.dylib in Frameworks */,
+				9E45753020BFCD45008BDD04 /* libXcomposite.1.dylib in Frameworks */,
+				9E45753120BFCD45008BDD04 /* libxcb-glx.0.dylib in Frameworks */,
+				9E45753220BFCD45008BDD04 /* libfreetype.6.dylib in Frameworks */,
+				9E45753320BFCD45008BDD04 /* libxcb-xtest.0.dylib in Frameworks */,
+				9E45753420BFCD45008BDD04 /* libxcb-util.1.dylib in Frameworks */,
+				9E45753520BFCD45008BDD04 /* libxshmfence.1.dylib in Frameworks */,
+				9E45753620BFCD45008BDD04 /* libfontenc.1.dylib in Frameworks */,
+				9E45753720BFCD45008BDD04 /* libXevie.1.dylib in Frameworks */,
+				9E45753820BFCD45008BDD04 /* libXmu.6.dylib in Frameworks */,
+				9E45753920BFCD45008BDD04 /* libxcb-xv.0.dylib in Frameworks */,
+				9E45753A20BFCD45008BDD04 /* libpng15.15.dylib in Frameworks */,
+				9E45753B20BFCD45008BDD04 /* libGLESv2.2.dylib in Frameworks */,
+				9E45753C20BFCD45008BDD04 /* libxcb-dpms.0.dylib in Frameworks */,
+				9E45753D20BFCD45008BDD04 /* libxcb-errors.0.dylib in Frameworks */,
+				9E45753E20BFCD45008BDD04 /* libxcb-shm.0.dylib in Frameworks */,
+				9E45753F20BFCD45008BDD04 /* libcairo-script-interpreter.2.dylib in Frameworks */,
+				9E45754020BFCD45008BDD04 /* libICE.6.dylib in Frameworks */,
+				9E45754120BFCD45008BDD04 /* libxcb-sync.1.dylib in Frameworks */,
+				9E45754220BFCD45008BDD04 /* libfontconfig.1.dylib in Frameworks */,
+				9E45754320BFCD45008BDD04 /* libAppleWM.7.dylib in Frameworks */,
+				9E45754420BFCD45008BDD04 /* libXrandr.2.dylib in Frameworks */,
+				9E45754520BFCD45008BDD04 /* libXRes.1.dylib in Frameworks */,
+				9E45754620BFCD45008BDD04 /* libXaw3d.8.dylib in Frameworks */,
+				9E45754720BFCD45008BDD04 /* libxcb-dri2.0.dylib in Frameworks */,
+				9E45754820BFCD45008BDD04 /* libxcb-xf86dri.0.dylib in Frameworks */,
+				9E45754920BFCD45008BDD04 /* libXext.6.dylib in Frameworks */,
+				9E45754A20BFCD45008BDD04 /* libXaw8.8.dylib in Frameworks */,
+				9E45754B20BFCD45008BDD04 /* libGLESv1_CM.1.dylib in Frameworks */,
+				9E45754C20BFCD45008BDD04 /* libXpresent.1.dylib in Frameworks */,
+				9E45754D20BFCD45008BDD04 /* libxcb-res.0.dylib in Frameworks */,
+				9E45754E20BFCD45008BDD04 /* libxcb.1.dylib in Frameworks */,
+				9E45754F20BFCD45008BDD04 /* libpixman-1.0.dylib in Frameworks */,
+				9E45755020BFCD45008BDD04 /* libXfontcache.1.dylib in Frameworks */,
+				9E45755120BFCD45008BDD04 /* libXplugin.1.dylib in Frameworks */,
+				9E45755220BFCD45008BDD04 /* libxcb-cursor.0.dylib in Frameworks */,
+				9E45755320BFCD45008BDD04 /* libxcb-xfixes.0.dylib in Frameworks */,
+				9E45755420BFCD45008BDD04 /* libXTrap.6.dylib in Frameworks */,
+				9E45755520BFCD45008BDD04 /* libXss.1.dylib in Frameworks */,
+				9E45755620BFCD45008BDD04 /* libOSMesa.8.dylib in Frameworks */,
+				9E45755720BFCD45008BDD04 /* libxcb-randr.0.dylib in Frameworks */,
+				9E45755820BFCD45008BDD04 /* libGLU.1.dylib in Frameworks */,
+				9E45755920BFCD45008BDD04 /* libXdamage.1.dylib in Frameworks */,
+				9E45755A20BFCD45008BDD04 /* libxcb-present.0.dylib in Frameworks */,
+				9E45755B20BFCD45008BDD04 /* libXdmcp.6.dylib in Frameworks */,
+				9E45755C20BFCD45008BDD04 /* libpng16.16.dylib in Frameworks */,
+				9E45755D20BFCD45008BDD04 /* libxcb-xkb.1.dylib in Frameworks */,
+				9E45755E20BFCD45008BDD04 /* libXfont.1.dylib in Frameworks */,
+				9E45755F20BFCD45008BDD04 /* libXrender.1.dylib in Frameworks */,
+				9E45756020BFCD45008BDD04 /* libXtst.6.dylib in Frameworks */,
+				9E45756120BFCD45008BDD04 /* libXcursor.1.dylib in Frameworks */,
+				9E45756220BFCD45008BDD04 /* libXfont2.2.dylib in Frameworks */,
+				9E45756320BFCD45008BDD04 /* libxcb-record.0.dylib in Frameworks */,
+				9E45756420BFCD45008BDD04 /* libXi.6.dylib in Frameworks */,
+				9E45756520BFCD45008BDD04 /* libXaw7.7.dylib in Frameworks */,
+				9E45756620BFCD45008BDD04 /* libpng.3.dylib in Frameworks */,
+				9E4574A820BFCD3B008BDD04 /* libX11.6.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E0CB19620C1E383009CDE2E /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				9E0CB19420C1E2FB009CDE2E /* object.h */,
+				9E0CB19B20C1E61D009CDE2E /* sphere.cpp */,
+				9E0CB19C20C1E61D009CDE2E /* sphere.h */,
+				9E0CB19E20C1E625009CDE2E /* plane.cpp */,
+				9E0CB19F20C1E625009CDE2E /* plane.h */,
+				9E0CB1A120C1E62D009CDE2E /* camera.cpp */,
+				9E0CB1A220C1E62D009CDE2E /* camera.h */,
+				9E0CB1A420C1E634009CDE2E /* light.cpp */,
+				9E0CB1A520C1E634009CDE2E /* light.h */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		9E0CB19720C1E394009CDE2E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9E5258CE20C0DC1300A56A52 /* util.cpp */,
+				9E5258D120C0DCA900A56A52 /* util.h */,
+				9EE2D44B20BFAEEA0040D125 /* libs.h */,
+				9E0CB19920C1E501009CDE2E /* structs.h */,
+				9E6C275D20C71B900062B56A /* sceneload.cpp */,
+				9E6C275E20C71B900062B56A /* sceneload.h */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		9E4574A020BFC22C008BDD04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E45756920BFCE28008BDD04 /* libjpeg.9.dylib */,
+				9E45756720BFCE0F008BDD04 /* libpng16.16.dylib */,
+				9E4574E420BFCD41008BDD04 /* libAppleWM.7.dylib */,
+				9E4574E020BFCD41008BDD04 /* libcairo-script-interpreter.2.dylib */,
+				9E4574B020BFCD3C008BDD04 /* libcairo.2.dylib */,
+				9E4574A920BFCD3C008BDD04 /* libdmx.1.dylib */,
+				9E4574E320BFCD41008BDD04 /* libfontconfig.1.dylib */,
+				9E4574D720BFCD40008BDD04 /* libfontenc.1.dylib */,
+				9E4574D320BFCD3F008BDD04 /* libfreetype.6.dylib */,
+				9E4574CC20BFCD3F008BDD04 /* libFS.6.dylib */,
+				9E4574BA20BFCD3D008BDD04 /* libGL.1.dylib */,
+				9E4574B120BFCD3C008BDD04 /* libglapi.0.dylib */,
+				9E4574EC20BFCD42008BDD04 /* libGLESv1_CM.1.dylib */,
+				9E4574DC20BFCD40008BDD04 /* libGLESv2.2.dylib */,
+				9E4574F920BFCD44008BDD04 /* libGLU.1.dylib */,
+				9E4574BB20BFCD3D008BDD04 /* libglut.3.dylib */,
+				9E4574E120BFCD41008BDD04 /* libICE.6.dylib */,
+				9E4574F720BFCD43008BDD04 /* libOSMesa.8.dylib */,
+				9E4574F020BFCD43008BDD04 /* libpixman-1.0.dylib */,
+				9E45750720BFCD45008BDD04 /* libpng.3.dylib */,
+				9E4574AF20BFCD3C008BDD04 /* libpng12.0.dylib */,
+				9E4574BC20BFCD3D008BDD04 /* libpng14.14.dylib */,
+				9E4574DB20BFCD40008BDD04 /* libpng15.15.dylib */,
+				9E4574FD20BFCD44008BDD04 /* libpng16.16.dylib */,
+				9E4574AA20BFCD3C008BDD04 /* libSM.6.dylib */,
+				9E4574AC20BFCD3C008BDD04 /* libX11-xcb.1.dylib */,
+				9E4574C520BFCD3E008BDD04 /* libXau.6.dylib */,
+				9E4574E720BFCD42008BDD04 /* libXaw3d.8.dylib */,
+				9E4574B520BFCD3D008BDD04 /* libXaw6.6.dylib */,
+				9E45750620BFCD45008BDD04 /* libXaw7.7.dylib */,
+				9E4574EB20BFCD42008BDD04 /* libXaw8.8.dylib */,
+				9E4574C820BFCD3E008BDD04 /* libxcb-composite.0.dylib */,
+				9E4574F320BFCD43008BDD04 /* libxcb-cursor.0.dylib */,
+				9E4574AB20BFCD3C008BDD04 /* libxcb-damage.0.dylib */,
+				9E4574DD20BFCD40008BDD04 /* libxcb-dpms.0.dylib */,
+				9E4574E820BFCD42008BDD04 /* libxcb-dri2.0.dylib */,
+				9E4574B220BFCD3C008BDD04 /* libxcb-dri3.0.dylib */,
+				9E4574DE20BFCD40008BDD04 /* libxcb-errors.0.dylib */,
+				9E4574D020BFCD3F008BDD04 /* libxcb-ewmh.2.dylib */,
+				9E4574D220BFCD3F008BDD04 /* libxcb-glx.0.dylib */,
+				9E4574C920BFCD3E008BDD04 /* libxcb-icccm.4.dylib */,
+				9E4574B320BFCD3D008BDD04 /* libxcb-image.0.dylib */,
+				9E4574B820BFCD3D008BDD04 /* libxcb-keysyms.1.dylib */,
+				9E4574FB20BFCD44008BDD04 /* libxcb-present.0.dylib */,
+				9E4574F820BFCD44008BDD04 /* libxcb-randr.0.dylib */,
+				9E45750420BFCD45008BDD04 /* libxcb-record.0.dylib */,
+				9E4574C120BFCD3E008BDD04 /* libxcb-render-util.0.dylib */,
+				9E4574C220BFCD3E008BDD04 /* libxcb-render.0.dylib */,
+				9E4574EE20BFCD42008BDD04 /* libxcb-res.0.dylib */,
+				9E4574CE20BFCD3F008BDD04 /* libxcb-screensaver.0.dylib */,
+				9E4574C320BFCD3E008BDD04 /* libxcb-shape.0.dylib */,
+				9E4574DF20BFCD41008BDD04 /* libxcb-shm.0.dylib */,
+				9E4574E220BFCD41008BDD04 /* libxcb-sync.1.dylib */,
+				9E4574D520BFCD3F008BDD04 /* libxcb-util.1.dylib */,
+				9E4574E920BFCD42008BDD04 /* libxcb-xf86dri.0.dylib */,
+				9E4574F420BFCD43008BDD04 /* libxcb-xfixes.0.dylib */,
+				9E4574AD20BFCD3C008BDD04 /* libxcb-xinerama.0.dylib */,
+				9E4574FE20BFCD44008BDD04 /* libxcb-xkb.1.dylib */,
+				9E4574D420BFCD3F008BDD04 /* libxcb-xtest.0.dylib */,
+				9E4574DA20BFCD40008BDD04 /* libxcb-xv.0.dylib */,
+				9E4574BF20BFCD3E008BDD04 /* libxcb-xvmc.0.dylib */,
+				9E4574EF20BFCD43008BDD04 /* libxcb.1.dylib */,
+				9E4574D120BFCD3F008BDD04 /* libXcomposite.1.dylib */,
+				9E45750220BFCD45008BDD04 /* libXcursor.1.dylib */,
+				9E4574FA20BFCD44008BDD04 /* libXdamage.1.dylib */,
+				9E4574FC20BFCD44008BDD04 /* libXdmcp.6.dylib */,
+				9E4574D820BFCD40008BDD04 /* libXevie.1.dylib */,
+				9E4574EA20BFCD42008BDD04 /* libXext.6.dylib */,
+				9E4574BE20BFCD3D008BDD04 /* libXfixes.3.dylib */,
+				9E4574FF20BFCD44008BDD04 /* libXfont.1.dylib */,
+				9E45750320BFCD45008BDD04 /* libXfont2.2.dylib */,
+				9E4574F120BFCD43008BDD04 /* libXfontcache.1.dylib */,
+				9E4574B720BFCD3D008BDD04 /* libXft.2.dylib */,
+				9E45750520BFCD45008BDD04 /* libXi.6.dylib */,
+				9E4574C420BFCD3E008BDD04 /* libXinerama.1.dylib */,
+				9E4574B920BFCD3D008BDD04 /* libxkbfile.1.dylib */,
+				9E4574B620BFCD3D008BDD04 /* libxkbui.1.dylib */,
+				9E4574D920BFCD40008BDD04 /* libXmu.6.dylib */,
+				9E4574C620BFCD3E008BDD04 /* libXmuu.1.dylib */,
+				9E4574AE20BFCD3C008BDD04 /* libXp.6.dylib */,
+				9E4574F220BFCD43008BDD04 /* libXplugin.1.dylib */,
+				9E4574C020BFCD3E008BDD04 /* libXpm.4.dylib */,
+				9E4574ED20BFCD42008BDD04 /* libXpresent.1.dylib */,
+				9E4574E520BFCD42008BDD04 /* libXrandr.2.dylib */,
+				9E45750020BFCD44008BDD04 /* libXrender.1.dylib */,
+				9E4574E620BFCD42008BDD04 /* libXRes.1.dylib */,
+				9E4574D620BFCD40008BDD04 /* libxshmfence.1.dylib */,
+				9E4574F620BFCD43008BDD04 /* libXss.1.dylib */,
+				9E4574C720BFCD3E008BDD04 /* libXt.6.dylib */,
+				9E4574CA20BFCD3E008BDD04 /* libXt.7.dylib */,
+				9E4574F520BFCD43008BDD04 /* libXTrap.6.dylib */,
+				9E45750120BFCD44008BDD04 /* libXtst.6.dylib */,
+				9E4574CD20BFCD3F008BDD04 /* libXv.1.dylib */,
+				9E4574B420BFCD3D008BDD04 /* libXvMC.1.dylib */,
+				9E4574BD20BFCD3D008BDD04 /* libXvMCW.1.dylib */,
+				9E4574CB20BFCD3F008BDD04 /* libXxf86misc.1.dylib */,
+				9E4574CF20BFCD3F008BDD04 /* libXxf86vm.1.dylib */,
+				9E4574A620BFCD1E008BDD04 /* lib */,
+				9E4574A120BFC22C008BDD04 /* libX11.6.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EA36E1020C1CE6A0034FCAD /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				9EA36E1120C1CFAF0034FCAD /* scene1.txt */,
+				9EA36E1220C1CFAF0034FCAD /* scene2.txt */,
+				9EA36E1520C1CFAF0034FCAD /* scene3.txt */,
+				9EA36E1320C1CFAF0034FCAD /* scene4.txt */,
+				9EA36E1420C1CFAF0034FCAD /* scene5.txt */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
+		9EE2D43820BFAA830040D125 = {
+			isa = PBXGroup;
+			children = (
+				9EE2D44320BFAA830040D125 /* RayTracer */,
+				9EE2D44220BFAA830040D125 /* Products */,
+				9E4574A020BFC22C008BDD04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EE2D44220BFAA830040D125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EE2D44120BFAA830040D125 /* RayTracer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EE2D44320BFAA830040D125 /* RayTracer */ = {
+			isa = PBXGroup;
+			children = (
+				9E0CB19720C1E394009CDE2E /* utils */,
+				9E0CB19620C1E383009CDE2E /* classes */,
+				9EA36E1020C1CE6A0034FCAD /* scene */,
+				9EE2D44420BFAA830040D125 /* main.cpp */,
+			);
+			path = RayTracer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EE2D44020BFAA830040D125 /* RayTracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE2D44820BFAA830040D125 /* Build configuration list for PBXNativeTarget "RayTracer" */;
+			buildPhases = (
+				9EE2D43D20BFAA830040D125 /* Sources */,
+				9EE2D43E20BFAA830040D125 /* Frameworks */,
+				9EE2D43F20BFAA830040D125 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayTracer;
+			productName = RayTracer;
+			productReference = 9EE2D44120BFAA830040D125 /* RayTracer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EE2D43920BFAA830040D125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					9EE2D44020BFAA830040D125 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 9EE2D43C20BFAA830040D125 /* Build configuration list for PBXProject "RayTracer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9EE2D43820BFAA830040D125;
+			productRefGroup = 9EE2D44220BFAA830040D125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EE2D44020BFAA830040D125 /* RayTracer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EE2D43D20BFAA830040D125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0CB1A020C1E625009CDE2E /* plane.cpp in Sources */,
+				9EE2D44520BFAA830040D125 /* main.cpp in Sources */,
+				9E0CB19D20C1E61D009CDE2E /* sphere.cpp in Sources */,
+				9E0CB1A620C1E634009CDE2E /* light.cpp in Sources */,
+				9E0CB1A320C1E62D009CDE2E /* camera.cpp in Sources */,
+				9E5258D020C0DC1400A56A52 /* util.cpp in Sources */,
+				9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9EE2D44620BFAA830040D125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9EE2D44720BFAA830040D125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9EE2D44920BFAA830040D125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG2AG3A8Z8;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glm/0.9.8.5,
+					/opt/X11/include,
+					/usr/local/Cellar/cimg/2.2.2/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/X11/lib,
+					/usr/local/Cellar/libpng/1.6.34/lib,
+					/usr/local/Cellar/jpeg/9c/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		9EE2D44A20BFAA830040D125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG2AG3A8Z8;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glm/0.9.8.5,
+					/opt/X11/include,
+					/usr/local/Cellar/cimg/2.2.2/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/X11/lib,
+					/usr/local/Cellar/libpng/1.6.34/lib,
+					/usr/local/Cellar/jpeg/9c/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EE2D43C20BFAA830040D125 /* Build configuration list for PBXProject "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE2D44620BFAA830040D125 /* Debug */,
+				9EE2D44720BFAA830040D125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE2D44820BFAA830040D125 /* Build configuration list for PBXNativeTarget "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE2D44920BFAA830040D125 /* Debug */,
+				9EE2D44A20BFAA830040D125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EE2D43920BFAA830040D125 /* Project object */;
+}
