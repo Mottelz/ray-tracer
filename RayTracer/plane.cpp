@@ -1,6 +1,6 @@
 #include "plane.h"
 
-Plane::Plane(glm::vec3 norm, glm::vec3 pos, glm::vec3 amb, float dif, float spe, float shine) {
+Plane::Plane(glm::vec3 norm, glm::vec3 pos, glm::vec3 amb, glm::vec3 dif, glm::vec3 spe, float shine) {
     m_norm = norm;
     m_pos = pos;
     m_amb = amb;
@@ -44,12 +44,12 @@ Intersect Plane::intersect(const Ray &r) {
 
 
 void Plane::print() { 
-    printf("Plane Specs: \n  Norm: %s\n  Position: %s\n  Ambient: %s\n  Diffuse: %f\n  Specular: %f\n  Shine: %f\n",
+    printf("Plane Specs: \n  Norm: %s\n  Position: %s\n  Ambient: %s\n  Diffuse: %s\n  Specular: %s\n  Shine: %f\n",
            glm::to_string(m_norm).c_str(),
            glm::to_string(m_pos).c_str(),
            glm::to_string(m_amb).c_str(),
-           m_dif,
-           m_spe,
+           glm::to_string(m_dif).c_str(),
+           glm::to_string(m_spe).c_str(),
            m_shi);
 }
 

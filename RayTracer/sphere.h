@@ -6,11 +6,11 @@ class Sphere: public Object {
     glm::vec3 m_pos;
     int m_rad;
     glm::vec3 m_amb;
-    float m_dif;
-    float m_spe;
+    glm::vec3 m_dif;
+    glm::vec3 m_spe;
     float m_shi;
 public:
-    Sphere(glm::vec3 pos, int rad, glm::vec3 amb, float dif, float spe, float shi);
+    Sphere(glm::vec3 pos, int rad, glm::vec3 amb, glm::vec3 dif, glm::vec3 spe, float shi);
     inline glm::vec3 getPostion() override { return m_pos; };
     Intersect intersect(const Ray &r) override;
     void print() override;

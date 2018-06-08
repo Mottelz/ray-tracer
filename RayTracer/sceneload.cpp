@@ -56,8 +56,8 @@ bool load_scene(const std::string& filepath) {
             glm::vec3 temp_norm;
             glm::vec3 temp_pos;
             glm::vec3 temp_amb;
-            float temp_dif;
-            float temp_spe;
+            glm::vec3 temp_dif;
+            glm::vec3 temp_spe;
             float temp_shi = 0.0;
             for (int i = 0; i < 6; i++) {
                 fscanf(file, "%s: ", lineHeader);
@@ -68,9 +68,9 @@ bool load_scene(const std::string& filepath) {
                 } else if (strcmp(lineHeader, "amb:") == 0) {
                     fscanf(file, "%f %f %f\n", &temp_amb.x, &temp_amb.y, &temp_amb.z);
                 } else if (strcmp(lineHeader, "dif:") == 0) {
-                    fscanf(file, "%f\n", &temp_dif);
+                    fscanf(file, "%f %f %f\n", &temp_dif.x, &temp_dif.y, &temp_dif.z);
                 } else if (strcmp(lineHeader, "spe:") == 0) {
-                    fscanf(file, "%f\n", &temp_spe);
+                    fscanf(file, "%f %f %f\n", &temp_spe.x, &temp_spe.y, &temp_spe.z);
                 } else if (strcmp(lineHeader, "shi:") == 0) {
                     fscanf(file, "%f\n", &temp_shi);
                 } else {
@@ -78,12 +78,12 @@ bool load_scene(const std::string& filepath) {
                     return false;
                 }
             }
-            printf("Plane Specs: \n  Norm: %s\n  Position: %s\n  Ambient: %s\n  Diffuse: %f\n  Specular: %f\n  Shine: %f\n",
+            printf("Plane Specs: \n  Norm: %s\n  Position: %s\n  Ambient: %s\n  Diffuse: %s\n  Specular: %s\n  Shine: %f\n",
                    glm::to_string(temp_norm).c_str(),
                    glm::to_string(temp_pos).c_str(),
                    glm::to_string(temp_amb).c_str(),
-                   temp_dif,
-                   temp_spe,
+                   glm::to_string(temp_dif).c_str(),
+                   glm::to_string(temp_spe).c_str(),
                    temp_shi);
         }
         
@@ -92,8 +92,8 @@ bool load_scene(const std::string& filepath) {
             glm::vec3 temp_pos;
             int temp_rad = 0;
             glm::vec3 temp_amb;
-            float temp_dif;
-            float temp_spe;
+            glm::vec3 temp_dif;
+            glm::vec3 temp_spe;
             float temp_shi = 0.0;
             for (int i = 0; i < 6; i++) {
                 fscanf(file, "%s: ", lineHeader);
@@ -104,9 +104,9 @@ bool load_scene(const std::string& filepath) {
                 } else if (strcmp(lineHeader, "amb:") == 0) {
                     fscanf(file, "%f %f %f\n", &temp_amb.x, &temp_amb.y, &temp_amb.z);
                 } else if (strcmp(lineHeader, "dif:") == 0) {
-                    fscanf(file, "%f\n", &temp_dif);
+                    fscanf(file, "%f %f %f\n", &temp_dif.x, &temp_dif.y, &temp_dif.z);
                 } else if (strcmp(lineHeader, "spe:") == 0) {
-                    fscanf(file, "%f\n", &temp_spe);
+                    fscanf(file, "%f %f %f\n", &temp_spe.x, &temp_spe.y, &temp_spe.z);
                 } else if (strcmp(lineHeader, "shi:") == 0) {
                     fscanf(file, "%f\n", &temp_shi);
                 } else {
@@ -114,12 +114,12 @@ bool load_scene(const std::string& filepath) {
                     return false;
                 }
             }
-            printf("Sphere Specs: \n  Position: %s\n  Rad: %i\n  Ambient:%s\n  Diffuse: %f\n  Specular: %f\n  Shine: %f\n",
+            printf("Sphere Specs: \n  Position: %s\n  Rad: %i\n  Ambient:%s\n  Diffuse: %s\n  Specular: %s\n  Shine: %f\n",
                    glm::to_string(temp_pos).c_str(),
                    temp_rad,
                    glm::to_string(temp_amb).c_str(),
-                   temp_dif,
-                   temp_spe,
+                   glm::to_string(temp_dif).c_str(),
+                   glm::to_string(temp_spe).c_str(),
                    temp_shi);
         }
         
@@ -206,8 +206,8 @@ bool load_scene(const std::string& filepath, std::vector<Object*> & things, std:
             glm::vec3 temp_norm;
             glm::vec3 temp_pos;
             glm::vec3 temp_amb;
-            float temp_dif;
-            float temp_spe;
+            glm::vec3 temp_dif;
+            glm::vec3 temp_spe;
             float temp_shi = 0.0;
             for (int i = 0; i < 6; i++) {
                 fscanf(file, "%s: ", lineHeader);
@@ -218,9 +218,9 @@ bool load_scene(const std::string& filepath, std::vector<Object*> & things, std:
                 } else if (strcmp(lineHeader, "amb:") == 0) {
                     fscanf(file, "%f %f %f\n", &temp_amb.x, &temp_amb.y, &temp_amb.z);
                 } else if (strcmp(lineHeader, "dif:") == 0) {
-                    fscanf(file, "%f\n", &temp_dif);
+                    fscanf(file, "%f %f %f\n", &temp_dif.x, &temp_dif.y, &temp_dif.z);
                 } else if (strcmp(lineHeader, "spe:") == 0) {
-                    fscanf(file, "%f\n", &temp_spe);
+                    fscanf(file, "%f %f %f\n", &temp_spe.x, &temp_spe.y, &temp_spe.z);
                 } else if (strcmp(lineHeader, "shi:") == 0) {
                     fscanf(file, "%f\n", &temp_shi);
                 } else {
@@ -237,8 +237,8 @@ bool load_scene(const std::string& filepath, std::vector<Object*> & things, std:
             glm::vec3 temp_pos;
             int temp_rad = 0;
             glm::vec3 temp_amb;
-            float temp_dif = 0.0;
-            float temp_spe = 0.0;
+            glm::vec3 temp_dif;
+            glm::vec3 temp_spe;
             float temp_shi = 0.0;
             for (int i = 0; i < 6; i++) {
                 fscanf(file, "%s: ", lineHeader);
@@ -249,9 +249,9 @@ bool load_scene(const std::string& filepath, std::vector<Object*> & things, std:
                 } else if (strcmp(lineHeader, "amb:") == 0) {
                     fscanf(file, "%f %f %f\n", &temp_amb.x, &temp_amb.y, &temp_amb.z);
                 } else if (strcmp(lineHeader, "dif:") == 0) {
-                    fscanf(file, "%f\n", &temp_dif);
+                    fscanf(file, "%f %f %f\n", &temp_dif.x, &temp_dif.y, &temp_dif.z);
                 } else if (strcmp(lineHeader, "spe:") == 0) {
-                    fscanf(file, "%f\n", &temp_spe);
+                    fscanf(file, "%f %f %f\n", &temp_spe.x, &temp_spe.y, &temp_spe.z);
                 } else if (strcmp(lineHeader, "shi:") == 0) {
                     fscanf(file, "%f\n", &temp_shi);
                 } else {

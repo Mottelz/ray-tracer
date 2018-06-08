@@ -1,6 +1,6 @@
 #include "sphere.h"
 
-Sphere::Sphere(glm::vec3 pos, int rad, glm::vec3 amb, float dif, float spe, float shi) {
+Sphere::Sphere(glm::vec3 pos, int rad, glm::vec3 amb, glm::vec3 dif, glm::vec3 spe, float shi) {
     m_pos = pos;
     m_rad = rad;
     m_amb = amb;
@@ -54,12 +54,12 @@ Intersect Sphere::intersect(const Ray &r) {
 }
 
 void Sphere::print() { 
-    printf("Sphere Specs: \n  Position: %s\n  Rad: %i\n  Ambient:%s\n  Diffuse: %f\n  Specular: %f\n  Shine: %f\n",
+    printf("Sphere Specs: \n  Position: %s\n  Rad: %i\n  Ambient:%s\n  Diffuse: %s\n  Specular: %s\n  Shine: %f\n",
            glm::to_string(m_pos).c_str(),
            m_rad,
            glm::to_string(m_amb).c_str(),
-           m_dif,
-           m_spe,
+           glm::to_string(m_dif).c_str(),
+           glm::to_string(m_spe).c_str(),
            m_shi);
 }
 
