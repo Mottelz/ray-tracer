@@ -38,3 +38,14 @@ void draw(cimg_library::CImg<float> &image, int w, int h, glm::vec3 color) {
     image(w, h, 2) = color.b*255;
 }
 
+glm::vec3 clip(glm::vec3 vec, float lo, float hi) {
+    vec.x = (vec.x > hi) ? hi : vec.x;
+    vec.y = (vec.y > hi) ? hi : vec.y;
+    vec.z = (vec.z > hi) ? hi : vec.z;
+    
+    vec.x = (vec.x < lo) ? lo : vec.x;
+    vec.y = (vec.y < lo) ? lo : vec.y;
+    vec.z = (vec.z < lo) ? lo : vec.z;
+    
+    return vec;
+};

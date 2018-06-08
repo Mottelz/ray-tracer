@@ -75,14 +75,7 @@ glm::vec3 Plane::getColour(const Light &light, const Intersect& hit, const glm::
     
     colour = ((diffuse+specular) * m_amb * light.getColour()) + m_amb;
     
-    //clip to [1,0]
-    colour.x = (colour.x > 1) ? 1 : colour.x;
-    colour.y = (colour.y > 1) ? 1 : colour.y;
-    colour.z = (colour.z > 1) ? 1 : colour.z;
-    
-    colour.x = (colour.x < 0) ? 0 : colour.x;
-    colour.y = (colour.y < 0) ? 0 : colour.y;
-    colour.z = (colour.z < 0) ? 0 : colour.z;
+    colour = clip(colour, 0.0f, 1.0f);
     
     return colour;
 }
