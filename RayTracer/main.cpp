@@ -23,13 +23,13 @@ int main(int argc, const char * argv[]) {
     if(!load_scene(scene, things, lights, cam)) {
         tell_user("Failed to load scene!");
     };
-    
+
     int width = cam->getWidth();
     int height = cam->getHeight();
-    
+
     //Creates an image with three channels and sets it to black
     cimg_library::CImg<float> image(width, height, 1, 3, 0);
-    
+
     //The main loop
     for (int j = 0; j < width; j++) {
         for (int k = 0; k < height; k++) {
@@ -42,7 +42,7 @@ int main(int argc, const char * argv[]) {
             r.dir.y = r.org.y - (k-(height/2));
             r.dir.z = r.org.z - cam -> getFocal();
             r.dir = glm::normalize(r.dir);
-            
+
             //for every object. check if there's a hit and if it's close.
             for (int i = 0; i < things.size(); i++) {
                 Intersect t_hit = things[i] -> intersect(r);
@@ -57,13 +57,13 @@ int main(int argc, const char * argv[]) {
                     }
                 }
             }
-            
-            
+
+
             if(hit.contact){
 #if mot_log
                 log << "HIT! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n";
 #endif
-                glm::vec3 colour = things[hit.thing] -> getColour();
+                glm::vec3 colour(0.0f);
                 for (int i = 0; i < lights.size(); i++) {
                     //Create the shadow ray.
                     glm::vec3 light_pos = lights[i] -> getPosition();
@@ -72,7 +72,7 @@ int main(int argc, const char * argv[]) {
                     sr.dir = hit.pos - light_pos;
                     sr.dir = glm::normalize(sr.dir);
                     bool in_shadow = false;
-                    
+
                     //Loop through objects and check if one is closer.
                     for (int m = 0; m < things.size(); m++) {
                         Intersect temp_hit = things[m] -> intersect(sr);
@@ -82,7 +82,7 @@ int main(int argc, const char * argv[]) {
                             }
                         }
                     }
-                    
+
                     if (!in_shadow) {
                         colour += things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition());
                     }
@@ -93,13 +93,13 @@ int main(int argc, const char * argv[]) {
 #if mot_log
                 log << "MISS! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n";
 #endif
-                draw(image, j, k, glm::vec3(0.0f));
+                draw(image, j, k, glm::vec3(0.3f, 0.0f, 0.3f));
             }
         }
     }
-    
+
     cam -> print();
-    
+
     //Save out the image in PNG format.
     image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".bmp"));
 #if show_pic
@@ -118,5 +118,18 @@ int main(int argc, const char * argv[]) {
 
 
 //int main(int argc, const char * argv[]) {
+//    glm::vec3 vic(3.0f);
+//    tell_user("It's now: " + glm::to_string(vic));
+//
+//    vic = vic * (4+2);
+//    tell_user("It's now: " + glm::to_string(vic));
+//
+//    vic = vic/4;
+//    tell_user("It's now: " + glm::to_string(vic));
+//
+//    vic = vic/2;
+//    tell_user("It's now: " + glm::to_string(vic));
+//
+//
 //    return 0;
 //}
