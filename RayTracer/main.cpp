@@ -1,7 +1,11 @@
+#define show_pic false //Display the image with CImg when done
+#define mot_log true
+
+
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
-#define show_pic FALSE //Display the image with CImg when done
+
 
 std::string scene = "scene1.txt";
 
@@ -11,9 +15,10 @@ int main(int argc, const char * argv[]) {
     std::vector<Object*> things; //init empty vector of objects in the scene.
     std::vector<Light*> lights; //init empty vector of lights
     Camera* cam; //init camera
+#if mot_log
     std::ofstream log;
     log.open(get_name("/Users/mottelzirkind/Desktop/results/log ",".txt"));
-    
+#endif
     //Load the scene
     if(!load_scene(scene, things, lights, cam)) {
         tell_user("Failed to load scene!");
@@ -55,7 +60,9 @@ int main(int argc, const char * argv[]) {
             
             
             if(hit.contact){
+#if mot_log
                 log << "HIT! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n";
+#endif
                 glm::vec3 colour = things[hit.thing] -> getColour();
                 for (int i = 0; i < lights.size(); i++) {
                     //Create the shadow ray.
@@ -83,7 +90,9 @@ int main(int argc, const char * argv[]) {
                     draw(image, j, k, colour);
                 }
             } else {
+#if mot_log
                 log << "MISS! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n";
+#endif
                 draw(image, j, k, glm::vec3(0.0f));
             }
         }
@@ -92,7 +101,7 @@ int main(int argc, const char * argv[]) {
     cam -> print();
     
     //Save out the image in PNG format.
-    image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".png"));
+    image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".bmp"));
 #if show_pic
     //Display the rendered image on screen
         cimg_library::CImgDisplay main_disp(image,"Render");
@@ -100,8 +109,9 @@ int main(int argc, const char * argv[]) {
             main_disp.wait();
         }
 #endif
-    
+#if mot_log
     log.close();
+#endif
     return 0;
 }
 

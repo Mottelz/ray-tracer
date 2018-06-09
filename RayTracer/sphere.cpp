@@ -26,7 +26,7 @@ Intersect Sphere::intersect(const Ray &r) {
     
     //the bit that goes under the sqrt. If this is negative we can stop.
     float under = glm::pow(b, 2) - 4*c;
-    if (under < 0.0f) {
+    if (under < glm::epsilon<float>()) {
         toRet.contact = false;
         return toRet;
     }
@@ -38,17 +38,17 @@ Intersect Sphere::intersect(const Ray &r) {
     t1 = (-b+sq)/2;
     
     //decide which to returns
-    if (t0 < 0.0f && t1 < 0.0f) {
+    if (t0 < glm::epsilon<float>() && t1 < glm::epsilon<float>()) {
         toRet.contact = false;
         return toRet;
-    } else if (t0 > 0.0f && t1 > 0.0f) {
+    } else if (t0 > glm::epsilon<float>() && t1 > glm::epsilon<float>()) {
         v = (t0 > t1) ? t1 : t0;
     } else {
         v = (t0 > t1) ? t0 : t1;
     }
     
     //Calculate and return point.
-    toRet.pos = r.org + r.dir*v;
+    toRet.pos = r.org + r.dir*(v+T_BIAS);
     toRet.contact = true;
     return toRet;
 }
@@ -70,8 +70,8 @@ glm::vec3 Sphere::getColour() {
 
 glm::vec3 Sphere::getColour(const Light &light, const Intersect& hit, const glm::vec3& camPos) {
     glm::vec3 colour(1.0f);
-    glm::vec3 light_vec = glm::normalize(hit.pos-light.getPosition());
-    glm::vec3 norm = glm::normalize(m_pos-hit.pos);
+    glm::vec3 light_vec = glm::normalize(light.getPosition()-hit.pos);
+    glm::vec3 norm = glm::normalize(hit.pos-m_pos);
     
     //Diffuse calculation
     float theta = glm::dot(light_vec,norm);
@@ -87,7 +87,7 @@ glm::vec3 Sphere::getColour(const Light &light, const Intersect& hit, const glm:
     colour = (diffuse+specular) * light.getColour();
     
     //clip [0,1]
-    colour = clip(colour, 0.0f, 1.0f);
+//    colour = clip(colour, 0.0f, 1.0f);
     
     return colour;
 }

@@ -37,7 +37,7 @@ Intersect Plane::intersect(const Ray &r) {
     
     //compare to zero
     toRet.contact = true;
-    toRet.pos = r.org + r.dir*t;
+    toRet.pos = r.org + r.dir*(t+T_BIAS);
     return toRet;
 }
 
@@ -60,7 +60,7 @@ glm::vec3 Plane::getColour() {
 
 glm::vec3 Plane::getColour(const Light &light, const Intersect& hit, const glm::vec3& camPos) {
     glm::vec3 colour(1.0f);
-    glm::vec3 light_vec = glm::normalize(hit.pos-light.getPosition());
+    glm::vec3 light_vec = glm::normalize(light.getPosition()-hit.pos);
     
     //Diffuse calculation
     float theta = glm::dot(light_vec,m_norm);
@@ -76,7 +76,7 @@ glm::vec3 Plane::getColour(const Light &light, const Intersect& hit, const glm::
     colour = (diffuse+specular) * light.getColour();
     
     //clip [0,1]
-    colour = clip(colour, 0.0f, 1.0f);
+//    colour = clip(colour, 0.0f, 1.0f);
     
     return colour;
 }
