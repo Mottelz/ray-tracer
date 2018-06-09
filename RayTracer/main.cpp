@@ -86,14 +86,17 @@ int main(int argc, const char * argv[]) {
                     if (!in_shadow) {
                         colour += things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition());
                     }
-                    clip(colour, 0.0f, 1.0f);
-                    draw(image, j, k, colour);
                 }
+                if (colour == glm::vec3(0.0f)) {
+                    colour = things[hit.thing] -> getColour();
+                }
+                clip(colour, 0.0f, 1.0f);
+                draw(image, j, k, colour);
             } else {
 #if mot_log
                 log << "MISS! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n";
 #endif
-                draw(image, j, k, glm::vec3(0.3f, 0.0f, 0.3f));
+                draw(image, j, k, glm::vec3(0.1f, 0.0f, 0.1f));
             }
         }
     }
