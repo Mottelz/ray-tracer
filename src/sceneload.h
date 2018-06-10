@@ -11,5 +11,5 @@
 #include "sphere.h"
 #include "plane.h"
 
-bool load_scene(const std::string& filepath);
-bool load_scene(const std::string& filepath, std::vector<Object*> & things, std::vector<Light*> & lights, Camera* & cam);
+bool load_scene(const std::string& filepath); /**< Loads the scene with a vec3 config and prints the read in results to terminal. Used for testing. */
+bool load_scene(const std::string& filepath, std::vector<Object*> & things, std::vector<Light*> & lights, Camera* & cam); /**< Loads the scene with a vec3 config. */
