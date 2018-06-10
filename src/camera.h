@@ -7,7 +7,10 @@
 #pragma once
 #include "libs.h"
 
-
+/**
+ * @brief Camera stores all of the camera related informaion.
+ * This class is loaded first and defies all of the scene related info.
+ **/
 class Camera {
     float m_height;
     float m_width;
@@ -18,7 +21,6 @@ class Camera {
 public:
     Camera(glm::vec3 pos, int fov, float asp, int focal);
     void print();
-    void setAll(glm::vec3 pos, int fov, float asp, int focal);
     ~Camera();
     int getHeight();
     int getWidth();

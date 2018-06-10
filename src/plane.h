@@ -8,7 +8,10 @@
 #include "object.h"
 #include "structs.h"
 #include "util.h"
-
+/**
+ * @brief Child of Object.
+ * This class represents infinte planes that can be placed in the scene.
+ **/
 class Plane: public Object {
     glm::vec3 m_norm;
     glm::vec3 m_pos;

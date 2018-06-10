@@ -19,18 +19,7 @@ void Camera::print() {
            m_height);
 }
 
-Camera::~Camera() {
-    std::cout << "Deleting camera..." << std::endl;
-}
-
-void Camera::setAll(glm::vec3 pos, int fov, float asp, int focal) { 
-    m_pos = pos;
-    m_fov = glm::radians((float) fov);
-    m_asp = asp;
-    m_focal = focal;
-    m_height = 2*m_focal*glm::tan(m_fov/2);
-    m_width = m_height*m_asp;
-}
+Camera::~Camera() {}
 
 int Camera::getHeight() {
     return ((int) m_height);

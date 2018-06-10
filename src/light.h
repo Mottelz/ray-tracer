@@ -9,6 +9,11 @@
 #include "util.h"
 #include "structs.h"
 
+/**
+ * @brief Light class could basically be a struct.
+ * This is a really minimal class that just store all the light's data. 
+ **/
+
 class Light {
     glm::vec3 m_pos;
     glm::vec3 m_colour;

@@ -9,6 +9,10 @@
 #include "structs.h"
 #include "light.h"
 
+
+/**
+ * @brief A pure virtual parent class for any physical object in this scene.
+ **/
 class Object {
 public:
     virtual glm::vec3 getPostion() = 0;

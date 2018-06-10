@@ -8,6 +8,11 @@
 #include "object.h"
 #include "util.h"
 
+/**
+ * @brief Child of Object.
+ * This class represents Spheres that can be placed in the scene.
+ **/
+
 class Sphere: public Object {
     glm::vec3 m_pos;
     int m_rad;
