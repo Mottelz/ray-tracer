@@ -1,0 +1,35 @@
+\hypertarget{class_sphere}{}\section{Sphere Class Reference}
+\label{class_sphere}\index{Sphere@{Sphere}}
+Inheritance diagram for Sphere\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sphere}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sphere_ac5331c3b7a05c78676a39ea7d30791ca}\label{class_sphere_ac5331c3b7a05c78676a39ea7d30791ca}} 
+{\bfseries Sphere} (glm\+::vec3 pos, int rad, glm\+::vec3 amb, glm\+::vec3 dif, glm\+::vec3 spe, float shi)
+\item 
+\mbox{\Hypertarget{class_sphere_a6e2f290f9632e8da3d8dd90dc74997ac}\label{class_sphere_a6e2f290f9632e8da3d8dd90dc74997ac}} 
+glm\+::vec3 {\bfseries get\+Postion} () override
+\item 
+\mbox{\Hypertarget{class_sphere_a8d2ea6e36b5c23330e08861bb723e2a4}\label{class_sphere_a8d2ea6e36b5c23330e08861bb723e2a4}} 
+\mbox{\hyperlink{struct_intersect}{Intersect}} {\bfseries intersect} (const \mbox{\hyperlink{struct_ray}{Ray}} \&r) override
+\item 
+\mbox{\Hypertarget{class_sphere_a95537121c5308b7b250f4a53171303ef}\label{class_sphere_a95537121c5308b7b250f4a53171303ef}} 
+void {\bfseries print} () override
+\item 
+\mbox{\Hypertarget{class_sphere_abc6455e04b563fb57b91f12183fa4d18}\label{class_sphere_abc6455e04b563fb57b91f12183fa4d18}} 
+glm\+::vec3 {\bfseries get\+Colour} () override
+\item 
+\mbox{\Hypertarget{class_sphere_a0ce51c06baaea1c35129b17b5132ff58}\label{class_sphere_a0ce51c06baaea1c35129b17b5132ff58}} 
+glm\+::vec3 {\bfseries get\+Colour} (const \mbox{\hyperlink{class_light}{Light}} \&light, const \mbox{\hyperlink{struct_intersect}{Intersect}} \&hit, const glm\+::vec3 \&cam\+Pos) override
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sphere_8h}{sphere.\+h}}\item 
+sphere.\+cpp\end{DoxyCompactItemize}

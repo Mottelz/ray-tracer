@@ -1,0 +1,40 @@
+\hypertarget{util_8h}{}\section{util.\+h File Reference}
+\label{util_8h}\index{util.\+h@{util.\+h}}
+
+
+Header file for functions without a home. These get used by the program, but don\textquotesingle{}t belong to any particular class.  
+
+
+{\ttfamily \#include \char`\"{}libs.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{util_8h_a6a03be8e35a5e432d3cf803e7747c8bb}\label{util_8h_a6a03be8e35a5e432d3cf803e7747c8bb}} 
+const char $\ast$ {\bfseries get\+\_\+name} (std\+::string name, std\+::string ext)
+\item 
+\mbox{\Hypertarget{util_8h_aad3d215621d3e2cab39898451ec83ca9}\label{util_8h_aad3d215621d3e2cab39898451ec83ca9}} 
+void {\bfseries draw\+\_\+square} (cimg\+\_\+library\+::\+C\+Img$<$ float $>$ \&image, int width, int height)
+\item 
+\mbox{\Hypertarget{util_8h_a3c93155a875791c3caa5413a87d48696}\label{util_8h_a3c93155a875791c3caa5413a87d48696}} 
+void {\bfseries draw} (cimg\+\_\+library\+::\+C\+Img$<$ float $>$ \&image, int w, int h, glm\+::vec3 color)
+\item 
+\mbox{\Hypertarget{util_8h_a93d512dded02ad3b0fcd96dbb99bc4f5}\label{util_8h_a93d512dded02ad3b0fcd96dbb99bc4f5}} 
+void {\bfseries tell\+\_\+user} (std\+::string message)
+\item 
+\mbox{\Hypertarget{util_8h_a7aaff6c75955e4af57f5bc2dbcbd40b8}\label{util_8h_a7aaff6c75955e4af57f5bc2dbcbd40b8}} 
+glm\+::vec3 {\bfseries clip} (glm\+::vec3 vec, float lo, float hi)
+\item 
+\mbox{\Hypertarget{util_8h_a3669601dfd22a241dcbe089310adb6fd}\label{util_8h_a3669601dfd22a241dcbe089310adb6fd}} 
+bool {\bfseries is\+\_\+closer} (glm\+::vec3 p0, glm\+::vec3 p1, glm\+::vec3 p2)
+\item 
+\mbox{\Hypertarget{util_8h_ae9aaa22b1b1c0249f8617f45eb99ad55}\label{util_8h_ae9aaa22b1b1c0249f8617f45eb99ad55}} 
+glm\+::vec3 {\bfseries calculate\+\_\+colour} (glm\+::vec3 light\+Pos, glm\+::vec3 light\+Col, glm\+::vec3 cam\+Pos, glm\+::vec3 p0, glm\+::vec3 norm, glm\+::vec3 diff\+In, glm\+::vec3 spec\+In, glm\+::vec3 amb\+In, float shine\+In)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for functions without a home. These get used by the program, but don\textquotesingle{}t belong to any particular class. 
+
+\begin{DoxyAuthor}{Author}
+Mottel Zirkind 
+\end{DoxyAuthor}

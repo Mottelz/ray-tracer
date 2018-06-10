@@ -519,7 +519,7 @@
 		9EE2D43820BFAA830040D125 = {
 			isa = PBXGroup;
 			children = (
-				9EE2D44320BFAA830040D125 /* RayTracer */,
+				9EE2D44320BFAA830040D125 /* src */,
 				9EE2D44220BFAA830040D125 /* Products */,
 				9E4574A020BFC22C008BDD04 /* Frameworks */,
 			);
@@ -533,7 +533,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9EE2D44320BFAA830040D125 /* RayTracer */ = {
+		9EE2D44320BFAA830040D125 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				9EE2D44420BFAA830040D125 /* main.cpp */,
@@ -541,7 +541,7 @@
 				9E0CB19720C1E394009CDE2E /* utils */,
 				9EA36E1020C1CE6A0034FCAD /* scene */,
 			);
-			path = RayTracer;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

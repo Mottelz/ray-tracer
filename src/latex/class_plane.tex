@@ -1,0 +1,35 @@
+\hypertarget{class_plane}{}\section{Plane Class Reference}
+\label{class_plane}\index{Plane@{Plane}}
+Inheritance diagram for Plane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_plane}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plane_a7aef2d9e06892562f982d9fd6596370c}\label{class_plane_a7aef2d9e06892562f982d9fd6596370c}} 
+{\bfseries Plane} (glm\+::vec3 norm, glm\+::vec3 pos, glm\+::vec3 amb, glm\+::vec3 dif, glm\+::vec3 spe, float shine)
+\item 
+\mbox{\Hypertarget{class_plane_a61c43d837a1921039d9b3466d1284741}\label{class_plane_a61c43d837a1921039d9b3466d1284741}} 
+glm\+::vec3 {\bfseries get\+Postion} () override
+\item 
+\mbox{\Hypertarget{class_plane_a76cf36bbdaaed72e59aa7ecd9dcb9dba}\label{class_plane_a76cf36bbdaaed72e59aa7ecd9dcb9dba}} 
+\mbox{\hyperlink{struct_intersect}{Intersect}} {\bfseries intersect} (const \mbox{\hyperlink{struct_ray}{Ray}} \&r) override
+\item 
+\mbox{\Hypertarget{class_plane_a3d9139793b931279e3dcd1fd80a263c7}\label{class_plane_a3d9139793b931279e3dcd1fd80a263c7}} 
+void {\bfseries print} () override
+\item 
+\mbox{\Hypertarget{class_plane_a81494e203b2cd4bf67d00c2503e1929f}\label{class_plane_a81494e203b2cd4bf67d00c2503e1929f}} 
+glm\+::vec3 {\bfseries get\+Colour} () override
+\item 
+\mbox{\Hypertarget{class_plane_a6f2ddd0896e72b7446e2f9acad20c7c3}\label{class_plane_a6f2ddd0896e72b7446e2f9acad20c7c3}} 
+glm\+::vec3 {\bfseries get\+Colour} (const \mbox{\hyperlink{class_light}{Light}} \&light, const \mbox{\hyperlink{struct_intersect}{Intersect}} \&hit, const glm\+::vec3 \&cam\+Pos) override
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{plane_8h}{plane.\+h}}\item 
+plane.\+cpp\end{DoxyCompactItemize}
