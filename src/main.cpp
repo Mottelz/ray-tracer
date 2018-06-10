@@ -5,7 +5,7 @@
 #include "sceneload.h" //The function that loads the scene
 
 
-std::string scene = "scene5.txt";
+std::string scene = "scene1.txt";
 
 
 //Main function
