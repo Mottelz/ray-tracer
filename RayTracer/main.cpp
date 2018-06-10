@@ -1,13 +1,11 @@
 #define show_pic false //Display the image with CImg when done
-#define mot_log true
-
-
+#define mot_log false //create a log (these get pretty freaking big)
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
 
-std::string scene = "scene1.txt";
+std::string scene = "scene5.txt";
 
 
 ////Main function
@@ -117,22 +115,3 @@ int main(int argc, const char * argv[]) {
 #endif
     return 0;
 }
-
-
-
-//int main(int argc, const char * argv[]) {
-//    glm::vec3 vic(3.0f);
-//    tell_user("It's now: " + glm::to_string(vic));
-//
-//    vic = vic * (4+2);
-//    tell_user("It's now: " + glm::to_string(vic));
-//
-//    vic = vic/4;
-//    tell_user("It's now: " + glm::to_string(vic));
-//
-//    vic = vic/2;
-//    tell_user("It's now: " + glm::to_string(vic));
-//
-//
-//    return 0;
-//}
