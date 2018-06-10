@@ -19,8 +19,6 @@ void Camera::print() {
            m_height);
 }
 
-Camera::~Camera() {}
-
 int Camera::getHeight() {
     return ((int) m_height);
 }

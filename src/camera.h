@@ -19,11 +19,10 @@ class Camera {
     int m_focal;
     float m_asp;
 public:
-    Camera(glm::vec3 pos, int fov, float asp, int focal);
-    void print();
-    ~Camera();
-    int getHeight();
-    int getWidth();
-    glm::vec3 getPosition();
-    inline int getFocal() { return m_focal; };
+    Camera(glm::vec3 pos, int fov, float asp, int focal); /**< THe only constructor. Calculates the width and height based on the given info. */
+    void print(); /**< Prints the camera's details as a nicely formatted string. */
+    int getHeight(); /**< Returns canvas's height as an int. */
+    int getWidth(); /**< Returns canvas's width as an int. */
+    glm::vec3 getPosition(); /**< Returns camera's position. */
+    inline int getFocal() { return m_focal; }; /**< Returns camera's focal length. */
 };
