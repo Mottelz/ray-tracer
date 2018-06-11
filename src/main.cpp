@@ -65,7 +65,8 @@ int main(int argc, const char * argv[]) {
 #if mot_log
                 log << "HIT! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //register a hit in the log.
 #endif
-                glm::dvec3 colour(0.0f); //Start with black.
+                std::vector<glm::dvec3> colours;
+                colours.push_back(things[hit.thing] -> getColour());
                 for (int i = 0; i < lights.size(); i++) { //Loop through every light in the scene.
                     //Create the shadow ray.
                     glm::dvec3 light_pos = lights[i] -> getPosition(); //get the light's position stored in a variable for readablity.
@@ -81,35 +82,46 @@ int main(int argc, const char * argv[]) {
                         if (shadow_hit.contact) { //If there is an intersection
                             if (is_closer(light_pos, shadow_hit.pos, hit.pos)) { //and that object is closer,
                                 in_shadow = true; //then we are in shadow.
+                                break;
                             }
                         }
                     } //After looping through all of the objects for a given light.
 
                     if (!in_shadow) { //If we're not in shadow,
                         glm::dvec3 new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //The new colour.
-                        colour.x = glm::sqrt(glm::pow(colour.x, 2)+glm::pow(new_colour.x, 2)); //Colour merging done via squareroot of the combined squares.
-                        colour.y = glm::sqrt(glm::pow(colour.y, 2)+glm::pow(new_colour.y, 2)); //Colour merging done via squareroot of the combined squares.
-                        colour.z = glm::sqrt(glm::pow(colour.z, 2)+glm::pow(new_colour.z, 2)); //Colour merging done via squareroot of the combined squares.
+                        colours.push_back(new_colour);
                     }
                 } //After looping through all of the lights.
                 
-                if (colour == glm::dvec3(0.0f)) { //If the colur is still black,
+                glm::dvec3 colour;
+                
+                if (colours.size() == 0) { //If the colur is still black,
                     colour = things[hit.thing] -> getColour(); //set it to the ambient colour for this object.
+                } else {
+                    for (int c = 0; c < colours.size(); c++) {
+                        colour.x = glm::sqrt(glm::pow(colour.x+colours[c].x/colours.size(), 2)); //Colour merging done via squareroot of the combined squares.
+                        colour.y = glm::sqrt(glm::pow(colour.y+colours[c].y/colours.size(), 2)); //Colour merging done via squareroot of the combined squares.
+                        colour.z = glm::sqrt(glm::pow(colour.z+colours[c].z/colours.size(), 2)); //Colour merging done via squareroot of the combined squares.
+                    }
                 }
                 
-                clip(colour, 0.0f, 1.0f); //Clip the colour to [0,1]
+                
+                
+                
+                clip(colour, 0.0, 1.0); //Clip the colour to [0,1]
                 draw(image, j, k, colour); //Draw the pixel. The X is inverted because of a quirk in CImg.
             } else { //If the initial ray did not intersect with any object.
 #if mot_log
                 log << "MISS! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //Log a miss
 #endif
-                draw(image, j, k, glm::dvec3(0.1f, 0.0f, 0.1f)); //And fill the pixel with Burgundy, so we know that something was added to the pixel.
+                draw(image, j, k, glm::dvec3(0)); //And fill the pixel with Burgundy, so we know that something was added to the pixel.
             }
         }
     }
 
     cam -> print(); //Print out the camera's stats so our user gets some feedback between the writing and the saving.
-
+    image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".bmp")); //get_name used so that the image includes a timestamp.
+    
 #if show_pic //If we want to see the picture displayed then display it with CImg.
     //Display the rendered image on screen
         cimg_library::CImgDisplay main_disp(image,"Render");
@@ -118,9 +130,6 @@ int main(int argc, const char * argv[]) {
         }
 #endif
 
-image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".bmp")); //get_name used so that the image includes a timestamp.
-    
-    
 #if mot_log //If we're using a log
     log.close(); //Close the log's write stream.
 #endif

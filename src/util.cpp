@@ -33,9 +33,9 @@ void draw_square(cimg_library::CImg<double> &image, int width, int height) {
 //Set the colour of a given pixel
 void draw(cimg_library::CImg<double> &image, int w, int h, glm::dvec3 color) {
     //Color in a given pixel
-    image(w, h, 0) = color.r*255;
-    image(w, h, 1) = color.g*255;
-    image(w, h, 2) = color.b*255;
+    image(w, h, 0) = color.r*256;
+    image(w, h, 1) = color.g*256;
+    image(w, h, 2) = color.b*256;
 }
 
 //clips a vec3
