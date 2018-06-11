@@ -61,13 +61,15 @@ bool is_closer(const glm::vec3 p0, const glm::vec3 p1, const glm::vec3 p2) {
     return true;
 };
 
+
+
 //general colour calculation function. here to save time during tweaking.
 glm::vec3 calculate_colour(glm::vec3 lightPos, glm::vec3 lightCol, glm::vec3 camPos, glm::vec3 p0, glm::vec3 norm, glm::vec3 diffIn, glm::vec3 specIn, glm::vec3 ambIn, float shineIn) {
     
     //Get missing directions and reflections
     glm::vec3 view_dir = glm::normalize(camPos - p0);
     glm::vec3 light_dir = glm::normalize(lightPos - p0);
-    glm::vec3 reflection = glm::reflect(view_dir, norm);
+    glm::vec3 reflection = glm::reflect(norm, view_dir);
     
     //Get alpha and theta
     float alpha = glm::dot(view_dir, reflection);
@@ -79,8 +81,12 @@ glm::vec3 calculate_colour(glm::vec3 lightPos, glm::vec3 lightCol, glm::vec3 cam
     
     //finally calculate and return the colour
     glm::vec3 colour = (ambIn + diff_fin + spec_fin) * lightCol;
+    colour = clip(colour, 0.0f, 1.0f);
     return colour;
 };
+
+
+
 
 
 

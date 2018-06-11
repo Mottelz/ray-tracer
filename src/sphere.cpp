@@ -22,7 +22,7 @@ Intersect Sphere::intersect(const Ray &r) {
     }
     
     float b = 2*(r.dir.x*(r.org.x-m_pos.x)+r.dir.y*(r.org.y-m_pos.y)+r.dir.z*(r.org.z-m_pos.z));
-    float c = (r.org.x-m_pos.x)*(r.org.x-m_pos.x)+(r.org.y-m_pos.y)*(r.org.y-m_pos.y)+(r.org.z-m_pos.z)*(r.org.z-m_pos.z)-glm::pow(m_rad, 2);
+    float c = glm::pow((r.org.x-m_pos.x), 2)+glm::pow((r.org.y-m_pos.y), 2)+glm::pow((r.org.z-m_pos.z), 2)-glm::pow(m_rad, 2);
     
     //the bit that goes under the sqrt. If this is negative we can stop.
     float under = glm::pow(b, 2) - 4*c;

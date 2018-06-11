@@ -4,7 +4,6 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-
 std::string scene = "scene1.txt";
 
 
@@ -40,7 +39,6 @@ int main(int argc, const char * argv[]) {
             hit.contact = false; //Since it hasn't made cactually hit anything yet, set it to false.
             Ray r; //The ray we are firing.
             r.org = cam -> getPosition(); //The origin point of the ray is the camera's position.
-            //direction is difference between two points
             r.dir.x = r.org.x - (j-(width/2)); //X = origin minus current pixel's width.
             r.dir.y = r.org.y - (k-(height/2)); //Y = origin minus current pixel's height.
             r.dir.z = r.org.z - cam -> getFocal(); //Z = origin minus the focal length.
@@ -63,7 +61,7 @@ int main(int argc, const char * argv[]) {
             
             if(hit.contact){//If we made contact calulate the colour/shadow.
 #if mot_log
-                log << "HIT! pixel: " + std::to_string(width-j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //register a hit in the log.
+                log << "HIT! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //register a hit in the log.
 #endif
                 glm::vec3 colour(0.0f); //Start with black.
                 for (int i = 0; i < lights.size(); i++) { //Loop through every light in the scene.
@@ -71,7 +69,7 @@ int main(int argc, const char * argv[]) {
                     glm::vec3 light_pos = lights[i] -> getPosition(); //get the light's position stored in a variable for readablity.
                     Ray sr; //Create the shadow ray.
                     sr.org = light_pos; //Set shadow ray origin to the light.
-                    sr.dir = hit.pos - light_pos; //Set the shadow ray direction by point of contact minus light's position.
+                    sr.dir = hit.pos - light_pos; //Set the shadow ray direction by light's position minus point of contact.
                     sr.dir = glm::normalize(sr.dir); //Normalize the direction.
                     bool in_shadow = false; //Store if this is in shadow. Starts off in light.
 
@@ -86,7 +84,10 @@ int main(int argc, const char * argv[]) {
                     } //After looping through all of the objects for a given light.
 
                     if (!in_shadow) { //If we're not in shadow,
-                        colour += things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //Add the colour based on this light to our calculated colour.
+                        glm::vec3 new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //The new colour.
+                        colour.x = glm::sqrt(glm::pow(colour.x, 2)+glm::pow(new_colour.x, 2)); //Colour merging done via squareroot of the combined squares.
+                        colour.y = glm::sqrt(glm::pow(colour.y, 2)+glm::pow(new_colour.y, 2)); //Colour merging done via squareroot of the combined squares.
+                        colour.z = glm::sqrt(glm::pow(colour.z, 2)+glm::pow(new_colour.z, 2)); //Colour merging done via squareroot of the combined squares.
                     }
                 } //After looping through all of the lights.
                 
@@ -95,12 +96,12 @@ int main(int argc, const char * argv[]) {
                 }
                 
                 clip(colour, 0.0f, 1.0f); //Clip the colour to [0,1]
-                draw(image, width-j, k, colour); //Draw the pixel. The X is inverted because of a quirk in CImg.
+                draw(image, j, k, colour); //Draw the pixel. The X is inverted because of a quirk in CImg.
             } else { //If the initial ray did not intersect with any object.
 #if mot_log
-                log << "MISS! pixel: " + std::to_string(width-j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //Log a miss
+                log << "MISS! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //Log a miss
 #endif
-                draw(image, width-j, k, glm::vec3(0.1f, 0.0f, 0.1f)); //And fill the pixel with Burgundy, so we know that something was added to the pixel.
+                draw(image, j, k, glm::vec3(0.1f, 0.0f, 0.1f)); //And fill the pixel with Burgundy, so we know that something was added to the pixel.
             }
         }
     }
