@@ -9,7 +9,7 @@ Sphere::Sphere(glm::vec3 pos, int rad, glm::vec3 amb, glm::vec3 dif, glm::vec3 s
     m_shi = shi;
 }
 
-Intersect Sphere::intersect(const Ray &r) { 
+Intersect Sphere::intersect(const Ray &r, float bias) {
     float t0 = 0, t1 = 0; //The intersection point
     Intersect toRet;
     toRet.contact = false;
@@ -48,7 +48,7 @@ Intersect Sphere::intersect(const Ray &r) {
     }
     
     //Calculate and return point.
-    toRet.pos = r.org + r.dir*(v+T_BIAS);
+    toRet.pos = r.org + r.dir*(v+bias);
     toRet.contact = true;
     return toRet;
 }

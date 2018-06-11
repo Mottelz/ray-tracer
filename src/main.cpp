@@ -5,7 +5,9 @@
 #include "sceneload.h" //The function that loads the scene
 
 std::string scene = "scene1.txt";
-
+//Based on testing, these are the optimal biases to avoid acne and get proper distribution.
+float ray_bias = 0.0f;
+float shadow_bias = 0.005f;
 
 //Main function
 int main(int argc, const char * argv[]) {
@@ -46,7 +48,7 @@ int main(int argc, const char * argv[]) {
 
             //for every object. check if there's a hit and if it's close.
             for (int i = 0; i < things.size(); i++) { //Loop through obejcts.
-                Intersect t_hit = things[i] -> intersect(r); //Check for intersection.
+                Intersect t_hit = things[i] -> intersect(r, ray_bias); //Check for intersection.
                 t_hit.thing = i; //Set the intersection object index to the current object. Used when calulating colour.
                 if (t_hit.contact) { //If we made contact with this object the check.
                     if (!hit.contact) { //If the previous Intersect wasn't storing contact,
@@ -75,7 +77,7 @@ int main(int argc, const char * argv[]) {
 
                     //Loop through objects and check if one is closer.
                     for (int m = 0; m < things.size(); m++) {
-                        Intersect shadow_hit = things[m] -> intersect(sr); //Get the shadow ray intersection
+                        Intersect shadow_hit = things[m] -> intersect(sr, shadow_bias); //Get the shadow ray intersection
                         if (shadow_hit.contact) { //If there is an intersection
                             if (is_closer(light_pos, shadow_hit.pos, hit.pos)) { //and that object is closer,
                                 in_shadow = true; //then we are in shadow.

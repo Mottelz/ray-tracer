@@ -22,7 +22,7 @@ class Plane: public Object {
 public:
     Plane(glm::vec3 norm, glm::vec3 pos, glm::vec3 amb, glm::vec3 dif, glm::vec3 spe, float shine); /**< @brief Just the basic constructor. */
     inline glm::vec3 getPostion() override { return m_pos; }; /**< @brief Returns the position of the plane. */
-    Intersect intersect(const Ray &r) override; /**< @brief Checks if a ray intersects with the plane. Returns an Intersect with contact true or false. */
+    Intersect intersect(const Ray &r, float bias) override; /**< @brief Checks if a ray intersects with the plane. Returns an Intersect with contact true or false. */
     void print() override; /**< @brief Prints a nicely formatted string with all the plane's stats. */
     glm::vec3 getColour() override; /**< @brief Returns the ambient colour. */
     glm::vec3 getColour(const Light &light, const Intersect& hit, const glm::vec3& camPos) override; /**< @brief Runs #calculate_colour and returns the result. */

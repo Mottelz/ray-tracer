@@ -9,7 +9,7 @@ Plane::Plane(glm::vec3 norm, glm::vec3 pos, glm::vec3 amb, glm::vec3 dif, glm::v
     m_shi = shine;
 }
 
-Intersect Plane::intersect(const Ray &r) {
+Intersect Plane::intersect(const Ray &r, float bias) {
     //The formula
     //t = a-b/c
     //a = n.p0
@@ -37,7 +37,7 @@ Intersect Plane::intersect(const Ray &r) {
     
     //compare to zero
     toRet.contact = true;
-    toRet.pos = r.org + r.dir*(t+T_BIAS);
+    toRet.pos = r.org + r.dir*(t+bias);
     return toRet;
 }
 
