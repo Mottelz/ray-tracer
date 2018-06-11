@@ -1,14 +1,14 @@
 #include "light.h"
 
-Light::Light(glm::vec3 pos, glm::vec3 colour) { 
+Light::Light(glm::dvec3 pos, glm::dvec3 colour) { 
     m_pos = pos;
     m_colour = colour;
 }
 
 //If none given, colour set to white.
-Light::Light(glm::vec3 pos) { 
+Light::Light(glm::dvec3 pos) { 
     m_pos = pos;
-    m_colour = glm::vec3(1.0f);
+    m_colour = glm::dvec3(1.0f);
 }
 
 void Light::print() {

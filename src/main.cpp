@@ -6,8 +6,8 @@
 
 std::string scene = "scene1.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
-float ray_bias = 0.0f;
-float shadow_bias = 0.005f;
+double ray_bias = 0.0;
+double shadow_bias = 0.0005;
 
 //Main function
 int main(int argc, const char * argv[]) {
@@ -32,7 +32,7 @@ int main(int argc, const char * argv[]) {
     int height = cam->getHeight();
 
     //Creates an image with three channels and sets it to black
-    cimg_library::CImg<float> image(width, height, 1, 3, 0);
+    cimg_library::CImg<double> image(width, height, 1, 3, 0);
 
     //Loop through every pixel
     for (int j = 0; j < width; j++) { //loop through width
@@ -65,10 +65,10 @@ int main(int argc, const char * argv[]) {
 #if mot_log
                 log << "HIT! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //register a hit in the log.
 #endif
-                glm::vec3 colour(0.0f); //Start with black.
+                glm::dvec3 colour(0.0f); //Start with black.
                 for (int i = 0; i < lights.size(); i++) { //Loop through every light in the scene.
                     //Create the shadow ray.
-                    glm::vec3 light_pos = lights[i] -> getPosition(); //get the light's position stored in a variable for readablity.
+                    glm::dvec3 light_pos = lights[i] -> getPosition(); //get the light's position stored in a variable for readablity.
                     Ray sr; //Create the shadow ray.
                     sr.org = light_pos; //Set shadow ray origin to the light.
                     sr.dir = hit.pos - light_pos; //Set the shadow ray direction by light's position minus point of contact.
@@ -86,14 +86,14 @@ int main(int argc, const char * argv[]) {
                     } //After looping through all of the objects for a given light.
 
                     if (!in_shadow) { //If we're not in shadow,
-                        glm::vec3 new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //The new colour.
+                        glm::dvec3 new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //The new colour.
                         colour.x = glm::sqrt(glm::pow(colour.x, 2)+glm::pow(new_colour.x, 2)); //Colour merging done via squareroot of the combined squares.
                         colour.y = glm::sqrt(glm::pow(colour.y, 2)+glm::pow(new_colour.y, 2)); //Colour merging done via squareroot of the combined squares.
                         colour.z = glm::sqrt(glm::pow(colour.z, 2)+glm::pow(new_colour.z, 2)); //Colour merging done via squareroot of the combined squares.
                     }
                 } //After looping through all of the lights.
                 
-                if (colour == glm::vec3(0.0f)) { //If the colur is still black,
+                if (colour == glm::dvec3(0.0f)) { //If the colur is still black,
                     colour = things[hit.thing] -> getColour(); //set it to the ambient colour for this object.
                 }
                 
@@ -103,7 +103,7 @@ int main(int argc, const char * argv[]) {
 #if mot_log
                 log << "MISS! pixel: " + std::to_string(j) + " x " + std::to_string(k) + " at pos: " + glm::to_string(r.dir) + "\n"; //Log a miss
 #endif
-                draw(image, j, k, glm::vec3(0.1f, 0.0f, 0.1f)); //And fill the pixel with Burgundy, so we know that something was added to the pixel.
+                draw(image, j, k, glm::dvec3(0.1f, 0.0f, 0.1f)); //And fill the pixel with Burgundy, so we know that something was added to the pixel.
             }
         }
     }
