@@ -6,8 +6,8 @@
 
 std::string scene = "scene1.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
-double ray_bias = 0.0;
-double shadow_bias = 0.0005;
+double ray_bias = 0.00;
+double shadow_bias = 0.0085;
 
 //Main function
 int main(int argc, const char * argv[]) {
@@ -110,9 +110,6 @@ int main(int argc, const char * argv[]) {
 
     cam -> print(); //Print out the camera's stats so our user gets some feedback between the writing and the saving.
 
-    //Save out the image in PNG format.
-    image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".png")); //get_name used so that the image includes a timestamp.
-
 #if show_pic //If we want to see the picture displayed then display it with CImg.
     //Display the rendered image on screen
         cimg_library::CImgDisplay main_disp(image,"Render");
@@ -121,6 +118,9 @@ int main(int argc, const char * argv[]) {
         }
 #endif
 
+image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".bmp")); //get_name used so that the image includes a timestamp.
+    
+    
 #if mot_log //If we're using a log
     log.close(); //Close the log's write stream.
 #endif
