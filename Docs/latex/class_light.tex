@@ -1,0 +1,109 @@
+\hypertarget{class_light}{}\section{Light Class Reference}
+\label{class_light}\index{Light@{Light}}
+
+
+\mbox{\hyperlink{class_light}{Light}} class could basically be a struct. This is a really minimal class that just store all the light\textquotesingle{}s data.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_light_a62bbd4eb90c31a7e07a3153b7ce5d1d4}{Light}} (glm\+::vec3 pos)
+\begin{DoxyCompactList}\small\item\em Constructor for when you only know the position. This makes the light white and fully bright. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_light_ab2624427110cf6d5d905159d70c827b6}{Light}} (glm\+::vec3 pos, glm\+::vec3 colour)
+\begin{DoxyCompactList}\small\item\em Constructor for when you know everything about the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_light_a24d3c226daf99f57427a0cb4b75605a7}{get\+Position}} () const
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_light_ad00d8f1eba15a5d25b034f64e5bb4c43}{get\+Colour}} () const
+\begin{DoxyCompactList}\small\item\em Returns light\textquotesingle{}s position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_a99d3d45283ee007ffc8b19c0d7d27077}{print}} ()
+\begin{DoxyCompactList}\small\item\em Returns light\textquotesingle{}s colour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_light}{Light}} class could basically be a struct. This is a really minimal class that just store all the light\textquotesingle{}s data. 
+
+Definition at line 17 of file light.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_light_a62bbd4eb90c31a7e07a3153b7ce5d1d4}\label{class_light_a62bbd4eb90c31a7e07a3153b7ce5d1d4}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{pos }\end{DoxyParamCaption})}
+
+
+
+Constructor for when you only know the position. This makes the light white and fully bright. 
+
+
+
+Definition at line 9 of file light.\+cpp.
+
+\mbox{\Hypertarget{class_light_ab2624427110cf6d5d905159d70c827b6}\label{class_light_ab2624427110cf6d5d905159d70c827b6}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\subsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{pos,  }\item[{glm\+::vec3}]{colour }\end{DoxyParamCaption})}
+
+
+
+Constructor for when you know everything about the light. 
+
+
+
+Definition at line 3 of file light.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_light_ad00d8f1eba15a5d25b034f64e5bb4c43}\label{class_light_ad00d8f1eba15a5d25b034f64e5bb4c43}} 
+\index{Light@{Light}!get\+Colour@{get\+Colour}}
+\index{get\+Colour@{get\+Colour}!Light@{Light}}
+\subsubsection{\texorpdfstring{get\+Colour()}{getColour()}}
+{\footnotesize\ttfamily glm\+::vec3 Light\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns light\textquotesingle{}s position. 
+
+
+
+Definition at line 24 of file light.\+h.
+
+\mbox{\Hypertarget{class_light_a24d3c226daf99f57427a0cb4b75605a7}\label{class_light_a24d3c226daf99f57427a0cb4b75605a7}} 
+\index{Light@{Light}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Light@{Light}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Light\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file light.\+h.
+
+\mbox{\Hypertarget{class_light_a99d3d45283ee007ffc8b19c0d7d27077}\label{class_light_a99d3d45283ee007ffc8b19c0d7d27077}} 
+\index{Light@{Light}!print@{print}}
+\index{print@{print}!Light@{Light}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Light\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns light\textquotesingle{}s colour. 
+
+Prints the light\textquotesingle{}s stats in a nicely formatted string. 
+
+Definition at line 14 of file light.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{light_8h}{light.\+h}}\item 
+\mbox{\hyperlink{light_8cpp}{light.\+cpp}}\end{DoxyCompactItemize}

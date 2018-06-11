@@ -1,0 +1,134 @@
+\hypertarget{util_8h}{}\section{util.\+h File Reference}
+\label{util_8h}\index{util.\+h@{util.\+h}}
+
+
+Header file for functions without a home. These get used by the program, but don\textquotesingle{}t belong to any particular class.  
+
+
+{\ttfamily \#include \char`\"{}libs.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{util_8h_a6a03be8e35a5e432d3cf803e7747c8bb}{get\+\_\+name}} (std\+::string name, std\+::string ext)
+\begin{DoxyCompactList}\small\item\em Adds the date and time to a file name in the following format 1970-\/01-\/01 12h00m00s. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{util_8h_aad3d215621d3e2cab39898451ec83ca9}{draw\+\_\+square}} (cimg\+\_\+library\+::\+C\+Img$<$ float $>$ \&image, int width, int height)
+\begin{DoxyCompactList}\small\item\em Draws a 150x150 pink square in the centre of the image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{util_8h_a3c93155a875791c3caa5413a87d48696}{draw}} (cimg\+\_\+library\+::\+C\+Img$<$ float $>$ \&image, int w, int h, glm\+::vec3 color)
+\begin{DoxyCompactList}\small\item\em Colours in the given pixel. Given vec3 should be clipped between \mbox{[}0,1\mbox{]} the function converts it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{util_8h_a93d512dded02ad3b0fcd96dbb99bc4f5}{tell\+\_\+user}} (std\+::string message)
+\begin{DoxyCompactList}\small\item\em A simple print function. Here so that all messages can be disabled by commenting out one line. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{util_8h_a7aaff6c75955e4af57f5bc2dbcbd40b8}{clip}} (glm\+::vec3 vec, float lo, float hi)
+\begin{DoxyCompactList}\small\item\em Clip a vec3 between the given values. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{util_8h_a3669601dfd22a241dcbe089310adb6fd}{is\+\_\+closer}} (glm\+::vec3 p0, glm\+::vec3 p1, glm\+::vec3 p2)
+\begin{DoxyCompactList}\small\item\em True if p1 is closer to p0. False if p2 is closer to p0. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{util_8h_ae9aaa22b1b1c0249f8617f45eb99ad55}{calculate\+\_\+colour}} (glm\+::vec3 light\+Pos, glm\+::vec3 light\+Col, glm\+::vec3 cam\+Pos, glm\+::vec3 p0, glm\+::vec3 norm, glm\+::vec3 diff\+In, glm\+::vec3 spec\+In, glm\+::vec3 amb\+In, float shine\+In)
+\begin{DoxyCompactList}\small\item\em Calculates the colour using the Phong lighting model. Called by \mbox{\hyperlink{class_sphere}{Sphere}} and \mbox{\hyperlink{class_plane}{Plane}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for functions without a home. These get used by the program, but don\textquotesingle{}t belong to any particular class. 
+
+\begin{DoxyAuthor}{Author}
+Mottel Zirkind 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{util_8h_ae9aaa22b1b1c0249f8617f45eb99ad55}\label{util_8h_ae9aaa22b1b1c0249f8617f45eb99ad55}} 
+\index{util.\+h@{util.\+h}!calculate\+\_\+colour@{calculate\+\_\+colour}}
+\index{calculate\+\_\+colour@{calculate\+\_\+colour}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{calculate\+\_\+colour()}{calculate\_colour()}}
+{\footnotesize\ttfamily glm\+::vec3 calculate\+\_\+colour (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{light\+Pos,  }\item[{glm\+::vec3}]{light\+Col,  }\item[{glm\+::vec3}]{cam\+Pos,  }\item[{glm\+::vec3}]{p0,  }\item[{glm\+::vec3}]{norm,  }\item[{glm\+::vec3}]{diff\+In,  }\item[{glm\+::vec3}]{spec\+In,  }\item[{glm\+::vec3}]{amb\+In,  }\item[{float}]{shine\+In }\end{DoxyParamCaption})}
+
+
+
+Calculates the colour using the Phong lighting model. Called by \mbox{\hyperlink{class_sphere}{Sphere}} and \mbox{\hyperlink{class_plane}{Plane}}. 
+
+
+
+Definition at line 65 of file util.\+cpp.
+
+\mbox{\Hypertarget{util_8h_a7aaff6c75955e4af57f5bc2dbcbd40b8}\label{util_8h_a7aaff6c75955e4af57f5bc2dbcbd40b8}} 
+\index{util.\+h@{util.\+h}!clip@{clip}}
+\index{clip@{clip}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{clip()}{clip()}}
+{\footnotesize\ttfamily glm\+::vec3 clip (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{vec,  }\item[{float}]{lo,  }\item[{float}]{hi }\end{DoxyParamCaption})}
+
+
+
+Clip a vec3 between the given values. 
+
+
+
+Definition at line 42 of file util.\+cpp.
+
+\mbox{\Hypertarget{util_8h_a3c93155a875791c3caa5413a87d48696}\label{util_8h_a3c93155a875791c3caa5413a87d48696}} 
+\index{util.\+h@{util.\+h}!draw@{draw}}
+\index{draw@{draw}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{cimg\+\_\+library\+::\+C\+Img$<$ float $>$ \&}]{image,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{glm\+::vec3}]{color }\end{DoxyParamCaption})}
+
+
+
+Colours in the given pixel. Given vec3 should be clipped between \mbox{[}0,1\mbox{]} the function converts it. 
+
+
+
+Definition at line 34 of file util.\+cpp.
+
+\mbox{\Hypertarget{util_8h_aad3d215621d3e2cab39898451ec83ca9}\label{util_8h_aad3d215621d3e2cab39898451ec83ca9}} 
+\index{util.\+h@{util.\+h}!draw\+\_\+square@{draw\+\_\+square}}
+\index{draw\+\_\+square@{draw\+\_\+square}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+square()}{draw\_square()}}
+{\footnotesize\ttfamily void draw\+\_\+square (\begin{DoxyParamCaption}\item[{cimg\+\_\+library\+::\+C\+Img$<$ float $>$ \&}]{image,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Draws a 150x150 pink square in the centre of the image. 
+
+
+
+Definition at line 21 of file util.\+cpp.
+
+\mbox{\Hypertarget{util_8h_a6a03be8e35a5e432d3cf803e7747c8bb}\label{util_8h_a6a03be8e35a5e432d3cf803e7747c8bb}} 
+\index{util.\+h@{util.\+h}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+name()}{get\_name()}}
+{\footnotesize\ttfamily const char$\ast$ get\+\_\+name (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{ext }\end{DoxyParamCaption})}
+
+
+
+Adds the date and time to a file name in the following format 1970-\/01-\/01 12h00m00s. 
+
+
+
+Definition at line 8 of file util.\+cpp.
+
+\mbox{\Hypertarget{util_8h_a3669601dfd22a241dcbe089310adb6fd}\label{util_8h_a3669601dfd22a241dcbe089310adb6fd}} 
+\index{util.\+h@{util.\+h}!is\+\_\+closer@{is\+\_\+closer}}
+\index{is\+\_\+closer@{is\+\_\+closer}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+closer()}{is\_closer()}}
+{\footnotesize\ttfamily bool is\+\_\+closer (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{p0,  }\item[{glm\+::vec3}]{p1,  }\item[{glm\+::vec3}]{p2 }\end{DoxyParamCaption})}
+
+
+
+True if p1 is closer to p0. False if p2 is closer to p0. 
+
+
+
+Definition at line 57 of file util.\+cpp.
+
+\mbox{\Hypertarget{util_8h_a93d512dded02ad3b0fcd96dbb99bc4f5}\label{util_8h_a93d512dded02ad3b0fcd96dbb99bc4f5}} 
+\index{util.\+h@{util.\+h}!tell\+\_\+user@{tell\+\_\+user}}
+\index{tell\+\_\+user@{tell\+\_\+user}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{tell\+\_\+user()}{tell\_user()}}
+{\footnotesize\ttfamily void tell\+\_\+user (\begin{DoxyParamCaption}\item[{std\+::string}]{message }\end{DoxyParamCaption})}
+
+
+
+A simple print function. Here so that all messages can be disabled by commenting out one line. 
+
+
+
+Definition at line 3 of file util.\+cpp.
+

@@ -1,0 +1,95 @@
+\hypertarget{class_object}{}\section{Object Class Reference}
+\label{class_object}\index{Object@{Object}}
+
+
+A pure virtual parent class for any physical object in this scene.  
+
+
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual glm\+::vec3 \mbox{\hyperlink{class_object_ac29e04a255155b791d69b97820423efa}{get\+Postion}} ()=0
+\item 
+virtual \mbox{\hyperlink{struct_intersect}{Intersect}} \mbox{\hyperlink{class_object_a27b26f69f1fcb4dc72eca40ac0d20ea6}{intersect}} (const \mbox{\hyperlink{struct_ray}{Ray}} \&r)=0
+\item 
+virtual void \mbox{\hyperlink{class_object_ad81452e5a38455eff025d85ef1da7307}{print}} ()=0
+\item 
+virtual glm\+::vec3 \mbox{\hyperlink{class_object_a0a966fb37be861cbaacb834ef7b89d8a}{get\+Colour}} ()=0
+\item 
+virtual glm\+::vec3 \mbox{\hyperlink{class_object_aac162b545913d7aeab851204d3f04ebf}{get\+Colour}} (const \mbox{\hyperlink{class_light}{Light}} \&light, const \mbox{\hyperlink{struct_intersect}{Intersect}} \&hit, const glm\+::vec3 \&cam\+Pos)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A pure virtual parent class for any physical object in this scene. 
+
+Definition at line 16 of file object.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_a0a966fb37be861cbaacb834ef7b89d8a}\label{class_object_a0a966fb37be861cbaacb834ef7b89d8a}} 
+\index{Object@{Object}!get\+Colour@{get\+Colour}}
+\index{get\+Colour@{get\+Colour}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Colour()}{getColour()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual glm\+::vec3 Object\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_sphere_abc6455e04b563fb57b91f12183fa4d18}{Sphere}}, and \mbox{\hyperlink{class_plane_a81494e203b2cd4bf67d00c2503e1929f}{Plane}}.
+
+\mbox{\Hypertarget{class_object_aac162b545913d7aeab851204d3f04ebf}\label{class_object_aac162b545913d7aeab851204d3f04ebf}} 
+\index{Object@{Object}!get\+Colour@{get\+Colour}}
+\index{get\+Colour@{get\+Colour}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Colour()}{getColour()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual glm\+::vec3 Object\+::get\+Colour (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_light}{Light}} \&}]{light,  }\item[{const \mbox{\hyperlink{struct_intersect}{Intersect}} \&}]{hit,  }\item[{const glm\+::vec3 \&}]{cam\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_sphere_a0ce51c06baaea1c35129b17b5132ff58}{Sphere}}, and \mbox{\hyperlink{class_plane_a6f2ddd0896e72b7446e2f9acad20c7c3}{Plane}}.
+
+\mbox{\Hypertarget{class_object_ac29e04a255155b791d69b97820423efa}\label{class_object_ac29e04a255155b791d69b97820423efa}} 
+\index{Object@{Object}!get\+Postion@{get\+Postion}}
+\index{get\+Postion@{get\+Postion}!Object@{Object}}
+\subsubsection{\texorpdfstring{get\+Postion()}{getPostion()}}
+{\footnotesize\ttfamily virtual glm\+::vec3 Object\+::get\+Postion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_sphere_a6e2f290f9632e8da3d8dd90dc74997ac}{Sphere}}, and \mbox{\hyperlink{class_plane_a61c43d837a1921039d9b3466d1284741}{Plane}}.
+
+\mbox{\Hypertarget{class_object_a27b26f69f1fcb4dc72eca40ac0d20ea6}\label{class_object_a27b26f69f1fcb4dc72eca40ac0d20ea6}} 
+\index{Object@{Object}!intersect@{intersect}}
+\index{intersect@{intersect}!Object@{Object}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{struct_intersect}{Intersect}} Object\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ray}{Ray}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_sphere_a8d2ea6e36b5c23330e08861bb723e2a4}{Sphere}}, and \mbox{\hyperlink{class_plane_a76cf36bbdaaed72e59aa7ecd9dcb9dba}{Plane}}.
+
+\mbox{\Hypertarget{class_object_ad81452e5a38455eff025d85ef1da7307}\label{class_object_ad81452e5a38455eff025d85ef1da7307}} 
+\index{Object@{Object}!print@{print}}
+\index{print@{print}!Object@{Object}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Object\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_sphere_a95537121c5308b7b250f4a53171303ef}{Sphere}}, and \mbox{\hyperlink{class_plane_a3d9139793b931279e3dcd1fd80a263c7}{Plane}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{object_8h}{object.\+h}}\end{DoxyCompactItemize}
