@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['calculate_5fcolour',['calculate_colour',['../util_8cpp.html#ae9aaa22b1b1c0249f8617f45eb99ad55',1,'calculate_colour(glm::vec3 lightPos, glm::vec3 lightCol, glm::vec3 camPos, glm::vec3 p0, glm::vec3 norm, glm::vec3 diffIn, glm::vec3 specIn, glm::vec3 ambIn, float shineIn):&#160;util.cpp'],['../util_8h.html#ae9aaa22b1b1c0249f8617f45eb99ad55',1,'calculate_colour(glm::vec3 lightPos, glm::vec3 lightCol, glm::vec3 camPos, glm::vec3 p0, glm::vec3 norm, glm::vec3 diffIn, glm::vec3 specIn, glm::vec3 ambIn, float shineIn):&#160;util.cpp']]],
+  ['camera',['Camera',['../class_camera.html#a650299ece1e549c512df12164a5a0e9a',1,'Camera']]],
+  ['clip',['clip',['../util_8cpp.html#a7aaff6c75955e4af57f5bc2dbcbd40b8',1,'clip(glm::vec3 vec, float lo, float hi):&#160;util.cpp'],['../util_8h.html#a7aaff6c75955e4af57f5bc2dbcbd40b8',1,'clip(glm::vec3 vec, float lo, float hi):&#160;util.cpp']]]
+];

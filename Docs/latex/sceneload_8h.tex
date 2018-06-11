@@ -1,0 +1,57 @@
+\hypertarget{sceneload_8h}{}\section{sceneload.\+h File Reference}
+\label{sceneload_8h}\index{sceneload.\+h@{sceneload.\+h}}
+
+
+The scene loader. This version assumes a vec3 setup.  
+
+
+{\ttfamily \#include \char`\"{}light.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}camera.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sphere.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}plane.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{sceneload_8h_acc320c32cafcc507624d1678832581aa}{load\+\_\+scene}} (const std\+::string \&filepath)
+\begin{DoxyCompactList}\small\item\em Loads the scene with a vec3 config and prints the read in results to terminal. Used for testing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{sceneload_8h_a9aed10ae16077115b1d231d16ad5e47e}{load\+\_\+scene}} (const std\+::string \&filepath, std\+::vector$<$ \mbox{\hyperlink{class_object}{Object}} $\ast$$>$ \&things, std\+::vector$<$ \mbox{\hyperlink{class_light}{Light}} $\ast$$>$ \&lights, \mbox{\hyperlink{class_camera}{Camera}} $\ast$\&cam)
+\begin{DoxyCompactList}\small\item\em Loads the scene with a vec3 config. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The scene loader. This version assumes a vec3 setup. 
+
+\begin{DoxyAuthor}{Author}
+Mottel Zirkind 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sceneload_8h_acc320c32cafcc507624d1678832581aa}\label{sceneload_8h_acc320c32cafcc507624d1678832581aa}} 
+\index{sceneload.\+h@{sceneload.\+h}!load\+\_\+scene@{load\+\_\+scene}}
+\index{load\+\_\+scene@{load\+\_\+scene}!sceneload.\+h@{sceneload.\+h}}
+\subsubsection{\texorpdfstring{load\+\_\+scene()}{load\_scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool load\+\_\+scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filepath }\end{DoxyParamCaption})}
+
+
+
+Loads the scene with a vec3 config and prints the read in results to terminal. Used for testing. 
+
+
+
+Definition at line 5 of file sceneload.\+cpp.
+
+\mbox{\Hypertarget{sceneload_8h_a9aed10ae16077115b1d231d16ad5e47e}\label{sceneload_8h_a9aed10ae16077115b1d231d16ad5e47e}} 
+\index{sceneload.\+h@{sceneload.\+h}!load\+\_\+scene@{load\+\_\+scene}}
+\index{load\+\_\+scene@{load\+\_\+scene}!sceneload.\+h@{sceneload.\+h}}
+\subsubsection{\texorpdfstring{load\+\_\+scene()}{load\_scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool load\+\_\+scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filepath,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_object}{Object}} $\ast$$>$ \&}]{things,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_light}{Light}} $\ast$$>$ \&}]{lights,  }\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$\&}]{cam }\end{DoxyParamCaption})}
+
+
+
+Loads the scene with a vec3 config. 
+
+
+
+Definition at line 155 of file sceneload.\+cpp.
+

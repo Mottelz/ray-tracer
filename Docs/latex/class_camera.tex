@@ -1,0 +1,121 @@
+\hypertarget{class_camera}{}\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+\mbox{\hyperlink{class_camera}{Camera}} stores all of the camera related informaion. This class is loaded first and defies all of the scene related info.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_a650299ece1e549c512df12164a5a0e9a}{Camera}} (glm\+::vec3 pos, int fov, float asp, int focal)
+\begin{DoxyCompactList}\small\item\em The only constructor. Calculates the width and height based on the given info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a905d2a0f8677aaad1ee17eb2a842efe5}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints the camera\textquotesingle{}s details as a nicely formatted string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_camera_a315be9ee1238abddce9a580430ad403a}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returns canvas\textquotesingle{}s height as an int. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_camera_a1122b43b7db5e69e9d6e187b74a6ec7e}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returns canvas\textquotesingle{}s width as an int. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_camera_a520c5a7413b3e704f2f442288db17bcf}{get\+Position}} ()
+\item 
+int \mbox{\hyperlink{class_camera_a5045b4557d3cd7cd4c64c49f5a693aa5}{get\+Focal}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_camera}{Camera}} stores all of the camera related informaion. This class is loaded first and defies all of the scene related info. 
+
+Definition at line 14 of file camera.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_a650299ece1e549c512df12164a5a0e9a}\label{class_camera_a650299ece1e549c512df12164a5a0e9a}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{pos,  }\item[{int}]{fov,  }\item[{float}]{asp,  }\item[{int}]{focal }\end{DoxyParamCaption})}
+
+
+
+The only constructor. Calculates the width and height based on the given info. 
+
+
+
+Definition at line 3 of file camera.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_a5045b4557d3cd7cd4c64c49f5a693aa5}\label{class_camera_a5045b4557d3cd7cd4c64c49f5a693aa5}} 
+\index{Camera@{Camera}!get\+Focal@{get\+Focal}}
+\index{get\+Focal@{get\+Focal}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{get\+Focal()}{getFocal()}}
+{\footnotesize\ttfamily int Camera\+::get\+Focal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file camera.\+h.
+
+\mbox{\Hypertarget{class_camera_a315be9ee1238abddce9a580430ad403a}\label{class_camera_a315be9ee1238abddce9a580430ad403a}} 
+\index{Camera@{Camera}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{get\+Height()}{getHeight()}}
+{\footnotesize\ttfamily int Camera\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns canvas\textquotesingle{}s height as an int. 
+
+
+
+Definition at line 22 of file camera.\+cpp.
+
+\mbox{\Hypertarget{class_camera_a520c5a7413b3e704f2f442288db17bcf}\label{class_camera_a520c5a7413b3e704f2f442288db17bcf}} 
+\index{Camera@{Camera}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns camera\textquotesingle{}s position. 
+
+Definition at line 30 of file camera.\+cpp.
+
+\mbox{\Hypertarget{class_camera_a1122b43b7db5e69e9d6e187b74a6ec7e}\label{class_camera_a1122b43b7db5e69e9d6e187b74a6ec7e}} 
+\index{Camera@{Camera}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{get\+Width()}{getWidth()}}
+{\footnotesize\ttfamily int Camera\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns canvas\textquotesingle{}s width as an int. 
+
+
+
+Definition at line 26 of file camera.\+cpp.
+
+\mbox{\Hypertarget{class_camera_a905d2a0f8677aaad1ee17eb2a842efe5}\label{class_camera_a905d2a0f8677aaad1ee17eb2a842efe5}} 
+\index{Camera@{Camera}!print@{print}}
+\index{print@{print}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Camera\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the camera\textquotesingle{}s details as a nicely formatted string. 
+
+
+
+Definition at line 12 of file camera.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{camera_8h}{camera.\+h}}\item 
+\mbox{\hyperlink{camera_8cpp}{camera.\+cpp}}\end{DoxyCompactItemize}

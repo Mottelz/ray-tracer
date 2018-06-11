@@ -372,15 +372,15 @@
 		9E0CB19620C1E383009CDE2E /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				9E0CB19420C1E2FB009CDE2E /* object.h */,
-				9E0CB19B20C1E61D009CDE2E /* sphere.cpp */,
-				9E0CB19C20C1E61D009CDE2E /* sphere.h */,
-				9E0CB19E20C1E625009CDE2E /* plane.cpp */,
-				9E0CB19F20C1E625009CDE2E /* plane.h */,
 				9E0CB1A120C1E62D009CDE2E /* camera.cpp */,
-				9E0CB1A220C1E62D009CDE2E /* camera.h */,
 				9E0CB1A420C1E634009CDE2E /* light.cpp */,
+				9E0CB19E20C1E625009CDE2E /* plane.cpp */,
+				9E0CB19B20C1E61D009CDE2E /* sphere.cpp */,
+				9E0CB1A220C1E62D009CDE2E /* camera.h */,
 				9E0CB1A520C1E634009CDE2E /* light.h */,
+				9E0CB19420C1E2FB009CDE2E /* object.h */,
+				9E0CB19F20C1E625009CDE2E /* plane.h */,
+				9E0CB19C20C1E61D009CDE2E /* sphere.h */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -519,7 +519,7 @@
 		9EE2D43820BFAA830040D125 = {
 			isa = PBXGroup;
 			children = (
-				9EE2D44320BFAA830040D125 /* RayTracer */,
+				9EE2D44320BFAA830040D125 /* src */,
 				9EE2D44220BFAA830040D125 /* Products */,
 				9E4574A020BFC22C008BDD04 /* Frameworks */,
 			);
@@ -533,15 +533,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9EE2D44320BFAA830040D125 /* RayTracer */ = {
+		9EE2D44320BFAA830040D125 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				9E0CB19720C1E394009CDE2E /* utils */,
-				9E0CB19620C1E383009CDE2E /* classes */,
-				9EA36E1020C1CE6A0034FCAD /* scene */,
 				9EE2D44420BFAA830040D125 /* main.cpp */,
+				9E0CB19620C1E383009CDE2E /* classes */,
+				9E0CB19720C1E394009CDE2E /* utils */,
+				9EA36E1020C1CE6A0034FCAD /* scene */,
 			);
-			path = RayTracer;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
