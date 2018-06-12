@@ -4,7 +4,7 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scene1.txt";
+std::string scene = "scene5.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
 double ray_bias = 0.00;
 double shadow_bias = 0.0085;
@@ -41,9 +41,10 @@ int main(int argc, const char * argv[]) {
             hit.contact = false; //Since it hasn't made cactually hit anything yet, set it to false.
             Ray r; //The ray we are firing.
             r.org = cam -> getPosition(); //The origin point of the ray is the camera's position.
-            r.dir.x = r.org.x - (j-(width/2)); //X = origin minus current pixel's width.
-            r.dir.y = r.org.y - (k-(height/2)); //Y = origin minus current pixel's height.
-            r.dir.z = r.org.z - cam -> getFocal(); //Z = origin minus the focal length.
+            r.dir.x = (j-(width/2)) - r.org.x; //X = origin minus current pixel's width.
+            r.dir.y = ((height/2)-k) - r.org.y; //Y = origin minus current pixel's height.
+            r.dir.z = -(cam -> getFocal() - r.org.z); //Z = origin minus the focal length.
+            
             r.dir = glm::normalize(r.dir); //Normalize the direction.
 
             //for every object. check if there's a hit and if it's close.
@@ -99,13 +100,12 @@ int main(int argc, const char * argv[]) {
                     colour = things[hit.thing] -> getColour(); //set it to the ambient colour for this object.
                 } else {
                     for (int c = 0; c < colours.size(); c++) {
-                        colour.x = glm::sqrt(glm::pow(colour.x+colours[c].x/colours.size(), 2)); //Colour merging done via squareroot of the combined squares.
-                        colour.y = glm::sqrt(glm::pow(colour.y+colours[c].y/colours.size(), 2)); //Colour merging done via squareroot of the combined squares.
-                        colour.z = glm::sqrt(glm::pow(colour.z+colours[c].z/colours.size(), 2)); //Colour merging done via squareroot of the combined squares.
+                        colour = colour + (colours[c]*colours[c]);
                     }
+                    colour.x = glm::sqrt(colour.x/colours.size()); //Colour merging done via squareroot of the combined squares.
+                    colour.y = glm::sqrt(colour.y/colours.size()); //Colour merging done via squareroot of the combined squares.
+                    colour.z = glm::sqrt(colour.z/colours.size()); //Colour merging done via squareroot of the combined squares.
                 }
-                
-                
                 
                 
                 clip(colour, 0.0, 1.0); //Clip the colour to [0,1]

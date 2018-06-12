@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['org',['org',['../struct_ray.html#a37337cf8775a751e2d58de86ffccebec',1,'Ray']]]
+  ['org',['org',['../struct_ray.html#a78a1cbfb1bd302b4c1790fbe41845d31',1,'Ray']]]
 ];

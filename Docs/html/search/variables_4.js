@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scene',['scene',['../main_8cpp.html#a45ddb9af9deebcd9f0b060abff92da07',1,'main.cpp']]]
+  ['ray_5fbias',['ray_bias',['../main_8cpp.html#a3e16e5822a9cea9b4940f8d5b93a358d',1,'main.cpp']]]
 ];

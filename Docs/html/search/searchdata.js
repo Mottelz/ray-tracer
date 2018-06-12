@@ -4,8 +4,8 @@ var indexSectionsWithContent =
   1: "ciloprs",
   2: "clmopsu",
   3: "cdgilmpst",
-  4: "cdopst",
-  5: "cmst"
+  4: "cdoprst",
+  5: "cms"
 };
 
 var indexSectionNames =

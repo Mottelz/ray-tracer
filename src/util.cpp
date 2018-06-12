@@ -72,7 +72,7 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     glm::dvec3 reflection = glm::reflect(norm, view_dir);
     
     //Get alpha and theta
-    double alpha = glm::dot(view_dir, reflection);
+    double alpha = glm::dot(light_dir, reflection);
     double theta = glm::dot(norm, light_dir);
     
     //actually calculate specular and diffuse
@@ -81,6 +81,7 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     
     //finally calculate and return the colour
     glm::dvec3 colour = (ambIn + diff_fin + spec_fin) * lightCol;
+    colour = clip(colour, 0.0, 1.0);
     return colour;
 };
 
