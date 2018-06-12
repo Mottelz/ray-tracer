@@ -18,18 +18,18 @@ Inheritance diagram for Plane\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_plane_a7aef2d9e06892562f982d9fd6596370c}{Plane}} (glm\+::vec3 norm, glm\+::vec3 pos, glm\+::vec3 amb, glm\+::vec3 dif, glm\+::vec3 spe, float shine)
+\mbox{\hyperlink{class_plane_aeb002db84ff90de81df472544c35dbca}{Plane}} (glm\+::dvec3 norm, glm\+::dvec3 pos, glm\+::dvec3 amb, glm\+::dvec3 dif, glm\+::dvec3 spe, double shine)
 \begin{DoxyCompactList}\small\item\em Just the basic constructor. \end{DoxyCompactList}\item 
-glm\+::vec3 \mbox{\hyperlink{class_plane_a61c43d837a1921039d9b3466d1284741}{get\+Postion}} () override
+glm\+::dvec3 \mbox{\hyperlink{class_plane_ab49db9185e5489809dc13135a5231109}{get\+Postion}} () override
 \item 
-\mbox{\hyperlink{struct_intersect}{Intersect}} \mbox{\hyperlink{class_plane_a76cf36bbdaaed72e59aa7ecd9dcb9dba}{intersect}} (const \mbox{\hyperlink{struct_ray}{Ray}} \&r) override
+\mbox{\hyperlink{struct_intersect}{Intersect}} \mbox{\hyperlink{class_plane_ab636b2a91165088ba60dac02aaf89785}{intersect}} (const \mbox{\hyperlink{struct_ray}{Ray}} \&r, double bias) override
 \begin{DoxyCompactList}\small\item\em Returns the position of the plane. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_plane_a3d9139793b931279e3dcd1fd80a263c7}{print}} () override
 \begin{DoxyCompactList}\small\item\em Prints a nicely formatted string with all the plane\textquotesingle{}s stats. \end{DoxyCompactList}\item 
-glm\+::vec3 \mbox{\hyperlink{class_plane_a81494e203b2cd4bf67d00c2503e1929f}{get\+Colour}} () override
+glm\+::dvec3 \mbox{\hyperlink{class_plane_acd86caefd4ff1bf35f2719b1bef6afd8}{get\+Colour}} () override
 \begin{DoxyCompactList}\small\item\em Returns the ambient colour. \end{DoxyCompactList}\item 
-glm\+::vec3 \mbox{\hyperlink{class_plane_a6f2ddd0896e72b7446e2f9acad20c7c3}{get\+Colour}} (const \mbox{\hyperlink{class_light}{Light}} \&light, const \mbox{\hyperlink{struct_intersect}{Intersect}} \&hit, const glm\+::vec3 \&cam\+Pos) override
-\begin{DoxyCompactList}\small\item\em Runs \mbox{\hyperlink{util_8h_ae9aaa22b1b1c0249f8617f45eb99ad55}{calculate\+\_\+colour}} and returns the result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+glm\+::dvec3 \mbox{\hyperlink{class_plane_a05e58028f795833a1ee68b374597fa3a}{get\+Colour}} (const \mbox{\hyperlink{class_light}{Light}} \&light, const \mbox{\hyperlink{struct_intersect}{Intersect}} \&hit, const glm\+::dvec3 \&cam\+Pos) override
+\begin{DoxyCompactList}\small\item\em Runs \mbox{\hyperlink{util_8h_add552e26ff1418c78cbcb09b18ab0f44}{calculate\+\_\+colour}} and returns the result. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -40,11 +40,11 @@ Definition at line 15 of file plane.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_plane_a7aef2d9e06892562f982d9fd6596370c}\label{class_plane_a7aef2d9e06892562f982d9fd6596370c}} 
+\mbox{\Hypertarget{class_plane_aeb002db84ff90de81df472544c35dbca}\label{class_plane_aeb002db84ff90de81df472544c35dbca}} 
 \index{Plane@{Plane}!Plane@{Plane}}
 \index{Plane@{Plane}!Plane@{Plane}}
 \subsubsection{\texorpdfstring{Plane()}{Plane()}}
-{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{norm,  }\item[{glm\+::vec3}]{pos,  }\item[{glm\+::vec3}]{amb,  }\item[{glm\+::vec3}]{dif,  }\item[{glm\+::vec3}]{spe,  }\item[{float}]{shine }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{glm\+::dvec3}]{norm,  }\item[{glm\+::dvec3}]{pos,  }\item[{glm\+::dvec3}]{amb,  }\item[{glm\+::dvec3}]{dif,  }\item[{glm\+::dvec3}]{spe,  }\item[{double}]{shine }\end{DoxyParamCaption})}
 
 
 
@@ -57,11 +57,11 @@ Definition at line 3 of file plane.\+cpp.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{class_plane_a81494e203b2cd4bf67d00c2503e1929f}\label{class_plane_a81494e203b2cd4bf67d00c2503e1929f}} 
+\mbox{\Hypertarget{class_plane_acd86caefd4ff1bf35f2719b1bef6afd8}\label{class_plane_acd86caefd4ff1bf35f2719b1bef6afd8}} 
 \index{Plane@{Plane}!get\+Colour@{get\+Colour}}
 \index{get\+Colour@{get\+Colour}!Plane@{Plane}}
 \subsubsection{\texorpdfstring{get\+Colour()}{getColour()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily glm\+::vec3 Plane\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily glm\+::dvec3 Plane\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -69,49 +69,49 @@ Returns the ambient colour.
 
 
 
-Implements \mbox{\hyperlink{class_object_a0a966fb37be861cbaacb834ef7b89d8a}{Object}}.
+Implements \mbox{\hyperlink{class_object_a96a5bb5dcad4c340caa1d806fb5bd572}{Object}}.
 
 
 
 Definition at line 56 of file plane.\+cpp.
 
-\mbox{\Hypertarget{class_plane_a6f2ddd0896e72b7446e2f9acad20c7c3}\label{class_plane_a6f2ddd0896e72b7446e2f9acad20c7c3}} 
+\mbox{\Hypertarget{class_plane_a05e58028f795833a1ee68b374597fa3a}\label{class_plane_a05e58028f795833a1ee68b374597fa3a}} 
 \index{Plane@{Plane}!get\+Colour@{get\+Colour}}
 \index{get\+Colour@{get\+Colour}!Plane@{Plane}}
 \subsubsection{\texorpdfstring{get\+Colour()}{getColour()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily glm\+::vec3 Plane\+::get\+Colour (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_light}{Light}} \&}]{light,  }\item[{const \mbox{\hyperlink{struct_intersect}{Intersect}} \&}]{hit,  }\item[{const glm\+::vec3 \&}]{cam\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily glm\+::dvec3 Plane\+::get\+Colour (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_light}{Light}} \&}]{light,  }\item[{const \mbox{\hyperlink{struct_intersect}{Intersect}} \&}]{hit,  }\item[{const glm\+::dvec3 \&}]{cam\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Runs \mbox{\hyperlink{util_8h_ae9aaa22b1b1c0249f8617f45eb99ad55}{calculate\+\_\+colour}} and returns the result. 
+Runs \mbox{\hyperlink{util_8h_add552e26ff1418c78cbcb09b18ab0f44}{calculate\+\_\+colour}} and returns the result. 
 
 
 
-Implements \mbox{\hyperlink{class_object_aac162b545913d7aeab851204d3f04ebf}{Object}}.
+Implements \mbox{\hyperlink{class_object_abecc5668197c7222b5c9180a9738f69b}{Object}}.
 
 
 
 Definition at line 61 of file plane.\+cpp.
 
-\mbox{\Hypertarget{class_plane_a61c43d837a1921039d9b3466d1284741}\label{class_plane_a61c43d837a1921039d9b3466d1284741}} 
+\mbox{\Hypertarget{class_plane_ab49db9185e5489809dc13135a5231109}\label{class_plane_ab49db9185e5489809dc13135a5231109}} 
 \index{Plane@{Plane}!get\+Postion@{get\+Postion}}
 \index{get\+Postion@{get\+Postion}!Plane@{Plane}}
 \subsubsection{\texorpdfstring{get\+Postion()}{getPostion()}}
-{\footnotesize\ttfamily glm\+::vec3 Plane\+::get\+Postion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily glm\+::dvec3 Plane\+::get\+Postion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{class_object_ac29e04a255155b791d69b97820423efa}{Object}}.
+Implements \mbox{\hyperlink{class_object_a71cb3da0e19b83f2558bf406abc9db68}{Object}}.
 
 
 
 Definition at line 24 of file plane.\+h.
 
-\mbox{\Hypertarget{class_plane_a76cf36bbdaaed72e59aa7ecd9dcb9dba}\label{class_plane_a76cf36bbdaaed72e59aa7ecd9dcb9dba}} 
+\mbox{\Hypertarget{class_plane_ab636b2a91165088ba60dac02aaf89785}\label{class_plane_ab636b2a91165088ba60dac02aaf89785}} 
 \index{Plane@{Plane}!intersect@{intersect}}
 \index{intersect@{intersect}!Plane@{Plane}}
 \subsubsection{\texorpdfstring{intersect()}{intersect()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_intersect}{Intersect}} Plane\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ray}{Ray}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_intersect}{Intersect}} Plane\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_ray}{Ray}} \&}]{r,  }\item[{double}]{bias }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -119,7 +119,7 @@ Returns the position of the plane.
 
 Checks if a ray intersects with the plane. Returns an \mbox{\hyperlink{struct_intersect}{Intersect}} with contact true or false. 
 
-Implements \mbox{\hyperlink{class_object_a27b26f69f1fcb4dc72eca40ac0d20ea6}{Object}}.
+Implements \mbox{\hyperlink{class_object_a16d022cf54624baea89c542a44e6db26}{Object}}.
 
 
 

@@ -112,24 +112,24 @@ Inheritance diagram for Object:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac29e04a255155b791d69b97820423efa"><td class="memItemLeft" align="right" valign="top">virtual glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ac29e04a255155b791d69b97820423efa">getPostion</a> ()=0</td></tr>
-<tr class="separator:ac29e04a255155b791d69b97820423efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b26f69f1fcb4dc72eca40ac0d20ea6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_intersect.html">Intersect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a27b26f69f1fcb4dc72eca40ac0d20ea6">intersect</a> (const <a class="el" href="struct_ray.html">Ray</a> &amp;r)=0</td></tr>
-<tr class="separator:a27b26f69f1fcb4dc72eca40ac0d20ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cb3da0e19b83f2558bf406abc9db68"><td class="memItemLeft" align="right" valign="top">virtual glm::dvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a71cb3da0e19b83f2558bf406abc9db68">getPostion</a> ()=0</td></tr>
+<tr class="separator:a71cb3da0e19b83f2558bf406abc9db68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d022cf54624baea89c542a44e6db26"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_intersect.html">Intersect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a16d022cf54624baea89c542a44e6db26">intersect</a> (const <a class="el" href="struct_ray.html">Ray</a> &amp;r, double bias)=0</td></tr>
+<tr class="separator:a16d022cf54624baea89c542a44e6db26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad81452e5a38455eff025d85ef1da7307"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ad81452e5a38455eff025d85ef1da7307">print</a> ()=0</td></tr>
 <tr class="separator:ad81452e5a38455eff025d85ef1da7307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a966fb37be861cbaacb834ef7b89d8a"><td class="memItemLeft" align="right" valign="top">virtual glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a0a966fb37be861cbaacb834ef7b89d8a">getColour</a> ()=0</td></tr>
-<tr class="separator:a0a966fb37be861cbaacb834ef7b89d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac162b545913d7aeab851204d3f04ebf"><td class="memItemLeft" align="right" valign="top">virtual glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aac162b545913d7aeab851204d3f04ebf">getColour</a> (const <a class="el" href="class_light.html">Light</a> &amp;light, const <a class="el" href="struct_intersect.html">Intersect</a> &amp;hit, const glm::vec3 &amp;camPos)=0</td></tr>
-<tr class="separator:aac162b545913d7aeab851204d3f04ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a5bb5dcad4c340caa1d806fb5bd572"><td class="memItemLeft" align="right" valign="top">virtual glm::dvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a96a5bb5dcad4c340caa1d806fb5bd572">getColour</a> ()=0</td></tr>
+<tr class="separator:a96a5bb5dcad4c340caa1d806fb5bd572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abecc5668197c7222b5c9180a9738f69b"><td class="memItemLeft" align="right" valign="top">virtual glm::dvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#abecc5668197c7222b5c9180a9738f69b">getColour</a> (const <a class="el" href="class_light.html">Light</a> &amp;light, const <a class="el" href="struct_intersect.html">Intersect</a> &amp;hit, const glm::dvec3 &amp;camPos)=0</td></tr>
+<tr class="separator:abecc5668197c7222b5c9180a9738f69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A pure virtual parent class for any physical object in this scene. </p>
 
 <p class="definition">Definition at line <a class="el" href="object_8h_source.html#l00016">16</a> of file <a class="el" href="object_8h_source.html">object.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0a966fb37be861cbaacb834ef7b89d8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a966fb37be861cbaacb834ef7b89d8a">&#9670;&nbsp;</a></span>getColour() <span class="overload">[1/2]</span></h2>
+<a id="a96a5bb5dcad4c340caa1d806fb5bd572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a5bb5dcad4c340caa1d806fb5bd572">&#9670;&nbsp;</a></span>getColour() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual glm::vec3 Object::getColour </td>
+          <td class="memname">virtual glm::dvec3 Object::getColour </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -151,12 +151,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_sphere.html#abc6455e04b563fb57b91f12183fa4d18">Sphere</a>, and <a class="el" href="class_plane.html#a81494e203b2cd4bf67d00c2503e1929f">Plane</a>.</p>
+<p>Implemented in <a class="el" href="class_sphere.html#a700025702852f2f6c888c7dbd720ea76">Sphere</a>, and <a class="el" href="class_plane.html#acd86caefd4ff1bf35f2719b1bef6afd8">Plane</a>.</p>
 
 </div>
 </div>
-<a id="aac162b545913d7aeab851204d3f04ebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac162b545913d7aeab851204d3f04ebf">&#9670;&nbsp;</a></span>getColour() <span class="overload">[2/2]</span></h2>
+<a id="abecc5668197c7222b5c9180a9738f69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abecc5668197c7222b5c9180a9738f69b">&#9670;&nbsp;</a></span>getColour() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual glm::vec3 Object::getColour </td>
+          <td class="memname">virtual glm::dvec3 Object::getColour </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_light.html">Light</a> &amp;&#160;</td>
           <td class="paramname"><em>light</em>, </td>
@@ -179,7 +179,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramtype">const glm::dvec3 &amp;&#160;</td>
           <td class="paramname"><em>camPos</em>&#160;</td>
         </tr>
         <tr>
@@ -195,12 +195,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_sphere.html#a0ce51c06baaea1c35129b17b5132ff58">Sphere</a>, and <a class="el" href="class_plane.html#a6f2ddd0896e72b7446e2f9acad20c7c3">Plane</a>.</p>
+<p>Implemented in <a class="el" href="class_sphere.html#ac5c6bbcd43b8caabe4a23ba3e53d414a">Sphere</a>, and <a class="el" href="class_plane.html#a05e58028f795833a1ee68b374597fa3a">Plane</a>.</p>
 
 </div>
 </div>
-<a id="ac29e04a255155b791d69b97820423efa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac29e04a255155b791d69b97820423efa">&#9670;&nbsp;</a></span>getPostion()</h2>
+<a id="a71cb3da0e19b83f2558bf406abc9db68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cb3da0e19b83f2558bf406abc9db68">&#9670;&nbsp;</a></span>getPostion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +209,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual glm::vec3 Object::getPostion </td>
+          <td class="memname">virtual glm::dvec3 Object::getPostion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -222,12 +222,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_sphere.html#a6e2f290f9632e8da3d8dd90dc74997ac">Sphere</a>, and <a class="el" href="class_plane.html#a61c43d837a1921039d9b3466d1284741">Plane</a>.</p>
+<p>Implemented in <a class="el" href="class_sphere.html#abcc01a6057eb30df9605ce3786b6c47c">Sphere</a>, and <a class="el" href="class_plane.html#ab49db9185e5489809dc13135a5231109">Plane</a>.</p>
 
 </div>
 </div>
-<a id="a27b26f69f1fcb4dc72eca40ac0d20ea6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27b26f69f1fcb4dc72eca40ac0d20ea6">&#9670;&nbsp;</a></span>intersect()</h2>
+<a id="a16d022cf54624baea89c542a44e6db26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d022cf54624baea89c542a44e6db26">&#9670;&nbsp;</a></span>intersect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,8 +239,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="struct_intersect.html">Intersect</a> Object::intersect </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_ray.html">Ray</a> &amp;&#160;</td>
-          <td class="paramname"><em>r</em></td><td>)</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bias</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -250,7 +260,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_sphere.html#a8d2ea6e36b5c23330e08861bb723e2a4">Sphere</a>, and <a class="el" href="class_plane.html#a76cf36bbdaaed72e59aa7ecd9dcb9dba">Plane</a>.</p>
+<p>Implemented in <a class="el" href="class_sphere.html#a3ba8c2a4bc8108b244f35e71c14b952d">Sphere</a>, and <a class="el" href="class_plane.html#ab636b2a91165088ba60dac02aaf89785">Plane</a>.</p>
 
 </div>
 </div>

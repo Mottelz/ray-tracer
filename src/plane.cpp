@@ -1,6 +1,6 @@
 #include "plane.h"
 
-Plane::Plane(glm::vec3 norm, glm::vec3 pos, glm::vec3 amb, glm::vec3 dif, glm::vec3 spe, float shine) {
+Plane::Plane(glm::dvec3 norm, glm::dvec3 pos, glm::dvec3 amb, glm::dvec3 dif, glm::dvec3 spe, double shine) {
     m_norm = norm;
     m_pos = pos;
     m_amb = amb;
@@ -9,7 +9,7 @@ Plane::Plane(glm::vec3 norm, glm::vec3 pos, glm::vec3 amb, glm::vec3 dif, glm::v
     m_shi = shine;
 }
 
-Intersect Plane::intersect(const Ray &r, float bias) {
+Intersect Plane::intersect(const Ray &r, double bias) {
     //The formula
     //t = a-b/c
     //a = n.p0
@@ -18,9 +18,9 @@ Intersect Plane::intersect(const Ray &r, float bias) {
     Intersect toRet;
     
     //caculate a, b, & c
-    float a = glm::dot(m_norm, m_pos);
-    float b = glm::dot(m_norm, r.org);
-    float c = glm::dot(m_norm, r.dir);
+    double a = glm::dot(m_norm, m_pos);
+    double b = glm::dot(m_norm, r.org);
+    double c = glm::dot(m_norm, r.dir);
     
     //If plane is behind the camera
     if(c == 0) {
@@ -28,7 +28,7 @@ Intersect Plane::intersect(const Ray &r, float bias) {
         return toRet;
     }
     
-    float t = (a-b)/c;
+    double t = (a-b)/c;
     
     if (t < 0) {
         toRet.contact = false;
@@ -53,13 +53,13 @@ void Plane::print() {
            m_shi);
 }
 
-glm::vec3 Plane::getColour() {
+glm::dvec3 Plane::getColour() {
     return m_amb;
 }
 
 
-glm::vec3 Plane::getColour(const Light &light, const Intersect& hit, const glm::vec3& camPos) {
-    glm::vec3 colour = calculate_colour(light.getPosition(), light.getColour(), camPos, hit.pos, m_norm, m_dif, m_spe, m_amb, m_shi);
+glm::dvec3 Plane::getColour(const Light &light, const Intersect& hit, const glm::dvec3& camPos) {
+    glm::dvec3 colour = calculate_colour(light.getPosition(), light.getColour(), camPos, hit.pos, m_norm, m_dif, m_spe, m_amb, m_shi);
     return colour;
 }
 

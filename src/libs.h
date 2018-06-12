@@ -26,5 +26,3 @@
 #define cimg_use_png //Allows import of png
 #define cimg_use_jpeg //Allows import of jpg
 #include <CImg.h>
-
-//#define T_BIAS 0.025f

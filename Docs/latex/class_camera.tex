@@ -12,7 +12,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_camera_a650299ece1e549c512df12164a5a0e9a}{Camera}} (glm\+::vec3 pos, int fov, float asp, int focal)
+\mbox{\hyperlink{class_camera_a9b4b8e1957b7e177a5d1a049c11f053f}{Camera}} (glm\+::dvec3 pos, int fov, double asp, int focal)
 \begin{DoxyCompactList}\small\item\em The only constructor. Calculates the width and height based on the given info. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_camera_a905d2a0f8677aaad1ee17eb2a842efe5}{print}} ()
 \begin{DoxyCompactList}\small\item\em Prints the camera\textquotesingle{}s details as a nicely formatted string. \end{DoxyCompactList}\item 
@@ -20,8 +20,8 @@ int \mbox{\hyperlink{class_camera_a315be9ee1238abddce9a580430ad403a}{get\+Height
 \begin{DoxyCompactList}\small\item\em Returns canvas\textquotesingle{}s height as an int. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_camera_a1122b43b7db5e69e9d6e187b74a6ec7e}{get\+Width}} ()
 \begin{DoxyCompactList}\small\item\em Returns canvas\textquotesingle{}s width as an int. \end{DoxyCompactList}\item 
-glm\+::vec3 \mbox{\hyperlink{class_camera_a520c5a7413b3e704f2f442288db17bcf}{get\+Position}} ()
-\item 
+glm\+::dvec3 \mbox{\hyperlink{class_camera_a4ea62b0ec351ac3cf4bd228617a3ec54}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns camera\textquotesingle{}s position. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_camera_a5045b4557d3cd7cd4c64c49f5a693aa5}{get\+Focal}} ()
 \end{DoxyCompactItemize}
 
@@ -34,11 +34,11 @@ Definition at line 14 of file camera.\+h.
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_camera_a650299ece1e549c512df12164a5a0e9a}\label{class_camera_a650299ece1e549c512df12164a5a0e9a}} 
+\mbox{\Hypertarget{class_camera_a9b4b8e1957b7e177a5d1a049c11f053f}\label{class_camera_a9b4b8e1957b7e177a5d1a049c11f053f}} 
 \index{Camera@{Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{Camera()}{Camera()}}
-{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{pos,  }\item[{int}]{fov,  }\item[{float}]{asp,  }\item[{int}]{focal }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{glm\+::dvec3}]{pos,  }\item[{int}]{fov,  }\item[{double}]{asp,  }\item[{int}]{focal }\end{DoxyParamCaption})}
 
 
 
@@ -75,13 +75,17 @@ Returns canvas\textquotesingle{}s height as an int.
 
 Definition at line 22 of file camera.\+cpp.
 
-\mbox{\Hypertarget{class_camera_a520c5a7413b3e704f2f442288db17bcf}\label{class_camera_a520c5a7413b3e704f2f442288db17bcf}} 
+\mbox{\Hypertarget{class_camera_a4ea62b0ec351ac3cf4bd228617a3ec54}\label{class_camera_a4ea62b0ec351ac3cf4bd228617a3ec54}} 
 \index{Camera@{Camera}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!Camera@{Camera}}
 \subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
-{\footnotesize\ttfamily glm\+::vec3 Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily glm\+::dvec3 Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
 
 Returns camera\textquotesingle{}s position. 
+
+
 
 Definition at line 30 of file camera.\+cpp.
 

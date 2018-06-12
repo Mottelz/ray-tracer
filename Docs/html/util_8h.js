@@ -1,10 +1,11 @@
 var util_8h =
 [
-    [ "calculate_colour", "util_8h.html#ae9aaa22b1b1c0249f8617f45eb99ad55", null ],
-    [ "clip", "util_8h.html#a7aaff6c75955e4af57f5bc2dbcbd40b8", null ],
-    [ "draw", "util_8h.html#a3c93155a875791c3caa5413a87d48696", null ],
-    [ "draw_square", "util_8h.html#aad3d215621d3e2cab39898451ec83ca9", null ],
+    [ "calculate_colour", "util_8h.html#add552e26ff1418c78cbcb09b18ab0f44", null ],
+    [ "clip", "util_8h.html#ad37c994004c595b7ef615d3eb9a24b71", null ],
+    [ "draw", "util_8h.html#a3642c68d85fde4a3a85094840b33b5a9", null ],
+    [ "draw_square", "util_8h.html#aae988f360a4b24c44fd3539e7ab4c3f0", null ],
     [ "get_name", "util_8h.html#a6a03be8e35a5e432d3cf803e7747c8bb", null ],
-    [ "is_closer", "util_8h.html#a3669601dfd22a241dcbe089310adb6fd", null ],
+    [ "is_closer", "util_8h.html#a80eefe664f68e11ee02df3ea20a65c15", null ],
+    [ "merge_colours", "util_8h.html#a95ec1843d3a5863740f559d52b5b1587", null ],
     [ "tell_user", "util_8h.html#a93d512dded02ad3b0fcd96dbb99bc4f5", null ]
 ];

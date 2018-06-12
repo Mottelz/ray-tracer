@@ -105,81 +105,81 @@ Functions</h2></td></tr>
 <tr class="memitem:a6a03be8e35a5e432d3cf803e7747c8bb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a6a03be8e35a5e432d3cf803e7747c8bb">get_name</a> (std::string name, std::string ext)</td></tr>
 <tr class="memdesc:a6a03be8e35a5e432d3cf803e7747c8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the date and time to a file name in the following format 1970-01-01 12h00m00s.  <a href="#a6a03be8e35a5e432d3cf803e7747c8bb">More...</a><br /></td></tr>
 <tr class="separator:a6a03be8e35a5e432d3cf803e7747c8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3d215621d3e2cab39898451ec83ca9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#aad3d215621d3e2cab39898451ec83ca9">draw_square</a> (cimg_library::CImg&lt; float &gt; &amp;image, int width, int height)</td></tr>
-<tr class="memdesc:aad3d215621d3e2cab39898451ec83ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a 150x150 pink square in the centre of the image.  <a href="#aad3d215621d3e2cab39898451ec83ca9">More...</a><br /></td></tr>
-<tr class="separator:aad3d215621d3e2cab39898451ec83ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c93155a875791c3caa5413a87d48696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a3c93155a875791c3caa5413a87d48696">draw</a> (cimg_library::CImg&lt; float &gt; &amp;image, int w, int h, glm::vec3 color)</td></tr>
-<tr class="memdesc:a3c93155a875791c3caa5413a87d48696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colours in the given pixel. Given vec3 should be clipped between [0,1] the function converts it.  <a href="#a3c93155a875791c3caa5413a87d48696">More...</a><br /></td></tr>
-<tr class="separator:a3c93155a875791c3caa5413a87d48696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aaff6c75955e4af57f5bc2dbcbd40b8"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a7aaff6c75955e4af57f5bc2dbcbd40b8">clip</a> (glm::vec3 vec, float lo, float hi)</td></tr>
-<tr class="memdesc:a7aaff6c75955e4af57f5bc2dbcbd40b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clip a vec3 between the given values.  <a href="#a7aaff6c75955e4af57f5bc2dbcbd40b8">More...</a><br /></td></tr>
-<tr class="separator:a7aaff6c75955e4af57f5bc2dbcbd40b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab059da54713583cec5923dbd3490ec9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#aab059da54713583cec5923dbd3490ec9">is_closer</a> (const glm::vec3 p0, const glm::vec3 p1, const glm::vec3 p2)</td></tr>
-<tr class="memdesc:aab059da54713583cec5923dbd3490ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if p1 is closer to p0. False if p2 is closer to p0.  <a href="#aab059da54713583cec5923dbd3490ec9">More...</a><br /></td></tr>
-<tr class="separator:aab059da54713583cec5923dbd3490ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9aaa22b1b1c0249f8617f45eb99ad55"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ae9aaa22b1b1c0249f8617f45eb99ad55">calculate_colour</a> (glm::vec3 lightPos, glm::vec3 lightCol, glm::vec3 camPos, glm::vec3 p0, glm::vec3 norm, glm::vec3 diffIn, glm::vec3 specIn, glm::vec3 ambIn, float shineIn)</td></tr>
-<tr class="memdesc:ae9aaa22b1b1c0249f8617f45eb99ad55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the colour using the Phong lighting model. Called by <a class="el" href="class_sphere.html" title="Child of Object. This class represents Spheres that can be placed in the scene. ">Sphere</a> and <a class="el" href="class_plane.html" title="Child of Object. This class represents infinte planes that can be placed in the scene. ">Plane</a>.  <a href="#ae9aaa22b1b1c0249f8617f45eb99ad55">More...</a><br /></td></tr>
-<tr class="separator:ae9aaa22b1b1c0249f8617f45eb99ad55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae988f360a4b24c44fd3539e7ab4c3f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#aae988f360a4b24c44fd3539e7ab4c3f0">draw_square</a> (cimg_library::CImg&lt; double &gt; &amp;image, int width, int height)</td></tr>
+<tr class="memdesc:aae988f360a4b24c44fd3539e7ab4c3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a 150x150 pink square in the centre of the image.  <a href="#aae988f360a4b24c44fd3539e7ab4c3f0">More...</a><br /></td></tr>
+<tr class="separator:aae988f360a4b24c44fd3539e7ab4c3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3642c68d85fde4a3a85094840b33b5a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#a3642c68d85fde4a3a85094840b33b5a9">draw</a> (cimg_library::CImg&lt; double &gt; &amp;image, int w, int h, glm::dvec3 color)</td></tr>
+<tr class="memdesc:a3642c68d85fde4a3a85094840b33b5a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colours in the given pixel. Given vec3 should be clipped between [0,1] the function converts it.  <a href="#a3642c68d85fde4a3a85094840b33b5a9">More...</a><br /></td></tr>
+<tr class="separator:a3642c68d85fde4a3a85094840b33b5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37c994004c595b7ef615d3eb9a24b71"><td class="memItemLeft" align="right" valign="top">glm::dvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#ad37c994004c595b7ef615d3eb9a24b71">clip</a> (glm::dvec3 vec, double lo, double hi)</td></tr>
+<tr class="memdesc:ad37c994004c595b7ef615d3eb9a24b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clip a vec3 between the given values.  <a href="#ad37c994004c595b7ef615d3eb9a24b71">More...</a><br /></td></tr>
+<tr class="separator:ad37c994004c595b7ef615d3eb9a24b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62ff457987b64645facddadc968ada6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#af62ff457987b64645facddadc968ada6">is_closer</a> (const glm::dvec3 p0, const glm::dvec3 p1, const glm::dvec3 p2)</td></tr>
+<tr class="memdesc:af62ff457987b64645facddadc968ada6"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if p1 is closer to p0. False if p2 is closer to p0.  <a href="#af62ff457987b64645facddadc968ada6">More...</a><br /></td></tr>
+<tr class="separator:af62ff457987b64645facddadc968ada6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add552e26ff1418c78cbcb09b18ab0f44"><td class="memItemLeft" align="right" valign="top">glm::dvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8cpp.html#add552e26ff1418c78cbcb09b18ab0f44">calculate_colour</a> (glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3 camPos, glm::dvec3 p0, glm::dvec3 norm, glm::dvec3 diffIn, glm::dvec3 specIn, glm::dvec3 ambIn, double shineIn)</td></tr>
+<tr class="memdesc:add552e26ff1418c78cbcb09b18ab0f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the colour using the Phong lighting model. Called by <a class="el" href="class_sphere.html" title="Child of Object. This class represents Spheres that can be placed in the scene. ">Sphere</a> and <a class="el" href="class_plane.html" title="Child of Object. This class represents infinte planes that can be placed in the scene. ">Plane</a>.  <a href="#add552e26ff1418c78cbcb09b18ab0f44">More...</a><br /></td></tr>
+<tr class="separator:add552e26ff1418c78cbcb09b18ab0f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae9aaa22b1b1c0249f8617f45eb99ad55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9aaa22b1b1c0249f8617f45eb99ad55">&#9670;&nbsp;</a></span>calculate_colour()</h2>
+<a id="add552e26ff1418c78cbcb09b18ab0f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add552e26ff1418c78cbcb09b18ab0f44">&#9670;&nbsp;</a></span>calculate_colour()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">glm::vec3 calculate_colour </td>
+          <td class="memname">glm::dvec3 calculate_colour </td>
           <td>(</td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>lightPos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>lightCol</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>camPos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>p0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>norm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>diffIn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>specIn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>ambIn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>shineIn</em>&#160;</td>
         </tr>
         <tr>
@@ -192,32 +192,32 @@ Functions</h2></td></tr>
 
 <p>Calculates the colour using the Phong lighting model. Called by <a class="el" href="class_sphere.html" title="Child of Object. This class represents Spheres that can be placed in the scene. ">Sphere</a> and <a class="el" href="class_plane.html" title="Child of Object. This class represents infinte planes that can be placed in the scene. ">Plane</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00065">65</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00067">67</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7aaff6c75955e4af57f5bc2dbcbd40b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aaff6c75955e4af57f5bc2dbcbd40b8">&#9670;&nbsp;</a></span>clip()</h2>
+<a id="ad37c994004c595b7ef615d3eb9a24b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37c994004c595b7ef615d3eb9a24b71">&#9670;&nbsp;</a></span>clip()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">glm::vec3 clip </td>
+          <td class="memname">glm::dvec3 clip </td>
           <td>(</td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>vec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>lo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>hi</em>&#160;</td>
         </tr>
         <tr>
@@ -234,8 +234,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c93155a875791c3caa5413a87d48696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c93155a875791c3caa5413a87d48696">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a3642c68d85fde4a3a85094840b33b5a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3642c68d85fde4a3a85094840b33b5a9">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +243,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void draw </td>
           <td>(</td>
-          <td class="paramtype">cimg_library::CImg&lt; float &gt; &amp;&#160;</td>
+          <td class="paramtype">cimg_library::CImg&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -261,7 +261,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">glm::vec3&#160;</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
           <td class="paramname"><em>color</em>&#160;</td>
         </tr>
         <tr>
@@ -278,8 +278,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aad3d215621d3e2cab39898451ec83ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad3d215621d3e2cab39898451ec83ca9">&#9670;&nbsp;</a></span>draw_square()</h2>
+<a id="aae988f360a4b24c44fd3539e7ab4c3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae988f360a4b24c44fd3539e7ab4c3f0">&#9670;&nbsp;</a></span>draw_square()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +287,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void draw_square </td>
           <td>(</td>
-          <td class="paramtype">cimg_library::CImg&lt; float &gt; &amp;&#160;</td>
+          <td class="paramtype">cimg_library::CImg&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -348,8 +348,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aab059da54713583cec5923dbd3490ec9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab059da54713583cec5923dbd3490ec9">&#9670;&nbsp;</a></span>is_closer()</h2>
+<a id="af62ff457987b64645facddadc968ada6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62ff457987b64645facddadc968ada6">&#9670;&nbsp;</a></span>is_closer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,19 +357,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool is_closer </td>
           <td>(</td>
-          <td class="paramtype">const glm::vec3&#160;</td>
+          <td class="paramtype">const glm::dvec3&#160;</td>
           <td class="paramname"><em>p0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const glm::vec3&#160;</td>
+          <td class="paramtype">const glm::dvec3&#160;</td>
           <td class="paramname"><em>p1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const glm::vec3&#160;</td>
+          <td class="paramtype">const glm::dvec3&#160;</td>
           <td class="paramname"><em>p2</em>&#160;</td>
         </tr>
         <tr>
