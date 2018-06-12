@@ -4,7 +4,7 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scene5.txt";
+std::string scene = "scenes/scene5.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
 double ray_bias = 0.00;
 double shadow_bias = 0.0085;
@@ -41,9 +41,9 @@ int main(int argc, const char * argv[]) {
             hit.contact = false; //Since it hasn't made cactually hit anything yet, set it to false.
             Ray r; //The ray we are firing.
             r.org = cam -> getPosition(); //The origin point of the ray is the camera's position.
-            r.dir.x = (j-(width/2)) - r.org.x; //X = origin minus current pixel's width.
-            r.dir.y = ((height/2)-k) - r.org.y; //Y = origin minus current pixel's height.
-            r.dir.z = -(cam -> getFocal() - r.org.z); //Z = origin minus the focal length.
+            r.dir.x = (j-(width/2)) - r.org.x; //current pixel's width (starts at furthest negative x).
+            r.dir.y = ((height/2)-k) - r.org.y; //current pixel's height (starts at positive y).
+            r.dir.z = -(cam -> getFocal() - r.org.z); //Z = negative the focal length minus origin.
             
             r.dir = glm::normalize(r.dir); //Normalize the direction.
 
@@ -98,17 +98,10 @@ int main(int argc, const char * argv[]) {
                 
                 if (colours.size() == 0) { //If the colur is still black,
                     colour = things[hit.thing] -> getColour(); //set it to the ambient colour for this object.
+                    colour = clip(colour, 0.0, 1.0); //Clip the colour to [0,1]
                 } else {
-                    for (int c = 0; c < colours.size(); c++) {
-                        colour = colour + (colours[c]*colours[c]);
-                    }
-                    colour.x = glm::sqrt(colour.x/colours.size()); //Colour merging done via squareroot of the combined squares.
-                    colour.y = glm::sqrt(colour.y/colours.size()); //Colour merging done via squareroot of the combined squares.
-                    colour.z = glm::sqrt(colour.z/colours.size()); //Colour merging done via squareroot of the combined squares.
+                    colour = merge_colours(colours);
                 }
-                
-                
-                clip(colour, 0.0, 1.0); //Clip the colour to [0,1]
                 draw(image, j, k, colour); //Draw the pixel. The X is inverted because of a quirk in CImg.
             } else { //If the initial ray did not intersect with any object.
 #if mot_log

@@ -79,13 +79,30 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     glm::dvec3 spec_fin = glm::pow(glm::max(alpha, 0.0), shineIn) * specIn;
     glm::dvec3 diff_fin = glm::max(theta, 0.0) * diffIn;
     
-    //finally calculate and return the colour
+    //finally calculate, clip and return the colour
     glm::dvec3 colour = (ambIn + diff_fin + spec_fin) * lightCol;
-    colour = clip(colour, 0.0, 1.0);
-    return colour;
+    
+    return clip(colour, 0.0, 1.0);;
 };
 
 
+//Calculate a merging colour
+glm::dvec3 merge_colours(std::vector<glm::dvec3> colours) {
+    glm::dvec3 colour(0.0); //start with an empty colour
+    
+    //sum the squares
+    for (int c = 0; c < colours.size(); c++) {
+        colour = colour + (colours[c]*colours[c]);
+    }
+    
+    //divide the sum and get its square root
+    colour.x = glm::sqrt(colour.x/colours.size());
+    colour.y = glm::sqrt(colour.y/colours.size());
+    colour.z = glm::sqrt(colour.z/colours.size());
+    
+    //clip and return
+    return clip(colour, 0.0, 1.0);
+};
 
 
 
