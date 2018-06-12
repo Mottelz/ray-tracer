@@ -4,7 +4,7 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scenes/scene5.txt";
+std::string scene = "scenes/scene1.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
 double ray_bias = 0.00;
 double shadow_bias = 0.0085;

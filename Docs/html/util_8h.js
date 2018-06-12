@@ -6,5 +6,6 @@ var util_8h =
     [ "draw_square", "util_8h.html#aae988f360a4b24c44fd3539e7ab4c3f0", null ],
     [ "get_name", "util_8h.html#a6a03be8e35a5e432d3cf803e7747c8bb", null ],
     [ "is_closer", "util_8h.html#a80eefe664f68e11ee02df3ea20a65c15", null ],
+    [ "merge_colours", "util_8h.html#a95ec1843d3a5863740f559d52b5b1587", null ],
     [ "tell_user", "util_8h.html#a93d512dded02ad3b0fcd96dbb99bc4f5", null ]
 ];

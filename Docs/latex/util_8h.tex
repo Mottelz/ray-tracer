@@ -22,7 +22,9 @@ glm\+::dvec3 \mbox{\hyperlink{util_8h_ad37c994004c595b7ef615d3eb9a24b71}{clip}} 
 bool \mbox{\hyperlink{util_8h_a80eefe664f68e11ee02df3ea20a65c15}{is\+\_\+closer}} (glm\+::dvec3 p0, glm\+::dvec3 p1, glm\+::dvec3 p2)
 \begin{DoxyCompactList}\small\item\em True if p1 is closer to p0. False if p2 is closer to p0. \end{DoxyCompactList}\item 
 glm\+::dvec3 \mbox{\hyperlink{util_8h_add552e26ff1418c78cbcb09b18ab0f44}{calculate\+\_\+colour}} (glm\+::dvec3 light\+Pos, glm\+::dvec3 light\+Col, glm\+::dvec3 cam\+Pos, glm\+::dvec3 p0, glm\+::dvec3 norm, glm\+::dvec3 diff\+In, glm\+::dvec3 spec\+In, glm\+::dvec3 amb\+In, double shine\+In)
-\begin{DoxyCompactList}\small\item\em Calculates the colour using the Phong lighting model. Called by \mbox{\hyperlink{class_sphere}{Sphere}} and \mbox{\hyperlink{class_plane}{Plane}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates the colour using the Phong lighting model. Called by \mbox{\hyperlink{class_sphere}{Sphere}} and \mbox{\hyperlink{class_plane}{Plane}}. \end{DoxyCompactList}\item 
+glm\+::dvec3 \mbox{\hyperlink{util_8h_a95ec1843d3a5863740f559d52b5b1587}{merge\+\_\+colours}} (glm\+::dvec3 colours)
+\begin{DoxyCompactList}\small\item\em Merges colours using the squaring method described here\+: \href{https://medium.com/@kevinsimper/how-to-average-rgb-colors-together-6cd3ef1ff1e5}{\tt https\+://medium.\+com/@kevinsimper/how-\/to-\/average-\/rgb-\/colors-\/together-\/6cd3ef1ff1e5}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -117,6 +119,16 @@ True if p1 is closer to p0. False if p2 is closer to p0.
 
 
 Definition at line 57 of file util.\+cpp.
+
+\mbox{\Hypertarget{util_8h_a95ec1843d3a5863740f559d52b5b1587}\label{util_8h_a95ec1843d3a5863740f559d52b5b1587}} 
+\index{util.\+h@{util.\+h}!merge\+\_\+colours@{merge\+\_\+colours}}
+\index{merge\+\_\+colours@{merge\+\_\+colours}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{merge\+\_\+colours()}{merge\_colours()}}
+{\footnotesize\ttfamily glm\+::dvec3 merge\+\_\+colours (\begin{DoxyParamCaption}\item[{glm\+::dvec3}]{colours }\end{DoxyParamCaption})}
+
+
+
+Merges colours using the squaring method described here\+: \href{https://medium.com/@kevinsimper/how-to-average-rgb-colors-together-6cd3ef1ff1e5}{\tt https\+://medium.\+com/@kevinsimper/how-\/to-\/average-\/rgb-\/colors-\/together-\/6cd3ef1ff1e5}. 
 
 \mbox{\Hypertarget{util_8h_a93d512dded02ad3b0fcd96dbb99bc4f5}\label{util_8h_a93d512dded02ad3b0fcd96dbb99bc4f5}} 
 \index{util.\+h@{util.\+h}!tell\+\_\+user@{tell\+\_\+user}}

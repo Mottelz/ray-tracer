@@ -123,6 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:add552e26ff1418c78cbcb09b18ab0f44"><td class="memItemLeft" align="right" valign="top">glm::dvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#add552e26ff1418c78cbcb09b18ab0f44">calculate_colour</a> (glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3 camPos, glm::dvec3 p0, glm::dvec3 norm, glm::dvec3 diffIn, glm::dvec3 specIn, glm::dvec3 ambIn, double shineIn)</td></tr>
 <tr class="memdesc:add552e26ff1418c78cbcb09b18ab0f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the colour using the Phong lighting model. Called by <a class="el" href="class_sphere.html" title="Child of Object. This class represents Spheres that can be placed in the scene. ">Sphere</a> and <a class="el" href="class_plane.html" title="Child of Object. This class represents infinte planes that can be placed in the scene. ">Plane</a>.  <a href="#add552e26ff1418c78cbcb09b18ab0f44">More...</a><br /></td></tr>
 <tr class="separator:add552e26ff1418c78cbcb09b18ab0f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ec1843d3a5863740f559d52b5b1587"><td class="memItemLeft" align="right" valign="top">glm::dvec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a95ec1843d3a5863740f559d52b5b1587">merge_colours</a> (glm::dvec3 colours)</td></tr>
+<tr class="memdesc:a95ec1843d3a5863740f559d52b5b1587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges colours using the squaring method described here: <a href="https://medium.com/@kevinsimper/how-to-average-rgb-colors-together-6cd3ef1ff1e5">https://medium.com/@kevinsimper/how-to-average-rgb-colors-together-6cd3ef1ff1e5</a>.  <a href="#a95ec1843d3a5863740f559d52b5b1587">More...</a><br /></td></tr>
+<tr class="separator:a95ec1843d3a5863740f559d52b5b1587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for functions without a home. These get used by the program, but don't belong to any particular class. </p>
@@ -391,6 +394,26 @@ Functions</h2></td></tr>
 <p>True if p1 is closer to p0. False if p2 is closer to p0. </p>
 
 <p class="definition">Definition at line <a class="el" href="util_8cpp_source.html#l00057">57</a> of file <a class="el" href="util_8cpp_source.html">util.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a95ec1843d3a5863740f559d52b5b1587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ec1843d3a5863740f559d52b5b1587">&#9670;&nbsp;</a></span>merge_colours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::dvec3 merge_colours </td>
+          <td>(</td>
+          <td class="paramtype">glm::dvec3&#160;</td>
+          <td class="paramname"><em>colours</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges colours using the squaring method described here: <a href="https://medium.com/@kevinsimper/how-to-average-rgb-colors-together-6cd3ef1ff1e5">https://medium.com/@kevinsimper/how-to-average-rgb-colors-together-6cd3ef1ff1e5</a>. </p>
 
 </div>
 </div>
