@@ -104,6 +104,30 @@ glm::dvec3 merge_colours(std::vector<glm::dvec3> colours) {
     return clip(colour, 0.0, 1.0);
 };
 
+void downsize(cimg_library::CImg<double> &src, cimg_library::CImg<double> &down, int width, int height, int aa_multi) {
+    for(int w = 0; w < width; w++) {
+        for(int h = 0; h < height; h++) {
+            std::vector<glm::dvec3> to_merge;
+            glm::dvec3 pixel(0);
+            int temp_w = aa_multi*w;
+            int temp_h = aa_multi*h;
+            for(int i = 0; i < aa_multi; i++) {
+                pixel.r = src(temp_w+i, temp_h+i, 0)/256;
+                pixel.g = src(temp_w+i, temp_h+i, 1)/256;
+                pixel.b = src(temp_w+i, temp_h+i, 2)/256;
+                to_merge.push_back(pixel);
+            }
+            draw(down, w, h, merge_colours(to_merge));
+        }
+    }
+};
 
-
-
+glm::dvec3 gammify(glm::dvec3 colour, double gamma) {
+    glm::dvec3 toRet(0);
+    
+    toRet.r = pow(colour.r, gamma);
+    toRet.g = pow(colour.g, gamma);
+    toRet.b = pow(colour.b, gamma);
+    
+    return toRet;
+};
