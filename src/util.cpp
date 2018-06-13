@@ -111,11 +111,13 @@ void downsize(cimg_library::CImg<double> &src, cimg_library::CImg<double> &down,
             glm::dvec3 pixel(0);
             int temp_w = aa_multi*w;
             int temp_h = aa_multi*h;
-            for(int i = 0; i < aa_multi; i++) {
-                pixel.r = src(temp_w+i, temp_h+i, 0)/256;
-                pixel.g = src(temp_w+i, temp_h+i, 1)/256;
-                pixel.b = src(temp_w+i, temp_h+i, 2)/256;
-                to_merge.push_back(pixel);
+            for(int j = 0; j < aa_multi; j++) {
+                for (int k = 0; k < aa_multi; k++) {
+                    pixel.r = src(temp_w+k, temp_h+j, 0)/256;
+                    pixel.g = src(temp_w+k, temp_h+j, 1)/256;
+                    pixel.b = src(temp_w+k, temp_h+j, 2)/256;
+                    to_merge.push_back(pixel);
+                }
             }
             draw(down, w, h, merge_colours(to_merge));
         }

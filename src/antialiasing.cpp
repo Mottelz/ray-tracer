@@ -5,13 +5,15 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scenes/scene1.txt";
+std::string scene = "scenes/scene5.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
 double ray_bias = 0.00;
-double shadow_bias = 0.0085;
-double gamma_val = 1.0;
+double shadow_ray_bias = 0.0085;
+double light_colour_bias = 1.0;
+double shadow_colour_bias = 0.80;
+double gamma_val = 0.9;
 #if antialiasing
-int aa_rad = 10;
+int aa_rad = 1;
 int aa_multi = aa_rad+2;
 #endif
 //Main function
@@ -95,7 +97,7 @@ int main(int argc, const char * argv[]) {
                     
                     //Loop through objects and check if one is closer.
                     for (int m = 0; m < things.size(); m++) {
-                        Intersect shadow_hit = things[m] -> intersect(sr, shadow_bias); //Get the shadow ray intersection
+                        Intersect shadow_hit = things[m] -> intersect(sr, shadow_ray_bias); //Get the shadow ray intersection
                         if (shadow_hit.contact) { //If there is an intersection
                             if (is_closer(light_pos, shadow_hit.pos, hit.pos)) { //and that object is closer,
                                 in_shadow = true; //then we are in shadow.
@@ -103,14 +105,14 @@ int main(int argc, const char * argv[]) {
                             }
                         }
                     } //After looping through all of the objects for a given light.
-                    
+                    glm::dvec3 new_colour(0.0);
                     if (!in_shadow) { //If we're not in shadow,
-                        glm::dvec3 new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //The new colour.
-                        colours.push_back(new_colour);
+                        new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()) * light_colour_bias; //The new colour.
                     } else {
-                        glm::dvec3 new_colour = things[hit.thing] -> getColour() * lights[i] -> getColour(); //The new colour.
-                        colours.push_back(new_colour);
+                        new_colour = things[hit.thing] -> getColour() * lights[i] -> getColour() * shadow_colour_bias; //The new colour.
                     }
+                    new_colour = clip(new_colour, 0.0, 1.0);
+                    colours.push_back(new_colour);
                 } //After looping through all of the lights.
                 
                 glm::dvec3 colour = merge_colours(colours);
