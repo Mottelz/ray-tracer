@@ -238,6 +238,35 @@
 			<key>uniqueIdentifier</key>
 			<string>2D536DE9-9EBE-4B45-8596-6A8A2D368101</string>
 		</dict>
+		<key>34ADBF58-FFFF-4287-9A46-57EC009B8602</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>34ADBF58-FFFF-4287-9A46-57EC009B8602.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550571716.511042</real>
+			<key>timeStoppedRecording</key>
+			<real>550571790.18864</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>34ADBF58-FFFF-4287-9A46-57EC009B8602</string>
+		</dict>
 		<key>3B5ACA08-1FB2-43F9-8E99-70DFED269839</key>
 		<dict>
 			<key>className</key>
@@ -295,6 +324,35 @@
 			<string>Debug RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>3E36865C-45AF-442E-988E-A28077F4F6FE</string>
+		</dict>
+		<key>3E444C59-CF20-4D1C-A16C-C7FE1D4E44DB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>3E444C59-CF20-4D1C-A16C-C7FE1D4E44DB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550571196.91817296</real>
+			<key>timeStoppedRecording</key>
+			<real>550571274.44212794</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>3E444C59-CF20-4D1C-A16C-C7FE1D4E44DB</string>
 		</dict>
 		<key>4175284F-9DE5-4097-ABFF-0FC47EFFEF3A</key>
 		<dict>
@@ -412,6 +470,64 @@
 			<key>uniqueIdentifier</key>
 			<string>63C85402-8DCB-4B5E-AFBD-B1A31134A9EA</string>
 		</dict>
+		<key>6D3BEE3A-7DF4-49AB-985F-625FDAE0B562</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6D3BEE3A-7DF4-49AB-985F-625FDAE0B562.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550571404.62753606</real>
+			<key>timeStoppedRecording</key>
+			<real>550571479.18301296</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6D3BEE3A-7DF4-49AB-985F-625FDAE0B562</string>
+		</dict>
+		<key>783919CA-D3FE-4F8F-B593-3C79598B4673</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>783919CA-D3FE-4F8F-B593-3C79598B4673.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550571517.33544004</real>
+			<key>timeStoppedRecording</key>
+			<real>550571594.53921902</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>783919CA-D3FE-4F8F-B593-3C79598B4673</string>
+		</dict>
 		<key>78825454-D8EB-4C59-A5F9-CC59D504E6C1</key>
 		<dict>
 			<key>className</key>
@@ -527,6 +643,64 @@
 			<string>Debug RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>979BC67E-123D-4A59-BBCF-E10994C8B5C8</string>
+		</dict>
+		<key>97C27710-8782-4F2F-AB65-6814C8607F8E</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>97C27710-8782-4F2F-AB65-6814C8607F8E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550571855.91333401</real>
+			<key>timeStoppedRecording</key>
+			<real>550571935.41947699</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>97C27710-8782-4F2F-AB65-6814C8607F8E</string>
+		</dict>
+		<key>B0845A9D-BA22-4BF6-85B6-7591A3153750</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B0845A9D-BA22-4BF6-85B6-7591A3153750.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550572255.02614498</real>
+			<key>timeStoppedRecording</key>
+			<real>550572288.61819196</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>B0845A9D-BA22-4BF6-85B6-7591A3153750</string>
 		</dict>
 		<key>B1427873-882B-4039-B463-AB7B1C9F487C</key>
 		<dict>
@@ -730,6 +904,35 @@
 			<string>Debug RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>D983E439-E0BB-4062-A839-4AAF46E0EE61</string>
+		</dict>
+		<key>DB610101-7684-4762-BBE9-CD39DE654F6C</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>DB610101-7684-4762-BBE9-CD39DE654F6C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550571979.07800996</real>
+			<key>timeStoppedRecording</key>
+			<real>550572060.94775701</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>DB610101-7684-4762-BBE9-CD39DE654F6C</string>
 		</dict>
 		<key>EC8A23A9-2E43-4A0A-91FC-43C7EC0C1939</key>
 		<dict>

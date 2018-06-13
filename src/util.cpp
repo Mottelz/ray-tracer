@@ -51,7 +51,12 @@ glm::dvec3 clip(glm::dvec3 vec, double lo, double hi) {
     return vec;
 };
 
-
+//clips a double
+double clip(double in_val, double lo, double hi) {
+    in_val = (in_val < lo) ? lo : in_val;
+    in_val = (in_val > hi) ? hi : in_val;
+    return in_val;
+};
 
 //returns true if p1 is closer to p0
 bool is_closer(const glm::dvec3 p0, const glm::dvec3 p1, const glm::dvec3 p2) {
@@ -74,6 +79,9 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     //Get alpha and theta
     double alpha = glm::dot(light_dir, reflection);
     double theta = glm::dot(norm, light_dir);
+    alpha = clip(alpha, 0.0, 1.0);
+    theta = clip(theta, 0.0, 1.0);
+    
     
     //actually calculate specular and diffuse
     glm::dvec3 spec_fin = glm::pow(glm::max(alpha, 0.0), shineIn) * specIn;

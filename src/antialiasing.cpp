@@ -5,12 +5,12 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scenes/scene5.txt";
+std::string scene = "scenes/scene1.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
 double ray_bias = 0.00;
 double shadow_ray_bias = 0.0085;
-double light_colour_bias = 1.0;
-double shadow_colour_bias = 0.80;
+double light_colour_bias = 1.2;
+double shadow_colour_bias = 0.90;
 double gamma_val = 0.9;
 #if antialiasing
 int aa_rad = 1;
