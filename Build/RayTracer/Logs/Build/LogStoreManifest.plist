@@ -6,7 +6,7 @@
 	<integer>8</integer>
 	<key>logs</key>
 	<dict>
-		<key>15352C67-006D-441C-9A0E-DEC698C2E777</key>
+		<key>56BFDCC2-0440-4C8B-8B04-96E4D389B283</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>15352C67-006D-441C-9A0E-DEC698C2E777.xcactivitylog</string>
+			<string>56BFDCC2-0440-4C8B-8B04-96E4D389B283.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,42 +27,13 @@
 			<key>signature</key>
 			<string>Build RayTracer</string>
 			<key>timeStartedRecording</key>
-			<real>550644676.71560299</real>
+			<real>550696382.75664401</real>
 			<key>timeStoppedRecording</key>
-			<real>550644681.40946901</real>
+			<real>550696387.59739101</real>
 			<key>title</key>
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
-			<string>15352C67-006D-441C-9A0E-DEC698C2E777</string>
-		</dict>
-		<key>5132423A-89E1-4924-B8DC-6B5DCE920115</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>5132423A-89E1-4924-B8DC-6B5DCE920115.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>RayTracer project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>RayTracer</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>0</integer>
-			<key>signature</key>
-			<string>Build RayTracer</string>
-			<key>timeStartedRecording</key>
-			<real>550643116.03777695</real>
-			<key>timeStoppedRecording</key>
-			<real>550643120.10946405</real>
-			<key>title</key>
-			<string>Build RayTracer</string>
-			<key>uniqueIdentifier</key>
-			<string>5132423A-89E1-4924-B8DC-6B5DCE920115</string>
+			<string>56BFDCC2-0440-4C8B-8B04-96E4D389B283</string>
 		</dict>
 	</dict>
 </dict>

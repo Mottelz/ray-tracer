@@ -1,17 +1,17 @@
 #define show_pic false //Display the image with CImg when done
 #define mot_log false //Create a log (these get pretty freaking big)
-#define antialiasing false //Apply antialiasing
+#define antialiasing true //Apply antialiasing
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scenes/scene2.txt";
+std::string scene = "scenes/scene5.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
-double ray_bias = 0.0000000001;
-double shadow_ray_bias = 0.000000085;
-double light_colour_bias = 1.2;
-double shadow_colour_bias = 0.90;
-double gamma_val = 0.9;
+double ray_bias = 0.0000001;
+double shadow_ray_bias = 0.000085;
+double light_colour_bias = 1.1;
+double shadow_colour_bias = 0.80;
+double gamma_val = 1.0001;
 #if antialiasing
 int aa_rad = 1;
 int aa_multi = aa_rad+2;
