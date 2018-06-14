@@ -6,7 +6,7 @@
 	<integer>8</integer>
 	<key>logs</key>
 	<dict>
-		<key>A8EF891D-9CEE-4D52-91BB-A5FE69C58B2E</key>
+		<key>162D7B6E-A67A-4B5E-B32B-44B7EADD1D1D</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A8EF891D-9CEE-4D52-91BB-A5FE69C58B2E.xcactivitylog</string>
+			<string>162D7B6E-A67A-4B5E-B32B-44B7EADD1D1D.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,13 +27,42 @@
 			<key>signature</key>
 			<string>Debug RayTracer</string>
 			<key>timeStartedRecording</key>
-			<real>550696387.57952595</real>
+			<real>550703359.91721702</real>
 			<key>timeStoppedRecording</key>
-			<real>550696452.26593399</real>
+			<real>550703394.55124295</real>
 			<key>title</key>
 			<string>Debug RayTracer</string>
 			<key>uniqueIdentifier</key>
-			<string>A8EF891D-9CEE-4D52-91BB-A5FE69C58B2E</string>
+			<string>162D7B6E-A67A-4B5E-B32B-44B7EADD1D1D</string>
+		</dict>
+		<key>EDFA8B70-3D32-4931-8B56-FA83B860DD07</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>EDFA8B70-3D32-4931-8B56-FA83B860DD07.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550703582.33101499</real>
+			<key>timeStoppedRecording</key>
+			<real>550703594.20976996</real>
+			<key>title</key>
+			<string>Debug RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>EDFA8B70-3D32-4931-8B56-FA83B860DD07</string>
 		</dict>
 	</dict>
 </dict>

@@ -110,6 +110,7 @@
 		9E45756820BFCE0F008BDD04 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45756720BFCE0F008BDD04 /* libpng16.16.dylib */; };
 		9E45756A20BFCE28008BDD04 /* libjpeg.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45756920BFCE28008BDD04 /* libjpeg.9.dylib */; };
 		9E5258D020C0DC1400A56A52 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5258CE20C0DC1300A56A52 /* util.cpp */; };
+		9E5C4E2F20D30C7A00F04A19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C4E2E20D30C7A00F04A19 /* main.cpp */; };
 		9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C275D20C71B900062B56A /* sceneload.cpp */; };
 		9EB20D4020CFAE1D005998F2 /* scenes in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EB20D3F20CFAE1D005998F2 /* scenes */; };
 		9ED1319520D07146008E549C /* antialiasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1319420D07146008E549C /* antialiasing.cpp */; };
@@ -240,6 +241,7 @@
 		9E45756920BFCE28008BDD04 /* libjpeg.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjpeg.9.dylib; path = ../../../../../../../../../../usr/local/Cellar/jpeg/9c/lib/libjpeg.9.dylib; sourceTree = "<group>"; };
 		9E5258CE20C0DC1300A56A52 /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
 		9E5258D120C0DCA900A56A52 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9E5C4E2E20D30C7A00F04A19 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9E6C275D20C71B900062B56A /* sceneload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sceneload.cpp; sourceTree = "<group>"; };
 		9E6C275E20C71B900062B56A /* sceneload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sceneload.h; sourceTree = "<group>"; };
 		9EB20D3F20CFAE1D005998F2 /* scenes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scenes; path = src/scenes; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 			isa = PBXGroup;
 			children = (
 				9ED1319420D07146008E549C /* antialiasing.cpp */,
+				9E5C4E2E20D30C7A00F04A19 /* main.cpp */,
 				9E0CB19620C1E383009CDE2E /* classes */,
 				9E0CB19720C1E394009CDE2E /* utils */,
 			);
@@ -581,6 +584,7 @@
 				9E0CB1A320C1E62D009CDE2E /* camera.cpp in Sources */,
 				9ED1319520D07146008E549C /* antialiasing.cpp in Sources */,
 				9E5258D020C0DC1400A56A52 /* util.cpp in Sources */,
+				9E5C4E2F20D30C7A00F04A19 /* main.cpp in Sources */,
 				9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

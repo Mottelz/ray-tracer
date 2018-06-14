@@ -27,5 +27,4 @@
 #define cimg_use_jpeg //Allows import of jpg
 #include <CImg.h>
 
-#define T0_SPHERE_BIAS 0.0
-#define T1_SPHERE_BIAS 0.0
+#define ZERO 0.0001
