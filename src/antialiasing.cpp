@@ -1,14 +1,14 @@
 #define show_pic false //Display the image with CImg when done
 #define mot_log false //Create a log (these get pretty freaking big)
-#define antialiasing true //Apply antialiasing
+#define antialiasing false //Apply antialiasing
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scenes/scene1.txt";
+std::string scene = "scenes/scene2.txt";
 //Based on testing, these are the optimal biases to avoid acne and get proper distribution.
-double ray_bias = 0.00;
-double shadow_ray_bias = 0.0085;
+double ray_bias = 0.0000000001;
+double shadow_ray_bias = 0.000000085;
 double light_colour_bias = 1.2;
 double shadow_colour_bias = 0.90;
 double gamma_val = 0.9;
@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
     Camera* cam; //init camera pointer
     
 #if mot_log
-     //A log. Stores points and whether or not they hit.
+    //A log. Stores points and whether or not they hit.
     std::ofstream log;
     log.open(get_name("/Users/mottelzirkind/Desktop/results/log ",".txt"));
 #endif
@@ -97,6 +97,7 @@ int main(int argc, const char * argv[]) {
                     
                     //Loop through objects and check if one is closer.
                     for (int m = 0; m < things.size(); m++) {
+                        
                         Intersect shadow_hit = things[m] -> intersect(sr, shadow_ray_bias); //Get the shadow ray intersection
                         if (shadow_hit.contact) { //If there is an intersection
                             if (is_closer(light_pos, shadow_hit.pos, hit.pos)) { //and that object is closer,
@@ -104,6 +105,7 @@ int main(int argc, const char * argv[]) {
                                 break;
                             }
                         }
+                        
                     } //After looping through all of the objects for a given light.
                     glm::dvec3 new_colour(0.0);
                     if (!in_shadow) { //If we're not in shadow,
@@ -134,23 +136,28 @@ int main(int argc, const char * argv[]) {
     height = cam -> getHeight();
     cimg_library::CImg<double> final_image(width, height, 1, 3, 0);
     downsize(image, final_image, width, height, aa_multi);
-    final_image.save(get_name("/Users/mottelzirkind/Desktop/results/render-down",".bmp")); //get_name used so that the image includes a timestamp.
+    std::string filename = get_name("/Users/mottelzirkind/Desktop/results/render-down",".bmp");
+    final_image.save(filename.c_str()); //get_name used so that the image includes a timestamp.
 #else
-    image.save(get_name("/Users/mottelzirkind/Desktop/results/render ",".bmp")); //get_name used so that the image includes a timestamp.
+    std::string filename = get_name("/Users/mottelzirkind/Desktop/results/render-",".bmp"); //get_name used so that the image includes a timestamp.
+    image.save(filename.c_str());
 #endif
     
     tell_user(get_name("Saved scene at ", ""));
     //If we want to see the picture displayed then display it with CImg.
     //Display the rendered image on screen
-#if antiantialiasing && show_pic
+#if (antiantialiasing && show_pic)
     cimg_library::CImgDisplay main_disp(final_image,"Render");
-#elseif show_pic
+#elif show_pic
     cimg_library::CImgDisplay main_disp(image,"Render");
 #endif
 #if show_pic
     while (!main_disp.is_closed()) {
         main_disp.wait();
     }
+#else
+    std::string command = "open -a Preview " + filename;
+    system(command.c_str());
 #endif
     
 #if mot_log //If we're using a log

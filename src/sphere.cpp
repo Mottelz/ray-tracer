@@ -25,7 +25,7 @@ Intersect Sphere::intersect(const Ray &r, double bias) {
     double c = glm::pow((r.org.x-m_pos.x), 2)+glm::pow((r.org.y-m_pos.y), 2)+glm::pow((r.org.z-m_pos.z), 2)-glm::pow(m_rad, 2);
     
     //the bit that goes under the sqrt. If this is negative we can stop.
-    double under = glm::pow(b, 2) - 4*c;
+    double under = b*b - 4*c;
     if (under < glm::epsilon<double>()) {
         toRet.contact = false;
         return toRet;
@@ -34,14 +34,14 @@ Intersect Sphere::intersect(const Ray &r, double bias) {
     double sq = glm::sqrt(under);
     
     //get t0 and t1
-    t0 = (-b-sq)/2;
-    t1 = (-b+sq)/2;
+    t0 = (-b-sq)/(2*a);
+    t1 = (-b+sq)/(2*a);
     
     //decide which to returns
-    if (t0 < glm::epsilon<double>() && t1 < glm::epsilon<double>()) {
+    if (t0 < 0.0 && t1 < 0.0) {
         toRet.contact = false;
         return toRet;
-    } else if (t0 > glm::epsilon<double>() && t1 > glm::epsilon<double>()) {
+    } else if (t0 > T0_SPHERE_BIAS && t1 > T1_SPHERE_BIAS) {
         v = (t0 > t1) ? t1 : t0;
     } else {
         v = (t0 > t1) ? t0 : t1;
@@ -69,7 +69,7 @@ glm::dvec3 Sphere::getColour() {
 
 
 glm::dvec3 Sphere::getColour(const Light &light, const Intersect& hit, const glm::dvec3& camPos) {
-    glm::dvec3 norm = glm::normalize(hit.pos-m_pos);
+    glm::dvec3 norm = glm::normalize((hit.pos-m_pos));
     glm::dvec3 colour = calculate_colour(light.getPosition(), light.getColour(), camPos, hit.pos, norm, m_dif, m_spe, m_amb, m_shi);
     return colour;
 }

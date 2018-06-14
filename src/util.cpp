@@ -11,7 +11,7 @@ const char* get_name(std::string name, std::string ext) {
     auto tm = *std::localtime(&t);
     //Convert time to stream
     std::ostringstream oss;
-    oss << std::put_time(&tm, "%y-%m-%d %Hh%Mm%Ss");
+    oss << std::put_time(&tm, "%y-%m-%d-%Hh%Mm%Ss");
     //Create the string and return it
     std::string filename = name + oss.str() + ext;
     return filename.c_str();
