@@ -1,11 +1,11 @@
-#define show_pic true //Display the image with CImg when done
+#define show_pic true //Display the image with Preview when done
 #define mot_log false //Create a log (these get pretty freaking big)
 #define antialiasing false //Apply antialiasing
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scenes/scene5.txt";
+std::string scene = "scenes/scene1.txt";
 double shadow_colour_bias = 1.0;
 double gamma_val = 0.95;
 double ray_org_bias = 1.0;
@@ -87,17 +87,14 @@ int main(int argc, const char * argv[]) {
                     shadow_ray.dir = lights[i] -> getPosition() - hit.pos; //Set the shadow ray direction by light's position minus point of contact.
                     shadow_ray.dir = glm::normalize(shadow_ray.dir); //Normalize the direction.
                     shadow_ray.org = shadow_ray.org+(shadow_ray.dir*ray_org_bias);
-                    
                     bool in_shadow = false; //Store if this is in shadow. Starts off in light.
-                                            //Loop through objects and check if one is closer.
-                    for (int m = 0; m < things.size(); m++) {
-                        //                        if(m != hit.thing) {
+
+                    for (int m = 0; m < things.size(); m++) { //Loop through objects and check if one is closer.
                         Intersect shadow_hit = things[m] -> intersect(shadow_ray); //Get the shadow ray intersection
                         if (shadow_hit.contact) { //If there is an intersection
                             in_shadow = true; //then we are in shadow.
                             break;
                         }
-                        //                        }
                     } //After looping through all of the objects for a given light.
                     glm::dvec3 new_colour(0.0);
                     if (!in_shadow) { //If we're not in shadow,
