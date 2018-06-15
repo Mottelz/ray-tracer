@@ -1,13 +1,12 @@
 #define show_pic true //Display the image with Preview when done
-#define mot_log false //Create a log (these get pretty freaking big)
-#define antialiasing false //Apply antialiasing
+#define antialiasing true //Apply antialiasing
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
 std::string scene = "scenes/scene5.txt";
-double shadow_colour_bias = 1.0;
-double gamma_val = 0.95;
+double shadow_colour_bias = 0.95;
+double gamma_val = 1.1;
 double ray_org_bias = 1.0;
 #if antialiasing
 int aa_rad = 1;
@@ -20,12 +19,6 @@ int main(int argc, const char * argv[]) {
     std::vector<Object*> things; //init empty vector of physical objects/things in the scene.
     std::vector<Light*> lights; //init empty vector of lights
     Camera* cam; //init camera pointer
-    
-#if mot_log
-    //A log. Stores points and whether or not they hit.
-    std::ofstream log;
-    log.open(get_name("/Users/mottelzirkind/Desktop/results/log ",".txt"));
-#endif
     
     //Load the scene
     if(!load_scene(scene, things, lights, cam)) {
@@ -134,10 +127,6 @@ int main(int argc, const char * argv[]) {
 #if show_pic
     std::string command = "open -a Preview " + filename;
     system(command.c_str());
-#endif
-    
-#if mot_log //If we're using a log
-    log.close(); //Close the log's write stream.
 #endif
     return 0; //And end the program.
 }

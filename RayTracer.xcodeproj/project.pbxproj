@@ -113,7 +113,6 @@
 		9E5C4E2F20D30C7A00F04A19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C4E2E20D30C7A00F04A19 /* main.cpp */; };
 		9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C275D20C71B900062B56A /* sceneload.cpp */; };
 		9EB20D4020CFAE1D005998F2 /* scenes in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EB20D3F20CFAE1D005998F2 /* scenes */; };
-		9ED1319520D07146008E549C /* antialiasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1319420D07146008E549C /* antialiasing.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -245,7 +244,6 @@
 		9E6C275D20C71B900062B56A /* sceneload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sceneload.cpp; sourceTree = "<group>"; };
 		9E6C275E20C71B900062B56A /* sceneload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sceneload.h; sourceTree = "<group>"; };
 		9EB20D3F20CFAE1D005998F2 /* scenes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scenes; path = src/scenes; sourceTree = "<group>"; };
-		9ED1319420D07146008E549C /* antialiasing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = antialiasing.cpp; sourceTree = "<group>"; };
 		9EE2D44120BFAA830040D125 /* RayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracer; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE2D44B20BFAEEA0040D125 /* libs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -515,7 +513,6 @@
 		9EE2D44320BFAA830040D125 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				9ED1319420D07146008E549C /* antialiasing.cpp */,
 				9E5C4E2E20D30C7A00F04A19 /* main.cpp */,
 				9E0CB19620C1E383009CDE2E /* classes */,
 				9E0CB19720C1E394009CDE2E /* utils */,
@@ -582,7 +579,6 @@
 				9E0CB19D20C1E61D009CDE2E /* sphere.cpp in Sources */,
 				9E0CB1A620C1E634009CDE2E /* light.cpp in Sources */,
 				9E0CB1A320C1E62D009CDE2E /* camera.cpp in Sources */,
-				9ED1319520D07146008E549C /* antialiasing.cpp in Sources */,
 				9E5258D020C0DC1400A56A52 /* util.cpp in Sources */,
 				9E5C4E2F20D30C7A00F04A19 /* main.cpp in Sources */,
 				9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */,
