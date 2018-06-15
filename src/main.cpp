@@ -1,10 +1,12 @@
 #define show_pic true //Display the image with Preview when done
 #define antialiasing true //Apply antialiasing
+#define mot_log true //Create a log to store the stats for testing
 #include "libs.h" //basic libraries (glm, iostrem, etc.)
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
 std::string scene = "scenes/scene5.txt";
+double colour_bias = 1.1;
 double shadow_colour_bias = 0.75;
 double gamma_val = 1.0;
 double ray_org_bias = 1.0;
@@ -19,12 +21,23 @@ int main(int argc, const char * argv[]) {
     std::vector<Object*> things; //init empty vector of physical objects/things in the scene.
     std::vector<Light*> lights; //init empty vector of lights
     Camera* cam; //init camera pointer
+    std::string message;
+    
+#if mot_log
+    //A log. Stores points and whether or not they hit.
+    std::ofstream log;
+    log.open(get_name("/Users/mottelzirkind/Desktop/results/log-",".txt"));
+#endif
     
     //Load the scene
     if(!load_scene(scene, things, lights, cam)) {
         tell_user("Failed to load scene!");
     } else {
-        tell_user(get_name("Loaded scene at ", ""));
+        message = get_name("Loaded scene at ", "");
+#if mot_log
+        log << message + "\n";
+#endif
+        tell_user(message);
     };
     
 #if antialiasing
@@ -36,6 +49,11 @@ int main(int argc, const char * argv[]) {
     int width = cam->getWidth();
     int height = cam->getHeight();
 #endif
+    
+#if mot_log
+    log << "Grid size (WxH): " + std::to_string(width) + "x" + std::to_string(height) + "\n";
+#endif
+    
     
     //Creates an image with three channels and sets it to black
     cimg_library::CImg<double> image(width, height, 1, 3, 0);
@@ -81,7 +99,7 @@ int main(int argc, const char * argv[]) {
                     shadow_ray.dir = glm::normalize(shadow_ray.dir); //Normalize the direction.
                     shadow_ray.org = shadow_ray.org+(shadow_ray.dir*ray_org_bias);
                     bool in_shadow = false; //Store if this is in shadow. Starts off in light.
-
+                    
                     for (int m = 0; m < things.size(); m++) { //Loop through objects and check if one is closer.
                         Intersect shadow_hit = things[m] -> intersect(shadow_ray); //Get the shadow ray intersection
                         if (shadow_hit.contact) { //If there is an intersection
@@ -91,14 +109,13 @@ int main(int argc, const char * argv[]) {
                     } //After looping through all of the objects for a given light.
                     glm::dvec3 new_colour(0.0);
                     if (!in_shadow) { //If we're not in shadow,
-                        new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //The new colour.
+                        new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()) * colour_bias; //The new colour.
                     } else {
                         new_colour = things[hit.thing] -> getColour() * lights[i] -> getColour() * shadow_colour_bias; //The new colour.
                     }
                     new_colour = clip(new_colour, ZERO, 1.0);
                     colours.push_back(new_colour);
                 }
-                
                 glm::dvec3 colour = merge_colours(colours);
                 if(gamma_val != 1.0) {
                     colour = gammify(colour, gamma_val);
@@ -121,7 +138,20 @@ int main(int argc, const char * argv[]) {
     std::string filename = get_name("/Users/mottelzirkind/Desktop/results/render-",".bmp"); //get_name used so that the image includes a timestamp.
     image.save(filename.c_str());
 #endif
-    tell_user(get_name("Saved scene at ", ""));
+    
+    message = get_name("Saved scene at ", "");
+    tell_user(message);
+#if mot_log
+    log << "Saved as: " + filename + "\n"
+    + "Image size (WxH): " + std::to_string(width) + "x" + std::to_string(height) + "\n"
+    +  message + "\n"
+    + "Configuration: \n"
+    + "  Colour Bias: " + std::to_string(colour_bias) + "\n"
+    + "  Shadow Colour Bias: " + std::to_string(shadow_colour_bias) + "\n"
+    + "  Gamma Value: " + std::to_string(gamma_val) + "\n"
+    + "  Shadow Ray Origin Bias: " + std::to_string(ray_org_bias) + "\n";
+#endif
+    
     //If we want to see the picture displayed then display it with CImg.
     //Display the rendered image on screen
 #if show_pic
