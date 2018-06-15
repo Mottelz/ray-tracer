@@ -5,9 +5,8 @@
 
 std::string scene = "scenes/scene5.txt";
 double colour_bias = 1.0;
-double shadow_colour_bias = 0.75;
-double gamma_val = 1.0;
-double ray_org_bias = 1.0;
+double shadow_colour_bias = 1.0;
+double gamma_val = 0.75;
 int num_samples = 5;
 #if antialiasing
 int aa_rad = 1;
@@ -91,15 +90,14 @@ int main(int argc, const char * argv[]) {
             if(hit.contact) {//If we made contact calulate the colour/shadow.
                 std::vector<glm::dvec3> colours;
                 colours.push_back(things[hit.thing] -> getColour());
-                int light_intensity = 0;
                 for (int i = 0; i < lights.size(); i++) { //Loop through every light in the scene.
 #if soft_shadow
+                    int light_intensity = 0;
                     for (int s = 0; s < num_samples; s++) {
                         Ray shadow_ray; //Create the shadow ray.
                         shadow_ray.org = hit.pos; //Set shadow ray origin to the light.
                         shadow_ray.dir = lights[i] -> getPosition() - hit.pos; //Set the shadow ray direction by light's position minus point of contact.
                         shadow_ray.dir = glm::normalize(shadow_ray.dir); //Normalize the direction.
-                        shadow_ray.org = shadow_ray.org+(shadow_ray.dir*ray_org_bias);
                         bool in_shadow = false;
                         for (int m = 0; m < things.size() && !in_shadow; m++) { //Loop through objects and check if one is closer.
                             Intersect shadow_hit = things[m] -> intersect(shadow_ray); //Get the shadow ray intersection
@@ -110,8 +108,7 @@ int main(int argc, const char * argv[]) {
                             }
                         } //After looping through all of the objects for a given light.
                         glm::dvec3 new_colour(0.0);
-                        new_colour = things[hit.thing] -> getColour(lights[i]->getColour(), lights[i] -> getPosition(), hit, cam ->getPosition()); //The new colour.
-//                        tell_user("Light Intensity: " + std::to_string(light_intensity));
+                            new_colour = things[hit.thing] -> getColour(lights[i]->getColour(), lights[i] -> getPosition(), hit, cam ->getPosition()) * ((double)light_intensity/((double)num_samples)); //The new colour.
                         new_colour = clip(new_colour, ZERO, 1.0);
                         colours.push_back(new_colour);
                     }
@@ -120,7 +117,6 @@ int main(int argc, const char * argv[]) {
                     shadow_ray.org = hit.pos; //Set shadow ray origin to the light.
                     shadow_ray.dir = lights[i] -> getPosition() - hit.pos; //Set the shadow ray direction by light's position minus point of contact.
                     shadow_ray.dir = glm::normalize(shadow_ray.dir); //Normalize the direction.
-                    shadow_ray.org = shadow_ray.org+(shadow_ray.dir*ray_org_bias);
                     bool in_shadow = false; //Store if this is in shadow. Starts off in light.
 
                     for (int m = 0; m < things.size(); m++) { //Loop through objects and check if one is closer.
@@ -142,7 +138,7 @@ int main(int argc, const char * argv[]) {
                 }
                 glm::dvec3 colour = merge_colours(colours);
 #if soft_shadow
-                colour = colour*((double)light_intensity/((double)num_samples*lights.size()));
+                colour = colour;
 #endif
                 if(gamma_val != 1.0) {
                     colour = gammify(colour, gamma_val);
@@ -175,8 +171,7 @@ int main(int argc, const char * argv[]) {
     + "Configuration: \n"
     + "  Colour Bias: " + std::to_string(colour_bias) + "\n"
     + "  Shadow Colour Bias: " + std::to_string(shadow_colour_bias) + "\n"
-    + "  Gamma Value: " + std::to_string(gamma_val) + "\n"
-    + "  Shadow Ray Origin Bias: " + std::to_string(ray_org_bias) + "\n";
+    + "  Gamma Value: " + std::to_string(gamma_val) + "\n";
 #endif
 
     //If we want to see the picture displayed then display it with CImg.

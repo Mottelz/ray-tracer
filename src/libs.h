@@ -32,4 +32,4 @@
 #define show_pic true //Display the image with Preview when done
 #define antialiasing false //Apply antialiasing
 #define mot_log true //Create a log to store the stats for testing
-#define soft_shadow false
+#define soft_shadow true
