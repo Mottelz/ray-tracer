@@ -113,6 +113,7 @@
 		9E5C4E2F20D30C7A00F04A19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C4E2E20D30C7A00F04A19 /* main.cpp */; };
 		9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C275D20C71B900062B56A /* sceneload.cpp */; };
 		9E7661B620D383E000EBE6E3 /* softy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7661B520D383E000EBE6E3 /* softy.cpp */; };
+		9E7661B920D3857B00EBE6E3 /* softLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7661B720D3857B00EBE6E3 /* softLights.cpp */; };
 		9EB20D4020CFAE1D005998F2 /* scenes in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EB20D3F20CFAE1D005998F2 /* scenes */; };
 /* End PBXBuildFile section */
 
@@ -245,6 +246,8 @@
 		9E6C275D20C71B900062B56A /* sceneload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sceneload.cpp; sourceTree = "<group>"; };
 		9E6C275E20C71B900062B56A /* sceneload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sceneload.h; sourceTree = "<group>"; };
 		9E7661B520D383E000EBE6E3 /* softy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = softy.cpp; sourceTree = "<group>"; };
+		9E7661B720D3857B00EBE6E3 /* softLights.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = softLights.cpp; sourceTree = "<group>"; };
+		9E7661B820D3857B00EBE6E3 /* softLights.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = softLights.h; sourceTree = "<group>"; };
 		9EB20D3F20CFAE1D005998F2 /* scenes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scenes; path = src/scenes; sourceTree = "<group>"; };
 		9EE2D44120BFAA830040D125 /* RayTracer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RayTracer; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE2D44B20BFAEEA0040D125 /* libs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libs.h; sourceTree = "<group>"; };
@@ -368,6 +371,8 @@
 				9E0CB19B20C1E61D009CDE2E /* sphere.cpp */,
 				9E0CB1A220C1E62D009CDE2E /* camera.h */,
 				9E0CB1A520C1E634009CDE2E /* light.h */,
+				9E7661B720D3857B00EBE6E3 /* softLights.cpp */,
+				9E7661B820D3857B00EBE6E3 /* softLights.h */,
 				9E0CB19420C1E2FB009CDE2E /* object.h */,
 				9E0CB19F20C1E625009CDE2E /* plane.h */,
 				9E0CB19C20C1E61D009CDE2E /* sphere.h */,
@@ -579,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0CB1A020C1E625009CDE2E /* plane.cpp in Sources */,
+				9E7661B920D3857B00EBE6E3 /* softLights.cpp in Sources */,
 				9E0CB19D20C1E61D009CDE2E /* sphere.cpp in Sources */,
 				9E0CB1A620C1E634009CDE2E /* light.cpp in Sources */,
 				9E0CB1A320C1E62D009CDE2E /* camera.cpp in Sources */,

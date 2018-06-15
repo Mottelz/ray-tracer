@@ -6,6 +6,7 @@
 
 #pragma once //Libraries loaded here
 #pragma GCC system_header //Surpress warnings
+#define ZERO 0.0001 //Need this because C is weird.
 
 //Standard libs
 #include <iostream>
@@ -27,4 +28,8 @@
 #define cimg_use_jpeg //Allows import of jpg
 #include <CImg.h>
 
-#define ZERO 0.0001
+//Configuration
+#define show_pic true //Display the image with Preview when done
+#define antialiasing false //Apply antialiasing
+#define mot_log true //Create a log to store the stats for testing
+#define soft_shadow false

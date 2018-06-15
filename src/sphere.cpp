@@ -68,8 +68,8 @@ glm::dvec3 Sphere::getColour() {
 }
 
 
-glm::dvec3 Sphere::getColour(const Light &light, const Intersect& hit, const glm::dvec3& camPos) {
+glm::dvec3 Sphere::getColour(const glm::dvec3 lightColour, const glm::dvec3 lightPos, const Intersect& hit, const glm::dvec3& camPos) {
     glm::dvec3 norm = glm::normalize((hit.pos-m_pos));
-    glm::dvec3 colour = calculate_colour(light.getPosition(), light.getColour(), camPos, hit.pos, norm, m_dif, m_spe, m_amb, m_shi);
+    glm::dvec3 colour = calculate_colour(lightPos, lightColour, camPos, hit.pos, norm, m_dif, m_spe, m_amb, m_shi);
     return colour;
 }

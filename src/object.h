@@ -19,5 +19,5 @@ public:
     virtual Intersect intersect(const Ray& r) = 0;
     virtual void print() = 0;
     virtual glm::dvec3 getColour() = 0;
-    virtual glm::dvec3 getColour(const Light& light, const Intersect& hit, const glm::dvec3& camPos) = 0;
+    virtual glm::dvec3 getColour(const glm::dvec3 lightColour, const glm::dvec3 lightPos, const Intersect& hit, const glm::dvec3& camPos) = 0;
 };

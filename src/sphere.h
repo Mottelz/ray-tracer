@@ -26,5 +26,5 @@ public:
     Intersect intersect(const Ray &r) override; /**< @brief Checks if a ray intersects with the sphere. Returns an Intersect with contact true or false. */
     void print() override; /**< @brief Prints a nicely formatted string with all the sphere's stats. */
     glm::dvec3 getColour() override; /**< @brief Returns the ambient colour. */
-    glm::dvec3 getColour(const Light &light, const Intersect& hit, const glm::dvec3& camPos) override; /**< @brief Calculates the norm for the point of contact then runs #calculate_colour */
+    glm::dvec3 getColour(const glm::dvec3 lightColour, const glm::dvec3 lightPos, const Intersect& hit, const glm::dvec3& camPos) override; /**< @brief Calculates the norm for the point of contact then runs #calculate_colour */
 };
