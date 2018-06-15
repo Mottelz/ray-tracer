@@ -5,8 +5,8 @@
 #include "sceneload.h" //The function that loads the scene
 
 std::string scene = "scenes/scene5.txt";
-double shadow_colour_bias = 0.95;
-double gamma_val = 1.1;
+double shadow_colour_bias = 0.75;
+double gamma_val = 1.0;
 double ray_org_bias = 1.0;
 #if antialiasing
 int aa_rad = 1;

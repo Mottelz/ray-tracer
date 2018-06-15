@@ -93,6 +93,35 @@
 			<key>uniqueIdentifier</key>
 			<string>32D87A3A-2D3A-4F7B-9983-CB24562D8364</string>
 		</dict>
+		<key>3BDB3BBB-5F06-48DB-BE76-EE9BBFDAD7B3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3BDB3BBB-5F06-48DB-BE76-EE9BBFDAD7B3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550729506.36640704</real>
+			<key>timeStoppedRecording</key>
+			<real>550729514.21467698</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>3BDB3BBB-5F06-48DB-BE76-EE9BBFDAD7B3</string>
+		</dict>
 		<key>3FEBF03F-38D4-43D3-8FC8-CCBA6178DCE3</key>
 		<dict>
 			<key>className</key>
@@ -266,6 +295,35 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>B6A1DF23-4D70-4E2F-8824-C8EB3CE3B73D</string>
+		</dict>
+		<key>DE82C804-BFBC-40B8-878F-43BEFA600A5C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DE82C804-BFBC-40B8-878F-43BEFA600A5C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550729354.54327905</real>
+			<key>timeStoppedRecording</key>
+			<real>550729362.94637299</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>DE82C804-BFBC-40B8-878F-43BEFA600A5C</string>
 		</dict>
 		<key>FA7B84A3-2EC3-4A0B-A5C9-DEE1A2F9C322</key>
 		<dict>
