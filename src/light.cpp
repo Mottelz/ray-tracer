@@ -8,7 +8,7 @@ Light::Light(glm::dvec3 pos, glm::dvec3 colour) {
 //If none given, colour set to white.
 Light::Light(glm::dvec3 pos) { 
     m_pos = pos;
-    m_colour = glm::dvec3(1.0f);
+    m_colour = glm::dvec3(1.0);
 }
 
 void Light::print() {

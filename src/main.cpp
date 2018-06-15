@@ -5,7 +5,7 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
 
-std::string scene = "scenes/scene1.txt";
+std::string scene = "scenes/scene5.txt";
 double shadow_colour_bias = 1.0;
 double gamma_val = 0.95;
 double ray_org_bias = 1.0;
@@ -102,7 +102,7 @@ int main(int argc, const char * argv[]) {
                     } else {
                         new_colour = things[hit.thing] -> getColour() * lights[i] -> getColour() * shadow_colour_bias; //The new colour.
                     }
-                    new_colour = clip(new_colour, 0.0, 1.0);
+                    new_colour = clip(new_colour, ZERO, 1.0);
                     colours.push_back(new_colour);
                 }
                 
@@ -110,7 +110,7 @@ int main(int argc, const char * argv[]) {
                 if(gamma_val != 1.0) {
                     colour = gammify(colour, gamma_val);
                 }
-                colour = clip(colour, 0.0, 1.0);
+                colour = clip(colour, ZERO, 1.0);
                 draw(image, j, k, colour); //Draw the pixel.
             } else { //If the initial ray did not intersect with any object.
                 draw(image, j, k, glm::dvec3(0)); //And fill the pixel with Burgundy, so we know that something was added to the pixel.

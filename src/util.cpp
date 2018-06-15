@@ -79,8 +79,8 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     //Get alpha and theta
     double alpha = glm::dot(light_dir, reflection);
     double theta = glm::dot(norm, light_dir);
-    alpha = clip(alpha, 0.0, 1.0);
-    theta = clip(theta, 0.0, 1.0);
+    alpha = clip(alpha, ZERO, 1.0);
+    theta = clip(theta, ZERO, 1.0);
     
     
     //actually calculate specular and diffuse
@@ -90,18 +90,18 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     //finally calculate, clip and return the colour
     glm::dvec3 colour = (ambIn + diff_fin + spec_fin) * lightCol;
     
-    return clip(colour, 0.0, 1.0);;
+    return clip(colour, ZERO, 1.0);;
 };
 
 
 //Calculate a merging colour
 glm::dvec3 merge_colours(std::vector<glm::dvec3> colours) {
-    glm::dvec3 colour(0.0); //start with an empty colour
+    glm::dvec3 colour(ZERO); //start with an empty colour
     
     //sum the squares
     for (int c = 0; c < colours.size(); c++) {
-        colours[c] = clip(colours[c], 0.0, 1.0);
-        colour = clip(colour, 0.0, 1.0);
+        colours[c] = clip(colours[c], ZERO, 1.0);
+        colour = clip(colour, ZERO, 1.0);
         colour = colour + (colours[c]*colours[c]);
     }
     
@@ -111,7 +111,7 @@ glm::dvec3 merge_colours(std::vector<glm::dvec3> colours) {
     colour.z = glm::sqrt(colour.z/colours.size());
     
     //clip and return
-    return clip(colour, 0.0, 1.0);
+    return clip(colour, ZERO, 1.0);
 };
 
 void downsize(cimg_library::CImg<double> &src, cimg_library::CImg<double> &down, int width, int height, int aa_multi) {
