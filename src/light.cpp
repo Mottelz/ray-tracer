@@ -15,3 +15,8 @@ void Light::print() {
     printf("Light specs:\n  Colour: %s\n  Position: %s\n", glm::to_string(m_colour).c_str(), glm::to_string(m_pos).c_str());
 };
 
+glm::dvec3 Light::getPosition() { 
+    return m_pos;
+}
+
+

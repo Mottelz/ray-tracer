@@ -6,7 +6,6 @@
 
 #pragma once //Libraries loaded here
 #pragma GCC system_header //Surpress warnings
-#define ZERO 0.0001 //Need this because C is weird.
 
 //Standard libs
 #include <iostream>
@@ -16,6 +15,7 @@
 #include <sstream>
 #include <fstream>
 #include <vector>
+#include <random>
 
 //Math
 #include <glm/glm.hpp>
@@ -33,3 +33,4 @@
 #define antialiasing false //Apply antialiasing
 #define mot_log true //Create a log to store the stats for testing
 #define soft_shadow true
+#define ZERO 0.0001 //Need this because C is weird.

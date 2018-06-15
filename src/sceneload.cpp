@@ -278,11 +278,7 @@ bool load_scene(const std::string& filepath, std::vector<Object*> & things, std:
                     return false;
                 }
             }
-#if soft_shadow
-            SoftLight* temp_light = new SoftLight(temp_pos, temp_col);
-#else
             Light* temp_light = new Light(temp_pos, temp_col);
-#endif
             lights.push_back(temp_light);
         }
         
