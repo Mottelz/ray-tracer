@@ -15,13 +15,13 @@
 
 class Sphere: public Object {
     glm::dvec3 m_pos;
-    int m_rad;
+    double m_rad;
     glm::dvec3 m_amb;
     glm::dvec3 m_dif;
     glm::dvec3 m_spe;
     double m_shi;
 public:
-    Sphere(glm::dvec3 pos, int rad, glm::dvec3 amb, glm::dvec3 dif, glm::dvec3 spe, double shi); /**< @brief Just the basic constructor. */
+    Sphere(glm::dvec3 pos, double rad, glm::dvec3 amb, glm::dvec3 dif, glm::dvec3 spe, double shi); /**< @brief Just the basic constructor. */
     inline glm::dvec3 getPostion() override { return m_pos; }; /**< @brief Returns the position of the sphere's centre. */
     Intersect intersect(const Ray &r) override; /**< @brief Checks if a ray intersects with the sphere. Returns an Intersect with contact true or false. */
     void print() override; /**< @brief Prints a nicely formatted string with all the sphere's stats. */

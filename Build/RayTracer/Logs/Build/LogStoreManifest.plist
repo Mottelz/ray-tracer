@@ -6,6 +6,64 @@
 	<integer>8</integer>
 	<key>logs</key>
 	<dict>
+		<key>01259EDC-1E8F-4A5D-87A2-BE4AA46633ED</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>01259EDC-1E8F-4A5D-87A2-BE4AA46633ED.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722434.41803801</real>
+			<key>timeStoppedRecording</key>
+			<real>550722444.66532505</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>01259EDC-1E8F-4A5D-87A2-BE4AA46633ED</string>
+		</dict>
+		<key>028E2733-956C-4A2F-8A2B-94E813F85FF2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>028E2733-956C-4A2F-8A2B-94E813F85FF2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718458.84729397</real>
+			<key>timeStoppedRecording</key>
+			<real>550718463.54610598</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>028E2733-956C-4A2F-8A2B-94E813F85FF2</string>
+		</dict>
 		<key>034E86F9-A2D4-4DED-A60A-27257AD10BA5</key>
 		<dict>
 			<key>className</key>
@@ -34,6 +92,93 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>034E86F9-A2D4-4DED-A60A-27257AD10BA5</string>
+		</dict>
+		<key>035EADBD-A4F3-4FBD-8806-BD5BE577A410</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>035EADBD-A4F3-4FBD-8806-BD5BE577A410.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720742.18654704</real>
+			<key>timeStoppedRecording</key>
+			<real>550720750.05491304</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>035EADBD-A4F3-4FBD-8806-BD5BE577A410</string>
+		</dict>
+		<key>06CA7B41-17AD-4DBA-AFD2-55D967CE380F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>06CA7B41-17AD-4DBA-AFD2-55D967CE380F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723749.79214895</real>
+			<key>timeStoppedRecording</key>
+			<real>550723754.78864801</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>06CA7B41-17AD-4DBA-AFD2-55D967CE380F</string>
+		</dict>
+		<key>0822572D-162B-465E-8B14-BC035A0125CE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0822572D-162B-465E-8B14-BC035A0125CE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722672.97744203</real>
+			<key>timeStoppedRecording</key>
+			<real>550722682.656618</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>0822572D-162B-465E-8B14-BC035A0125CE</string>
 		</dict>
 		<key>097F9853-FCB8-4B3B-A67D-102061CED4C7</key>
 		<dict>
@@ -64,6 +209,122 @@
 			<key>uniqueIdentifier</key>
 			<string>097F9853-FCB8-4B3B-A67D-102061CED4C7</string>
 		</dict>
+		<key>0A70C4D7-904D-4EE3-A45F-6648ABB049DA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0A70C4D7-904D-4EE3-A45F-6648ABB049DA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724876.47901595</real>
+			<key>timeStoppedRecording</key>
+			<real>550724881.53165197</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>0A70C4D7-904D-4EE3-A45F-6648ABB049DA</string>
+		</dict>
+		<key>0E26BB4B-E85A-42E6-BA96-5FE27B1EAD60</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0E26BB4B-E85A-42E6-BA96-5FE27B1EAD60.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718370.52996004</real>
+			<key>timeStoppedRecording</key>
+			<real>550718373.73444796</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>0E26BB4B-E85A-42E6-BA96-5FE27B1EAD60</string>
+		</dict>
+		<key>0F60E4FB-4AF8-4D38-83C0-77BCDE74F119</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0F60E4FB-4AF8-4D38-83C0-77BCDE74F119.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720206.87988806</real>
+			<key>timeStoppedRecording</key>
+			<real>550720214.59613001</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>0F60E4FB-4AF8-4D38-83C0-77BCDE74F119</string>
+		</dict>
+		<key>12A5621C-A732-4568-876E-AC7A4CE9951B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>12A5621C-A732-4568-876E-AC7A4CE9951B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720686.25698698</real>
+			<key>timeStoppedRecording</key>
+			<real>550720694.78393602</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>12A5621C-A732-4568-876E-AC7A4CE9951B</string>
+		</dict>
 		<key>131C3A3D-D53E-4467-8C54-61B581AF5A9A</key>
 		<dict>
 			<key>className</key>
@@ -92,6 +353,180 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>131C3A3D-D53E-4467-8C54-61B581AF5A9A</string>
+		</dict>
+		<key>14AE9C9E-B6A9-403E-90AF-EE489F8BB16F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>14AE9C9E-B6A9-403E-90AF-EE489F8BB16F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724515.61545002</real>
+			<key>timeStoppedRecording</key>
+			<real>550724520.57956302</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>14AE9C9E-B6A9-403E-90AF-EE489F8BB16F</string>
+		</dict>
+		<key>1500DB15-6C6E-4C7E-BC20-1F5FF0D95AC7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1500DB15-6C6E-4C7E-BC20-1F5FF0D95AC7.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719749.55684602</real>
+			<key>timeStoppedRecording</key>
+			<real>550719761.06595302</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>1500DB15-6C6E-4C7E-BC20-1F5FF0D95AC7</string>
+		</dict>
+		<key>160047AB-149B-4C4F-AEF4-8F2158D67088</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>160047AB-149B-4C4F-AEF4-8F2158D67088.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719254.81833398</real>
+			<key>timeStoppedRecording</key>
+			<real>550719258.73730302</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>160047AB-149B-4C4F-AEF4-8F2158D67088</string>
+		</dict>
+		<key>17528E1C-E5ED-4FA1-8DB7-B0D1162D61F9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>17528E1C-E5ED-4FA1-8DB7-B0D1162D61F9.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724977.62592196</real>
+			<key>timeStoppedRecording</key>
+			<real>550724987.75322795</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>17528E1C-E5ED-4FA1-8DB7-B0D1162D61F9</string>
+		</dict>
+		<key>187FD11B-EF17-4101-9A07-21ABAE4F7671</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>187FD11B-EF17-4101-9A07-21ABAE4F7671.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720354.65186906</real>
+			<key>timeStoppedRecording</key>
+			<real>550720359.997316</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>187FD11B-EF17-4101-9A07-21ABAE4F7671</string>
+		</dict>
+		<key>18910A0E-D838-4D67-8AE5-00EF88072E9D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>18910A0E-D838-4D67-8AE5-00EF88072E9D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718764.20888603</real>
+			<key>timeStoppedRecording</key>
+			<real>550718767.68690705</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>18910A0E-D838-4D67-8AE5-00EF88072E9D</string>
 		</dict>
 		<key>1894B72A-89BD-4A1A-AEB8-7BA7CBD93C2A</key>
 		<dict>
@@ -122,6 +557,64 @@
 			<key>uniqueIdentifier</key>
 			<string>1894B72A-89BD-4A1A-AEB8-7BA7CBD93C2A</string>
 		</dict>
+		<key>1AEE5346-8815-4AC3-9434-FF952429B48F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1AEE5346-8815-4AC3-9434-FF952429B48F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724169.294554</real>
+			<key>timeStoppedRecording</key>
+			<real>550724175.53157604</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>1AEE5346-8815-4AC3-9434-FF952429B48F</string>
+		</dict>
+		<key>1CF04947-16A3-4799-86AC-7CB020A6A212</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1CF04947-16A3-4799-86AC-7CB020A6A212.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724430.67628706</real>
+			<key>timeStoppedRecording</key>
+			<real>550724434.31016505</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>1CF04947-16A3-4799-86AC-7CB020A6A212</string>
+		</dict>
 		<key>1D0FE03E-BB85-49F0-804D-24A0D78439A9</key>
 		<dict>
 			<key>className</key>
@@ -150,6 +643,35 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>1D0FE03E-BB85-49F0-804D-24A0D78439A9</string>
+		</dict>
+		<key>201C12B9-9FD7-411B-9B4D-023C701B5AD7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>201C12B9-9FD7-411B-9B4D-023C701B5AD7.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720651.95526302</real>
+			<key>timeStoppedRecording</key>
+			<real>550720657.64906204</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>201C12B9-9FD7-411B-9B4D-023C701B5AD7</string>
 		</dict>
 		<key>207DA265-7F07-4893-8227-564D68093CA6</key>
 		<dict>
@@ -180,6 +702,64 @@
 			<key>uniqueIdentifier</key>
 			<string>207DA265-7F07-4893-8227-564D68093CA6</string>
 		</dict>
+		<key>215D3A39-40B3-4581-9BBA-A863E98695B0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>215D3A39-40B3-4581-9BBA-A863E98695B0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724634.01675904</real>
+			<key>timeStoppedRecording</key>
+			<real>550724644.51684201</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>215D3A39-40B3-4581-9BBA-A863E98695B0</string>
+		</dict>
+		<key>29F0F2B6-7CE7-4EE4-BE70-26608BF565A8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>29F0F2B6-7CE7-4EE4-BE70-26608BF565A8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718065.16798997</real>
+			<key>timeStoppedRecording</key>
+			<real>550718073.37830806</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>29F0F2B6-7CE7-4EE4-BE70-26608BF565A8</string>
+		</dict>
 		<key>2AAC7A95-E14F-48E2-AF9D-0A647D04E713</key>
 		<dict>
 			<key>className</key>
@@ -209,6 +789,35 @@
 			<key>uniqueIdentifier</key>
 			<string>2AAC7A95-E14F-48E2-AF9D-0A647D04E713</string>
 		</dict>
+		<key>2B259B68-8C6A-4F49-9162-4C86B9B4A999</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2B259B68-8C6A-4F49-9162-4C86B9B4A999.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719097.98761296</real>
+			<key>timeStoppedRecording</key>
+			<real>550719105.22333002</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>2B259B68-8C6A-4F49-9162-4C86B9B4A999</string>
+		</dict>
 		<key>2C504F95-CF9A-4D09-98A1-EF0C57259052</key>
 		<dict>
 			<key>className</key>
@@ -237,6 +846,93 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>2C504F95-CF9A-4D09-98A1-EF0C57259052</string>
+		</dict>
+		<key>2F78971B-B77E-4C70-9082-A5B34FC75781</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2F78971B-B77E-4C70-9082-A5B34FC75781.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718138.56126797</real>
+			<key>timeStoppedRecording</key>
+			<real>550718142.96638095</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>2F78971B-B77E-4C70-9082-A5B34FC75781</string>
+		</dict>
+		<key>3182DC62-0971-4C4F-9C30-FF70A15B5F39</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3182DC62-0971-4C4F-9C30-FF70A15B5F39.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723608.21630597</real>
+			<key>timeStoppedRecording</key>
+			<real>550723616.01961005</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>3182DC62-0971-4C4F-9C30-FF70A15B5F39</string>
+		</dict>
+		<key>350D1009-F7A3-435B-BBB1-6012B1D3ECC4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>350D1009-F7A3-435B-BBB1-6012B1D3ECC4.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725026.05260801</real>
+			<key>timeStoppedRecording</key>
+			<real>550725030.78218102</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>350D1009-F7A3-435B-BBB1-6012B1D3ECC4</string>
 		</dict>
 		<key>39101BA6-AD77-4528-9E03-672E3EFBBCCB</key>
 		<dict>
@@ -383,6 +1079,35 @@
 			<key>uniqueIdentifier</key>
 			<string>408D3C87-391D-46B0-AF3E-112D9F8B2CD5</string>
 		</dict>
+		<key>45FB4B19-13E2-4276-9844-F80DB7A9E4E1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>45FB4B19-13E2-4276-9844-F80DB7A9E4E1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723925.28589404</real>
+			<key>timeStoppedRecording</key>
+			<real>550723932.78463399</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>45FB4B19-13E2-4276-9844-F80DB7A9E4E1</string>
+		</dict>
 		<key>49656AA7-6416-43FB-8D89-E2BBCCCDF897</key>
 		<dict>
 			<key>className</key>
@@ -412,6 +1137,35 @@
 			<key>uniqueIdentifier</key>
 			<string>49656AA7-6416-43FB-8D89-E2BBCCCDF897</string>
 		</dict>
+		<key>5061FE53-0CCB-488D-9E3F-E3B62C11DF1C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5061FE53-0CCB-488D-9E3F-E3B62C11DF1C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722009.92960799</real>
+			<key>timeStoppedRecording</key>
+			<real>550722017.98521495</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>5061FE53-0CCB-488D-9E3F-E3B62C11DF1C</string>
+		</dict>
 		<key>515CFFAF-268C-47CD-9BEA-41F7D9640C97</key>
 		<dict>
 			<key>className</key>
@@ -440,6 +1194,64 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>515CFFAF-268C-47CD-9BEA-41F7D9640C97</string>
+		</dict>
+		<key>53416895-864B-4E41-ADFA-DD927094F027</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>53416895-864B-4E41-ADFA-DD927094F027.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720405.14551401</real>
+			<key>timeStoppedRecording</key>
+			<real>550720410.76309502</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>53416895-864B-4E41-ADFA-DD927094F027</string>
+		</dict>
+		<key>53D06900-858A-44F3-ADB7-DAA508BCA210</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>53D06900-858A-44F3-ADB7-DAA508BCA210.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724918.42391205</real>
+			<key>timeStoppedRecording</key>
+			<real>550724931.59662402</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>53D06900-858A-44F3-ADB7-DAA508BCA210</string>
 		</dict>
 		<key>5845CDEC-DF95-4418-A2FD-1E774DB21BD2</key>
 		<dict>
@@ -528,6 +1340,35 @@
 			<key>uniqueIdentifier</key>
 			<string>5DE69A65-D464-4DEB-9E1E-BD197BC3C49E</string>
 		</dict>
+		<key>5E4C3CA1-4E96-432F-AF1F-AAA3C648163A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5E4C3CA1-4E96-432F-AF1F-AAA3C648163A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724070.73111606</real>
+			<key>timeStoppedRecording</key>
+			<real>550724074.88592994</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>5E4C3CA1-4E96-432F-AF1F-AAA3C648163A</string>
+		</dict>
 		<key>5F18C921-E563-4D92-B166-1B572151DC8C</key>
 		<dict>
 			<key>className</key>
@@ -556,6 +1397,151 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>5F18C921-E563-4D92-B166-1B572151DC8C</string>
+		</dict>
+		<key>6246C9D6-0068-4784-A565-48A6F38937CB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6246C9D6-0068-4784-A565-48A6F38937CB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723058.49946594</real>
+			<key>timeStoppedRecording</key>
+			<real>550723065.89582598</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6246C9D6-0068-4784-A565-48A6F38937CB</string>
+		</dict>
+		<key>646DFCFC-3C5F-41DD-8034-7A98B99AAA47</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>646DFCFC-3C5F-41DD-8034-7A98B99AAA47.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718948.320503</real>
+			<key>timeStoppedRecording</key>
+			<real>550718956.33243704</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>646DFCFC-3C5F-41DD-8034-7A98B99AAA47</string>
+		</dict>
+		<key>647AEA93-CB12-433D-B42F-7427A9A8988F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>647AEA93-CB12-433D-B42F-7427A9A8988F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718604.28352296</real>
+			<key>timeStoppedRecording</key>
+			<real>550718608.120538</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>647AEA93-CB12-433D-B42F-7427A9A8988F</string>
+		</dict>
+		<key>65002EF5-97D6-46DA-B6DC-392D87E9F858</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>65002EF5-97D6-46DA-B6DC-392D87E9F858.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723208.47086704</real>
+			<key>timeStoppedRecording</key>
+			<real>550723216.268574</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>65002EF5-97D6-46DA-B6DC-392D87E9F858</string>
+		</dict>
+		<key>6811A906-56D9-46E2-8E51-DBF53ED2864E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6811A906-56D9-46E2-8E51-DBF53ED2864E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725191.527053</real>
+			<key>timeStoppedRecording</key>
+			<real>550725200.80092502</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6811A906-56D9-46E2-8E51-DBF53ED2864E</string>
 		</dict>
 		<key>68BD9AA6-4D81-42E4-9B5E-BA72B4FB2897</key>
 		<dict>
@@ -615,6 +1601,93 @@
 			<key>uniqueIdentifier</key>
 			<string>69BFD055-2C03-4F76-AF87-761F9836DBBE</string>
 		</dict>
+		<key>6A4B6894-D875-4567-8131-BAA57DF6CA40</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6A4B6894-D875-4567-8131-BAA57DF6CA40.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719207.62223601</real>
+			<key>timeStoppedRecording</key>
+			<real>550719212.40268803</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6A4B6894-D875-4567-8131-BAA57DF6CA40</string>
+		</dict>
+		<key>6B49D259-CC21-44CB-AB90-D494487564F9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6B49D259-CC21-44CB-AB90-D494487564F9.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550721082.73903</real>
+			<key>timeStoppedRecording</key>
+			<real>550721091.92207694</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6B49D259-CC21-44CB-AB90-D494487564F9</string>
+		</dict>
+		<key>6B97B0BE-2353-4EC8-95D5-FC281D31036F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6B97B0BE-2353-4EC8-95D5-FC281D31036F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719070.92377603</real>
+			<key>timeStoppedRecording</key>
+			<real>550719075.72439802</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6B97B0BE-2353-4EC8-95D5-FC281D31036F</string>
+		</dict>
 		<key>6BBF9DC3-0505-47B6-A540-D4986783AD32</key>
 		<dict>
 			<key>className</key>
@@ -673,6 +1746,64 @@
 			<key>uniqueIdentifier</key>
 			<string>6BCDF970-79FA-476B-972B-BC843714DE4E</string>
 		</dict>
+		<key>6C9CF377-82D3-495C-8CA5-06A864B4E5FF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6C9CF377-82D3-495C-8CA5-06A864B4E5FF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723666.29912996</real>
+			<key>timeStoppedRecording</key>
+			<real>550723673.99668002</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6C9CF377-82D3-495C-8CA5-06A864B4E5FF</string>
+		</dict>
+		<key>6F6BEC77-1BBA-4343-9EBC-034CAB84D9E8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6F6BEC77-1BBA-4343-9EBC-034CAB84D9E8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722397.46065104</real>
+			<key>timeStoppedRecording</key>
+			<real>550722405.16293502</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>6F6BEC77-1BBA-4343-9EBC-034CAB84D9E8</string>
+		</dict>
 		<key>6F9663EE-485B-42F9-AD83-450FF593A9EE</key>
 		<dict>
 			<key>className</key>
@@ -701,6 +1832,64 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>6F9663EE-485B-42F9-AD83-450FF593A9EE</string>
+		</dict>
+		<key>711DB89D-BAC5-4362-9129-F631E228188B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>711DB89D-BAC5-4362-9129-F631E228188B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723126.23669398</real>
+			<key>timeStoppedRecording</key>
+			<real>550723130.43436897</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>711DB89D-BAC5-4362-9129-F631E228188B</string>
+		</dict>
+		<key>752BE500-4534-4DEB-BA54-ABFAA1A358F8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>752BE500-4534-4DEB-BA54-ABFAA1A358F8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719316.35828602</real>
+			<key>timeStoppedRecording</key>
+			<real>550719323.15296495</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>752BE500-4534-4DEB-BA54-ABFAA1A358F8</string>
 		</dict>
 		<key>796499B4-B270-44EC-9B48-CBD67E113AB3</key>
 		<dict>
@@ -760,6 +1949,64 @@
 			<key>uniqueIdentifier</key>
 			<string>7B6EAEF8-E73E-44F7-B3D7-203ADFDD37F6</string>
 		</dict>
+		<key>7DCBAE9D-F324-4B57-9243-B9ECFD45527E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7DCBAE9D-F324-4B57-9243-B9ECFD45527E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724796.54116499</real>
+			<key>timeStoppedRecording</key>
+			<real>550724802.45256698</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>7DCBAE9D-F324-4B57-9243-B9ECFD45527E</string>
+		</dict>
+		<key>7E877DCE-C473-47B1-BA06-D7327E003F60</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7E877DCE-C473-47B1-BA06-D7327E003F60.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722100.99492705</real>
+			<key>timeStoppedRecording</key>
+			<real>550722107.92623198</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>7E877DCE-C473-47B1-BA06-D7327E003F60</string>
+		</dict>
 		<key>80017098-C218-4021-BCCF-E9381F50D26B</key>
 		<dict>
 			<key>className</key>
@@ -788,6 +2035,354 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>80017098-C218-4021-BCCF-E9381F50D26B</string>
+		</dict>
+		<key>80B1B8D4-156B-4368-8CFD-49A0338A3CFB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>80B1B8D4-156B-4368-8CFD-49A0338A3CFB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725294.35018694</real>
+			<key>timeStoppedRecording</key>
+			<real>550725301.738693</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>80B1B8D4-156B-4368-8CFD-49A0338A3CFB</string>
+		</dict>
+		<key>80EA47D4-EAAE-4EF5-9D5A-A674DD9FB46F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>80EA47D4-EAAE-4EF5-9D5A-A674DD9FB46F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723883.79744005</real>
+			<key>timeStoppedRecording</key>
+			<real>550723890.98483098</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>80EA47D4-EAAE-4EF5-9D5A-A674DD9FB46F</string>
+		</dict>
+		<key>8194A7C4-852C-4658-B0DC-F1E0E6C8DECE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8194A7C4-852C-4658-B0DC-F1E0E6C8DECE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720258.98225701</real>
+			<key>timeStoppedRecording</key>
+			<real>550720264.49237597</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>8194A7C4-852C-4658-B0DC-F1E0E6C8DECE</string>
+		</dict>
+		<key>82892807-424B-41AE-9176-C7597314A002</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>82892807-424B-41AE-9176-C7597314A002.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720058.18284798</real>
+			<key>timeStoppedRecording</key>
+			<real>550720063.66409004</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>82892807-424B-41AE-9176-C7597314A002</string>
+		</dict>
+		<key>82931EB8-E5A5-4981-BC2E-4AC1A904F42A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>82931EB8-E5A5-4981-BC2E-4AC1A904F42A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550721914.82235301</real>
+			<key>timeStoppedRecording</key>
+			<real>550721923.56997097</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>82931EB8-E5A5-4981-BC2E-4AC1A904F42A</string>
+		</dict>
+		<key>83823C7F-6FC0-4E23-B405-EE09D06A68FF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>83823C7F-6FC0-4E23-B405-EE09D06A68FF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724568.56215405</real>
+			<key>timeStoppedRecording</key>
+			<real>550724573.56344604</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>83823C7F-6FC0-4E23-B405-EE09D06A68FF</string>
+		</dict>
+		<key>838DD390-913B-4974-BB21-FF2EB91364BF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>838DD390-913B-4974-BB21-FF2EB91364BF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719637.938977</real>
+			<key>timeStoppedRecording</key>
+			<real>550719642.49537396</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>838DD390-913B-4974-BB21-FF2EB91364BF</string>
+		</dict>
+		<key>85C5A19F-0A23-41F9-B354-870AEFA4A68A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>85C5A19F-0A23-41F9-B354-870AEFA4A68A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550721271.83054304</real>
+			<key>timeStoppedRecording</key>
+			<real>550721279.05180895</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>85C5A19F-0A23-41F9-B354-870AEFA4A68A</string>
+		</dict>
+		<key>864805E4-E55D-4BE7-8785-4F9FF386314F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>864805E4-E55D-4BE7-8785-4F9FF386314F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718276.72462797</real>
+			<key>timeStoppedRecording</key>
+			<real>550718280.96626496</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>864805E4-E55D-4BE7-8785-4F9FF386314F</string>
+		</dict>
+		<key>86FC34BC-5BF5-4AB2-8036-617EA03A9B9E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>86FC34BC-5BF5-4AB2-8036-617EA03A9B9E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723165.17032003</real>
+			<key>timeStoppedRecording</key>
+			<real>550723172.62537801</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>86FC34BC-5BF5-4AB2-8036-617EA03A9B9E</string>
+		</dict>
+		<key>8997591B-D686-4795-AFF5-A63CF9BBE59B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8997591B-D686-4795-AFF5-A63CF9BBE59B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723399.73492801</real>
+			<key>timeStoppedRecording</key>
+			<real>550723404.83557701</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>8997591B-D686-4795-AFF5-A63CF9BBE59B</string>
+		</dict>
+		<key>8A1D2EB8-BB5B-4747-A32B-FE55B5ABDF02</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8A1D2EB8-BB5B-4747-A32B-FE55B5ABDF02.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725097.72788596</real>
+			<key>timeStoppedRecording</key>
+			<real>550725105.59346199</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>8A1D2EB8-BB5B-4747-A32B-FE55B5ABDF02</string>
 		</dict>
 		<key>8B1F0AFA-94D3-48D4-BB52-6819486B2596</key>
 		<dict>
@@ -876,6 +2471,64 @@
 			<key>uniqueIdentifier</key>
 			<string>8F7F646C-901D-4C8F-8620-29EE1955F893</string>
 		</dict>
+		<key>946E7069-9B72-47ED-BE99-CD178C0619D2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>946E7069-9B72-47ED-BE99-CD178C0619D2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725169.82651401</real>
+			<key>timeStoppedRecording</key>
+			<real>550725177.74553299</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>946E7069-9B72-47ED-BE99-CD178C0619D2</string>
+		</dict>
+		<key>97F79BB7-47A8-45B5-90E9-14736D2165DB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>97F79BB7-47A8-45B5-90E9-14736D2165DB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719425.83897805</real>
+			<key>timeStoppedRecording</key>
+			<real>550719431.75066698</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>97F79BB7-47A8-45B5-90E9-14736D2165DB</string>
+		</dict>
 		<key>986AF28F-3F12-4233-87B6-B13898DDFD8E</key>
 		<dict>
 			<key>className</key>
@@ -934,6 +2587,93 @@
 			<key>uniqueIdentifier</key>
 			<string>9BFA1C0F-F59C-4A36-8802-33DAE8F3C8C6</string>
 		</dict>
+		<key>9C06B8AC-E73F-4E3A-8290-A66D523DF425</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9C06B8AC-E73F-4E3A-8290-A66D523DF425.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725247.17458701</real>
+			<key>timeStoppedRecording</key>
+			<real>550725255.91470695</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>9C06B8AC-E73F-4E3A-8290-A66D523DF425</string>
+		</dict>
+		<key>9C3A48C9-231B-4694-BB2A-94CE78DFF1CE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9C3A48C9-231B-4694-BB2A-94CE78DFF1CE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720577.78418005</real>
+			<key>timeStoppedRecording</key>
+			<real>550720587.64137197</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>9C3A48C9-231B-4694-BB2A-94CE78DFF1CE</string>
+		</dict>
+		<key>9CBA5DB3-D14E-479B-B9EF-1E41F92D7242</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9CBA5DB3-D14E-479B-B9EF-1E41F92D7242.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719923.05662894</real>
+			<key>timeStoppedRecording</key>
+			<real>550719930.79354596</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>9CBA5DB3-D14E-479B-B9EF-1E41F92D7242</string>
+		</dict>
 		<key>A04AF02D-AEB9-4E5C-AB91-16A840695914</key>
 		<dict>
 			<key>className</key>
@@ -962,6 +2702,354 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>A04AF02D-AEB9-4E5C-AB91-16A840695914</string>
+		</dict>
+		<key>A19BC4FE-4874-4D1B-ACA6-987F0C38485E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A19BC4FE-4874-4D1B-ACA6-987F0C38485E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722977.73276806</real>
+			<key>timeStoppedRecording</key>
+			<real>550722981.48596799</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>A19BC4FE-4874-4D1B-ACA6-987F0C38485E</string>
+		</dict>
+		<key>A465CD06-B13E-4103-8A06-FD5A508EDD05</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A465CD06-B13E-4103-8A06-FD5A508EDD05.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720026.09028196</real>
+			<key>timeStoppedRecording</key>
+			<real>550720029.96415806</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>A465CD06-B13E-4103-8A06-FD5A508EDD05</string>
+		</dict>
+		<key>A8DE9339-B7CB-4BDB-B272-76207B65C5F7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A8DE9339-B7CB-4BDB-B272-76207B65C5F7.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719287.64525604</real>
+			<key>timeStoppedRecording</key>
+			<real>550719293.25105202</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>A8DE9339-B7CB-4BDB-B272-76207B65C5F7</string>
+		</dict>
+		<key>A9F517EF-0130-4974-8D73-96D062ABA997</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A9F517EF-0130-4974-8D73-96D062ABA997.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723835.61510003</real>
+			<key>timeStoppedRecording</key>
+			<real>550723845.18183804</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>A9F517EF-0130-4974-8D73-96D062ABA997</string>
+		</dict>
+		<key>AB6E432D-65E7-4B6B-80DF-871702BBBCEE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AB6E432D-65E7-4B6B-80DF-871702BBBCEE.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719663.47859502</real>
+			<key>timeStoppedRecording</key>
+			<real>550719668.31847298</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>AB6E432D-65E7-4B6B-80DF-871702BBBCEE</string>
+		</dict>
+		<key>AE12E022-2E6B-4A1B-BA5A-1C09833BF996</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AE12E022-2E6B-4A1B-BA5A-1C09833BF996.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719986.80685997</real>
+			<key>timeStoppedRecording</key>
+			<real>550719990.80065298</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>AE12E022-2E6B-4A1B-BA5A-1C09833BF996</string>
+		</dict>
+		<key>AF9F1D30-DF66-4FED-8ADC-ADC9B5701226</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AF9F1D30-DF66-4FED-8ADC-ADC9B5701226.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550721040.25301194</real>
+			<key>timeStoppedRecording</key>
+			<real>550721049.14955604</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>AF9F1D30-DF66-4FED-8ADC-ADC9B5701226</string>
+		</dict>
+		<key>BA37C2E5-0D7E-4436-AA79-6C13E10F4155</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BA37C2E5-0D7E-4436-AA79-6C13E10F4155.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723638.20443106</real>
+			<key>timeStoppedRecording</key>
+			<real>550723646.65408802</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>BA37C2E5-0D7E-4436-AA79-6C13E10F4155</string>
+		</dict>
+		<key>BD32C0D6-0B40-43C0-92FE-85C0939C1A0F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BD32C0D6-0B40-43C0-92FE-85C0939C1A0F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720524.13046396</real>
+			<key>timeStoppedRecording</key>
+			<real>550720533.09819198</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>BD32C0D6-0B40-43C0-92FE-85C0939C1A0F</string>
+		</dict>
+		<key>BE573758-F19C-411F-9282-9193567051D2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BE573758-F19C-411F-9282-9193567051D2.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722194.71471202</real>
+			<key>timeStoppedRecording</key>
+			<real>550722201.78230202</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>BE573758-F19C-411F-9282-9193567051D2</string>
+		</dict>
+		<key>BFF8A0B6-40FD-409C-BB53-2B12396F856E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BFF8A0B6-40FD-409C-BB53-2B12396F856E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725232.545928</real>
+			<key>timeStoppedRecording</key>
+			<real>550725236.37606299</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>BFF8A0B6-40FD-409C-BB53-2B12396F856E</string>
+		</dict>
+		<key>C0C4DC2E-2816-4016-B1DA-E778B6D2FE36</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C0C4DC2E-2816-4016-B1DA-E778B6D2FE36.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723300.47078896</real>
+			<key>timeStoppedRecording</key>
+			<real>550723308.77092004</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>C0C4DC2E-2816-4016-B1DA-E778B6D2FE36</string>
 		</dict>
 		<key>C0DAD44C-55D0-4562-A9D9-DCF61CA1C606</key>
 		<dict>
@@ -992,6 +3080,93 @@
 			<key>uniqueIdentifier</key>
 			<string>C0DAD44C-55D0-4562-A9D9-DCF61CA1C606</string>
 		</dict>
+		<key>C0E72B55-9196-4A5C-BC9E-7F7DD681064C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C0E72B55-9196-4A5C-BC9E-7F7DD681064C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719904.72400403</real>
+			<key>timeStoppedRecording</key>
+			<real>550719909.27328706</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>C0E72B55-9196-4A5C-BC9E-7F7DD681064C</string>
+		</dict>
+		<key>C14522A6-E1DB-4CF8-9D97-C41C2C23E903</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C14522A6-E1DB-4CF8-9D97-C41C2C23E903.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723791.79097497</real>
+			<key>timeStoppedRecording</key>
+			<real>550723800.45988095</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>C14522A6-E1DB-4CF8-9D97-C41C2C23E903</string>
+		</dict>
+		<key>C50D925B-90C0-4D03-8A88-87D26C22534F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C50D925B-90C0-4D03-8A88-87D26C22534F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723815.79524696</real>
+			<key>timeStoppedRecording</key>
+			<real>550723823.33653104</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>C50D925B-90C0-4D03-8A88-87D26C22534F</string>
+		</dict>
 		<key>C7808875-5AFC-4C82-867D-2E55A8A5A9FD</key>
 		<dict>
 			<key>className</key>
@@ -1020,6 +3195,35 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>C7808875-5AFC-4C82-867D-2E55A8A5A9FD</string>
+		</dict>
+		<key>CB737A16-34C8-465D-A438-531D6CC779F3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CB737A16-34C8-465D-A438-531D6CC779F3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725143.45459795</real>
+			<key>timeStoppedRecording</key>
+			<real>550725156.45333803</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>CB737A16-34C8-465D-A438-531D6CC779F3</string>
 		</dict>
 		<key>CB7E7040-2130-49F2-801C-904A23F4A6C7</key>
 		<dict>
@@ -1050,6 +3254,35 @@
 			<key>uniqueIdentifier</key>
 			<string>CB7E7040-2130-49F2-801C-904A23F4A6C7</string>
 		</dict>
+		<key>CCB01093-2A3D-49F2-84AD-5409FE080928</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CCB01093-2A3D-49F2-84AD-5409FE080928.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722909.03265595</real>
+			<key>timeStoppedRecording</key>
+			<real>550722920.24252701</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>CCB01093-2A3D-49F2-84AD-5409FE080928</string>
+		</dict>
 		<key>D371AABD-4040-4A58-ACAC-6EA149171445</key>
 		<dict>
 			<key>className</key>
@@ -1078,6 +3311,35 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>D371AABD-4040-4A58-ACAC-6EA149171445</string>
+		</dict>
+		<key>D386BF50-D4C9-4942-87CF-4FFC77032E23</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D386BF50-D4C9-4942-87CF-4FFC77032E23.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550722596.08099401</real>
+			<key>timeStoppedRecording</key>
+			<real>550722605.258497</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>D386BF50-D4C9-4942-87CF-4FFC77032E23</string>
 		</dict>
 		<key>D63560E6-B1DF-453C-BC5F-C5F49ED59E29</key>
 		<dict>
@@ -1108,6 +3370,238 @@
 			<key>uniqueIdentifier</key>
 			<string>D63560E6-B1DF-453C-BC5F-C5F49ED59E29</string>
 		</dict>
+		<key>D637C1A3-BD23-483F-800D-5C5643261D0A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D637C1A3-BD23-483F-800D-5C5643261D0A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723774.10974395</real>
+			<key>timeStoppedRecording</key>
+			<real>550723782.43606603</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>D637C1A3-BD23-483F-800D-5C5643261D0A</string>
+		</dict>
+		<key>D6C4E59F-6B75-48FA-8134-33F6F24D202F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D6C4E59F-6B75-48FA-8134-33F6F24D202F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723332.01178098</real>
+			<key>timeStoppedRecording</key>
+			<real>550723339.233814</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>D6C4E59F-6B75-48FA-8134-33F6F24D202F</string>
+		</dict>
+		<key>D87675EB-252D-4731-A96A-4FB19381598D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D87675EB-252D-4731-A96A-4FB19381598D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720795.02813804</real>
+			<key>timeStoppedRecording</key>
+			<real>550720800.60906196</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>D87675EB-252D-4731-A96A-4FB19381598D</string>
+		</dict>
+		<key>D892BEA7-667E-4001-B2EF-9BAC06544325</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D892BEA7-667E-4001-B2EF-9BAC06544325.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719684.62037694</real>
+			<key>timeStoppedRecording</key>
+			<real>550719691.41473901</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>D892BEA7-667E-4001-B2EF-9BAC06544325</string>
+		</dict>
+		<key>DA346AE7-14C6-4DB6-80E0-ED8992EA6EF6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DA346AE7-14C6-4DB6-80E0-ED8992EA6EF6.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550721829.07727897</real>
+			<key>timeStoppedRecording</key>
+			<real>550721833.08083904</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>DA346AE7-14C6-4DB6-80E0-ED8992EA6EF6</string>
+		</dict>
+		<key>DD729B6E-9F06-4DD6-882F-BDB8FDA57EEF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DD729B6E-9F06-4DD6-882F-BDB8FDA57EEF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723253.67940295</real>
+			<key>timeStoppedRecording</key>
+			<real>550723261.76728702</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>DD729B6E-9F06-4DD6-882F-BDB8FDA57EEF</string>
+		</dict>
+		<key>E03576B6-B60A-46A1-B720-2D4631DCBC2F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E03576B6-B60A-46A1-B720-2D4631DCBC2F.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550721863.83408594</real>
+			<key>timeStoppedRecording</key>
+			<real>550721869.57321894</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>E03576B6-B60A-46A1-B720-2D4631DCBC2F</string>
+		</dict>
+		<key>E2EB84B6-70CD-4D8E-8854-D7EFD6F70664</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E2EB84B6-70CD-4D8E-8854-D7EFD6F70664.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550721235.26728702</real>
+			<key>timeStoppedRecording</key>
+			<real>550721242.56113601</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>E2EB84B6-70CD-4D8E-8854-D7EFD6F70664</string>
+		</dict>
 		<key>E63B4234-8433-4AFC-83DF-F77BDA28AFA7</key>
 		<dict>
 			<key>className</key>
@@ -1137,6 +3631,122 @@
 			<key>uniqueIdentifier</key>
 			<string>E63B4234-8433-4AFC-83DF-F77BDA28AFA7</string>
 		</dict>
+		<key>E6739510-09FF-4649-9133-0D424DB5AE81</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E6739510-09FF-4649-9133-0D424DB5AE81.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720163.60904396</real>
+			<key>timeStoppedRecording</key>
+			<real>550720171.39653397</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>E6739510-09FF-4649-9133-0D424DB5AE81</string>
+		</dict>
+		<key>E98DB209-D9B8-4CC5-8278-E89CED290D84</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E98DB209-D9B8-4CC5-8278-E89CED290D84.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550725071.54703796</real>
+			<key>timeStoppedRecording</key>
+			<real>550725077.45202994</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>E98DB209-D9B8-4CC5-8278-E89CED290D84</string>
+		</dict>
+		<key>E9D6E980-B341-4D21-B1F3-6FD757CA4641</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E9D6E980-B341-4D21-B1F3-6FD757CA4641.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550720297.43771803</real>
+			<key>timeStoppedRecording</key>
+			<real>550720304.20808399</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>E9D6E980-B341-4D21-B1F3-6FD757CA4641</string>
+		</dict>
+		<key>F3E570F9-6D8A-42FD-8255-FC79B0DA5E10</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3E570F9-6D8A-42FD-8255-FC79B0DA5E10.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550719395.86220598</real>
+			<key>timeStoppedRecording</key>
+			<real>550719400.44714797</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>F3E570F9-6D8A-42FD-8255-FC79B0DA5E10</string>
+		</dict>
 		<key>F49210F8-4687-477A-B838-6A7CC83985D3</key>
 		<dict>
 			<key>className</key>
@@ -1165,6 +3775,122 @@
 			<string>Build RayTracer</string>
 			<key>uniqueIdentifier</key>
 			<string>F49210F8-4687-477A-B838-6A7CC83985D3</string>
+		</dict>
+		<key>F7969966-EE01-4AC8-A70C-C98FA56C0C21</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F7969966-EE01-4AC8-A70C-C98FA56C0C21.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550723536.88885295</real>
+			<key>timeStoppedRecording</key>
+			<real>550723542.55346406</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>F7969966-EE01-4AC8-A70C-C98FA56C0C21</string>
+		</dict>
+		<key>F8601AE4-13CA-4156-B194-CE349C835083</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F8601AE4-13CA-4156-B194-CE349C835083.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718699.689147</real>
+			<key>timeStoppedRecording</key>
+			<real>550718703.71669495</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>F8601AE4-13CA-4156-B194-CE349C835083</string>
+		</dict>
+		<key>FCE19094-9C0C-4447-94B7-C9CDEEF121B8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FCE19094-9C0C-4447-94B7-C9CDEEF121B8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550724237.14106905</real>
+			<key>timeStoppedRecording</key>
+			<real>550724246.34651101</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>FCE19094-9C0C-4447-94B7-C9CDEEF121B8</string>
+		</dict>
+		<key>FE1A9FB2-5C26-4A93-99A7-F725162F50C0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FE1A9FB2-5C26-4A93-99A7-F725162F50C0.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>RayTracer project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>RayTracer</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build RayTracer</string>
+			<key>timeStartedRecording</key>
+			<real>550718431.932181</real>
+			<key>timeStoppedRecording</key>
+			<real>550718436.08081198</real>
+			<key>title</key>
+			<string>Build RayTracer</string>
+			<key>uniqueIdentifier</key>
+			<string>FE1A9FB2-5C26-4A93-99A7-F725162F50C0</string>
 		</dict>
 	</dict>
 </dict>

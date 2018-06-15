@@ -6,10 +6,9 @@
 #include "sceneload.h" //The function that loads the scene
 
 std::string scene = "scenes/scene5.txt";
-//Based on testing, these are the optimal biases to avoid acne and get proper distribution.
-double light_colour_bias = 1.5;
-double shadow_colour_bias = 1.5;
-double gamma_val = 0.85;
+double shadow_colour_bias = 1.0;
+double gamma_val = 0.95;
+double ray_org_bias = 1.0;
 #if antialiasing
 int aa_rad = 1;
 int aa_multi = aa_rad+2;
@@ -87,20 +86,22 @@ int main(int argc, const char * argv[]) {
                     shadow_ray.org = hit.pos; //Set shadow ray origin to the light.
                     shadow_ray.dir = lights[i] -> getPosition() - hit.pos; //Set the shadow ray direction by light's position minus point of contact.
                     shadow_ray.dir = glm::normalize(shadow_ray.dir); //Normalize the direction.
+                    shadow_ray.org = shadow_ray.org+(shadow_ray.dir*ray_org_bias);
+                    
                     bool in_shadow = false; //Store if this is in shadow. Starts off in light.
                                             //Loop through objects and check if one is closer.
                     for (int m = 0; m < things.size(); m++) {
-//                        if(m != hit.thing) {
-                            Intersect shadow_hit = things[m] -> intersect(shadow_ray); //Get the shadow ray intersection
-                            if (shadow_hit.contact) { //If there is an intersection
-                                in_shadow = true; //then we are in shadow.
-                                break;
-                            }
-//                        }
+                        //                        if(m != hit.thing) {
+                        Intersect shadow_hit = things[m] -> intersect(shadow_ray); //Get the shadow ray intersection
+                        if (shadow_hit.contact) { //If there is an intersection
+                            in_shadow = true; //then we are in shadow.
+                            break;
+                        }
+                        //                        }
                     } //After looping through all of the objects for a given light.
                     glm::dvec3 new_colour(0.0);
                     if (!in_shadow) { //If we're not in shadow,
-                        new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()) * light_colour_bias; //The new colour.
+                        new_colour = things[hit.thing] -> getColour(*lights[i], hit, cam ->getPosition()); //The new colour.
                     } else {
                         new_colour = things[hit.thing] -> getColour() * lights[i] -> getColour() * shadow_colour_bias; //The new colour.
                     }

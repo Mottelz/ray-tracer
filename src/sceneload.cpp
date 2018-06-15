@@ -235,7 +235,7 @@ bool load_scene(const std::string& filepath, std::vector<Object*> & things, std:
         //Read in a sphere
         else if (strcmp(lineHeader, "sphere") == 0) {
             glm::dvec3 temp_pos;
-            int temp_rad = 0;
+            double temp_rad = 0.0;
             glm::dvec3 temp_amb;
             glm::dvec3 temp_dif;
             glm::dvec3 temp_spe;
@@ -245,7 +245,7 @@ bool load_scene(const std::string& filepath, std::vector<Object*> & things, std:
                 if (strcmp(lineHeader, "pos:") == 0) {
                     fscanf(file, "%lf %lf %lf\n", &temp_pos.x, &temp_pos.y, &temp_pos.z);
                 } else if (strcmp(lineHeader, "rad:") == 0) {
-                    fscanf(file, "%i\n", &temp_rad);
+                    fscanf(file, "%lf\n", &temp_rad);
                 } else if (strcmp(lineHeader, "amb:") == 0) {
                     fscanf(file, "%lf %lf %lf\n", &temp_amb.x, &temp_amb.y, &temp_amb.z);
                 } else if (strcmp(lineHeader, "dif:") == 0) {

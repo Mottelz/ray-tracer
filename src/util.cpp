@@ -74,7 +74,7 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     //Get missing directions and reflections
     glm::dvec3 view_dir = glm::normalize(camPos - p0);
     glm::dvec3 light_dir = glm::normalize(lightPos - p0);
-    glm::dvec3 reflection = glm::reflect(norm, view_dir);
+    glm::dvec3 reflection = glm::reflect(-view_dir, norm);
     
     //Get alpha and theta
     double alpha = glm::dot(light_dir, reflection);
@@ -84,8 +84,8 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     
     
     //actually calculate specular and diffuse
-    glm::dvec3 spec_fin = glm::pow(glm::max(alpha, 0.0), shineIn) * specIn;
-    glm::dvec3 diff_fin = glm::max(theta, 0.0) * diffIn;
+    glm::dvec3 spec_fin = glm::pow(glm::max(alpha, ZERO), shineIn) * specIn;
+    glm::dvec3 diff_fin = glm::max(theta, ZERO) * diffIn;
     
     //finally calculate, clip and return the colour
     glm::dvec3 colour = (ambIn + diff_fin + spec_fin) * lightCol;
@@ -100,6 +100,8 @@ glm::dvec3 merge_colours(std::vector<glm::dvec3> colours) {
     
     //sum the squares
     for (int c = 0; c < colours.size(); c++) {
+        colours[c] = clip(colours[c], 0.0, 1.0);
+        colour = clip(colour, 0.0, 1.0);
         colour = colour + (colours[c]*colours[c]);
     }
     
