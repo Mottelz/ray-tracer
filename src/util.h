@@ -30,3 +30,5 @@ glm::dvec3 merge_colours(std::vector<glm::dvec3> colours); /**< @brief Merges co
 void downsize(cimg_library::CImg<double> &src, cimg_library::CImg<double> &down, int width, int height, int aa_multi); /**< @brief  Downsizes from src to down. Expects the width and height of down. aa_multi is the difference in size between src and down (i.e. src.width = down.width * aa_multi). */
 
 glm::dvec3 gammify(glm::dvec3 colour, double gamma); /**< @brief Does that gamma thing. */
+
+bool are_equal(glm::dvec3 v0, glm::dvec3 v1); /**< @brief Compare vecs. */

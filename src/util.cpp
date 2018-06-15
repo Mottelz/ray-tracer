@@ -141,3 +141,9 @@ glm::dvec3 gammify(glm::dvec3 colour, double gamma) {
     
     return toRet;
 };
+
+
+bool are_equal(glm::dvec3 v0, glm::dvec3 v1) {
+    
+    return true;
+};

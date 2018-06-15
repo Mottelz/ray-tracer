@@ -37,7 +37,7 @@ Intersect Plane::intersect(const Ray &r) {
     
     //compare to zero
     toRet.contact = true;
-    toRet.pos = r.org + r.dir*(t);
+    toRet.pos = r.org + r.dir*t;
     return toRet;
 }
 
