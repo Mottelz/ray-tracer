@@ -10,7 +10,7 @@
 #define mot_log true //Create a log to store the stats for testing
 #define show_pic false //Display the image with Preview when done
 #define antialiasing true //Apply antialiasing
-#define soft_shadow true
+#define soft_shadow false
 #define ZERO 0.0001 //Need this because C is weird.
 
 //Standard libs
@@ -30,6 +30,4 @@
 
 
 //CImg
-#define cimg_use_png //Allows import of png
-#define cimg_use_jpeg //Allows import of jpg
 #include <CImg.h>

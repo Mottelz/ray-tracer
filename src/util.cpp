@@ -96,12 +96,10 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
 
 //Calculate a merging colour
 glm::dvec3 merge_colours(std::vector<glm::dvec3> colours) {
-    glm::dvec3 colour(ZERO); //start with an empty colour
+    glm::dvec3 colour(0.0); //start with an empty colour
     
     //sum the squares
     for (int c = 0; c < colours.size(); c++) {
-        colours[c] = clip(colours[c], ZERO, 1.0);
-        colour = clip(colour, ZERO, 1.0);
         colour = colour + (colours[c]*colours[c]);
     }
     

@@ -2,7 +2,7 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
                        //#include "softLights.h"
-
+std::string path = "/Users/mottelzirkind/Desktop/results/";
 double colour_bias = 1.0;
 double shadow_colour_bias = 0.25;
 double gamma_val = 1.0;
@@ -27,7 +27,7 @@ void draw_scene(const char* scene_name) {
 #if mot_log
         //A log. Stores points and whether or not they hit.
         std::ofstream log;
-        log.open(get_name("/Users/mottelzirkind/Desktop/results/log-",".txt"));
+        log.open(get_name(path+"log-",".txt"));
 #endif
         
         //Load the scene
@@ -123,7 +123,12 @@ void draw_scene(const char* scene_name) {
                         }
                         glm::dvec3 new_colour(0.0);
                         double light_multi = ((double)light_intensity/((double)num_samples));
-                        new_colour = things[hit.thing] -> getColour(soft_lights[i]->getColour(), soft_lights[i] -> getPositionRange()[0], hit, cam ->getPosition()) * light_multi; //The new colour.
+                        if(typeid(*things[hit.thing]) == typeid(Sphere)) {
+                            new_colour = things[hit.thing] -> getColour(soft_lights[i]->getColour(), soft_lights[i] -> getPositionRange()[0], hit, cam ->getPosition());
+                        } else {
+                          new_colour = things[hit.thing] -> getColour(soft_lights[i]->getColour(), soft_lights[i] -> getPositionRange()[0], hit, cam ->getPosition()) * light_multi;
+                        }
+                        
                         new_colour = clip(new_colour, ZERO, 1.0);
                         colours.push_back(new_colour);
                     }
@@ -169,10 +174,10 @@ void draw_scene(const char* scene_name) {
         height = cam -> getHeight();
         cimg_library::CImg<double> final_image(width, height, 1, 3, 0);
         downsize(image, final_image, width, height, aa_multi);
-        std::string filename = get_name("/Users/mottelzirkind/Desktop/results/render-down",".bmp");
+        std::string filename = get_name(path+"render-down",".bmp");
         final_image.save(filename.c_str()); //get_name used so that the image includes a timestamp.
 #else
-        std::string filename = get_name("/Users/mottelzirkind/Desktop/results/render-",".bmp"); //get_name used so that the image includes a timestamp.
+        std::string filename = get_name(path+"render-",".bmp"); //get_name used so that the image includes a timestamp.
         image.save(filename.c_str());
 #endif
         
@@ -202,7 +207,7 @@ void draw_scene(const char* scene_name) {
     
 int main (int argc, char *argv[]) {
         std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
-        std::vector<int> sample_range = {5, 25, 50, 128, 256};
+        std::vector<int> sample_range = {5, 25, 50, 100};
         
 #if soft_shadow
         for (int j = 0; j < sample_range.size(); j++) {
