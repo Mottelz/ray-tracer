@@ -1,11 +1,17 @@
 /**
  * @file libs.h
  * @author Mottel Zirkind
- * @brief The header for external libraries that are used everywhere. Also defines T_BIAS which helps with acne.
+ * @brief The header for external libraries and feature configuration
  **/
-
 #pragma once //Libraries loaded here
 #pragma GCC system_header //Surpress warnings
+
+//Configuration
+#define mot_log true //Create a log to store the stats for testing
+#define show_pic false //Display the image with Preview when done
+#define antialiasing true //Apply antialiasing
+#define soft_shadow true
+#define ZERO 0.0001 //Need this because C is weird.
 
 //Standard libs
 #include <iostream>
@@ -27,10 +33,3 @@
 #define cimg_use_png //Allows import of png
 #define cimg_use_jpeg //Allows import of jpg
 #include <CImg.h>
-
-//Configuration
-#define show_pic true //Display the image with Preview when done
-#define antialiasing false //Apply antialiasing
-#define mot_log true //Create a log to store the stats for testing
-#define soft_shadow true
-#define ZERO 0.0001 //Need this because C is weird.
