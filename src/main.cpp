@@ -214,15 +214,16 @@ void render_scene(const char* scene_name) { //If soft shadows are off, just give
 }
     
 int main (int argc, char *argv[]) {
+    //If the file doesn't exist, create it.
     std::string command = "mkdir " + path;
     system(command.c_str());
     
-    
-    //std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
-    std::vector<std::string> scenes = {"scenes/scene5.txt"};
+    //Our test cases
+    std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
     std::vector<int> sample_range = {5, 25};
     
 #if soft_shadow
+    //If in soft shadow, draw based on sample range.
     for (int j = 0; j < sample_range.size(); j++) {
         for (int i = 0; i < scenes.size(); i++) {
             tell_user("Drawing scene " + scenes[i] + " with " + std::to_string(sample_range[j]) + " samples.");
@@ -230,6 +231,7 @@ int main (int argc, char *argv[]) {
         }
     }
 #else
+    //If not doing soft shadow, just run the scenes.
     for (int i = 0; i < scenes.size(); i++) {
         tell_user("Drawing scene " + scenes[i]);
         render_scene(scenes[i].c_str());
