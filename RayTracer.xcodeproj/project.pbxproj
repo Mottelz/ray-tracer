@@ -111,7 +111,7 @@
 		9E45756A20BFCE28008BDD04 /* libjpeg.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45756920BFCE28008BDD04 /* libjpeg.9.dylib */; };
 		9E5258D020C0DC1400A56A52 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E5258CE20C0DC1300A56A52 /* util.cpp */; };
 		9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C275D20C71B900062B56A /* sceneload.cpp */; };
-		9E7661B620D383E000EBE6E3 /* softy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7661B520D383E000EBE6E3 /* softy.cpp */; };
+		9E7661B620D383E000EBE6E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7661B520D383E000EBE6E3 /* main.cpp */; };
 		9E7661B920D3857B00EBE6E3 /* softLights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E7661B720D3857B00EBE6E3 /* softLights.cpp */; };
 		9EB20D4020CFAE1D005998F2 /* scenes in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EB20D3F20CFAE1D005998F2 /* scenes */; };
 /* End PBXBuildFile section */
@@ -243,7 +243,7 @@
 		9E5258D120C0DCA900A56A52 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		9E6C275D20C71B900062B56A /* sceneload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sceneload.cpp; sourceTree = "<group>"; };
 		9E6C275E20C71B900062B56A /* sceneload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sceneload.h; sourceTree = "<group>"; };
-		9E7661B520D383E000EBE6E3 /* softy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = softy.cpp; sourceTree = "<group>"; };
+		9E7661B520D383E000EBE6E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9E7661B720D3857B00EBE6E3 /* softLights.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = softLights.cpp; sourceTree = "<group>"; };
 		9E7661B820D3857B00EBE6E3 /* softLights.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = softLights.h; sourceTree = "<group>"; };
 		9EB20D3F20CFAE1D005998F2 /* scenes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scenes; path = src/scenes; sourceTree = "<group>"; };
@@ -518,7 +518,7 @@
 		9EE2D44320BFAA830040D125 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				9E7661B520D383E000EBE6E3 /* softy.cpp */,
+				9E7661B520D383E000EBE6E3 /* main.cpp */,
 				9E0CB19620C1E383009CDE2E /* classes */,
 				9E0CB19720C1E394009CDE2E /* utils */,
 			);
@@ -587,7 +587,7 @@
 				9E0CB1A320C1E62D009CDE2E /* camera.cpp in Sources */,
 				9E5258D020C0DC1400A56A52 /* util.cpp in Sources */,
 				9E6C275F20C71B900062B56A /* sceneload.cpp in Sources */,
-				9E7661B620D383E000EBE6E3 /* softy.cpp in Sources */,
+				9E7661B620D383E000EBE6E3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,8 +9,8 @@
 //Configuration
 #define mot_log true //Create a log to store the stats for testing
 #define show_pic false //Display the image with Preview when done
-#define antialiasing true //Apply antialiasing
-#define soft_shadow false
+#define antialiasing false //Apply antialiasing
+#define soft_shadow false //Use soft lighting
 #define ZERO 0.0001 //Need this because C is weird.
 
 //Standard libs

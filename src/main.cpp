@@ -2,7 +2,7 @@
 #include "util.h" //stray functions that would clutter the main (draw_square, draw, etc.)
 #include "sceneload.h" //The function that loads the scene
                        //#include "softLights.h"
-std::string path = "/Users/mottelzirkind/Desktop/results/";
+std::string path = "/Users/mottelzirkind/Desktop/results/basic/";
 double colour_bias = 1.0;
 double shadow_colour_bias = 0.25;
 double gamma_val = 1.0;
@@ -16,7 +16,7 @@ int aa_multi = aa_rad+2;
 #if soft_shadow
 void draw_scene(const char* scene_name, int num_samples) {
 #else
-void draw_scene(const char* scene_name) {
+    void draw_scene(const char* scene_name) {
 #endif
         std::string scene(scene_name);
         std::vector<Object*> things; //init empty vector of physical objects/things in the scene.
@@ -123,11 +123,11 @@ void draw_scene(const char* scene_name) {
                         }
                         glm::dvec3 new_colour(0.0);
                         double light_multi = ((double)light_intensity/((double)num_samples));
-                        if(typeid(*things[hit.thing]) == typeid(Sphere)) {
-                            new_colour = things[hit.thing] -> getColour(soft_lights[i]->getColour(), soft_lights[i] -> getPositionRange()[0], hit, cam ->getPosition());
-                        } else {
-                          new_colour = things[hit.thing] -> getColour(soft_lights[i]->getColour(), soft_lights[i] -> getPositionRange()[0], hit, cam ->getPosition()) * light_multi;
-                        }
+                        //                        if(typeid(*things[hit.thing]) == typeid(Sphere)) {
+                        //                            new_colour = things[hit.thing] -> getColour(soft_lights[i]->getColour(), soft_lights[i] -> getPositionRange()[0], hit, cam ->getPosition());
+                        //                        } else {
+                        new_colour = things[hit.thing] -> getColour(soft_lights[i]->getColour(), soft_lights[i] -> getPositionRange()[0], hit, cam ->getPosition()) * light_multi;
+                        //                        }
                         
                         new_colour = clip(new_colour, ZERO, 1.0);
                         colours.push_back(new_colour);
@@ -205,9 +205,10 @@ void draw_scene(const char* scene_name) {
 #endif
     }
     
-int main (int argc, char *argv[]) {
+    int main (int argc, char *argv[]) {
         std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
-        std::vector<int> sample_range = {5, 25, 50, 100};
+        //std::vector<int> sample_range = {5, 25, 50, 100};
+        std::vector<int> sample_range = {250, 500};
         
 #if soft_shadow
         for (int j = 0; j < sample_range.size(); j++) {

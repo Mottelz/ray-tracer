@@ -33,9 +33,9 @@ void draw_square(cimg_library::CImg<double> &image, int width, int height) {
 //Set the colour of a given pixel
 void draw(cimg_library::CImg<double> &image, int w, int h, glm::dvec3 color) {
     //Color in a given pixel
-    image(w, h, 0) = color.r*256;
-    image(w, h, 1) = color.g*256;
-    image(w, h, 2) = color.b*256;
+    image(w, h, 0) = color.r*255;
+    image(w, h, 1) = color.g*255;
+    image(w, h, 2) = color.b*255;
 }
 
 //clips a vec3
@@ -121,9 +121,9 @@ void downsize(cimg_library::CImg<double> &src, cimg_library::CImg<double> &down,
             int temp_h = aa_multi*h;
             for(int j = 0; j < aa_multi; j++) {
                 for (int k = 0; k < aa_multi; k++) {
-                    pixel.r = src(temp_w+k, temp_h+j, 0)/256;
-                    pixel.g = src(temp_w+k, temp_h+j, 1)/256;
-                    pixel.b = src(temp_w+k, temp_h+j, 2)/256;
+                    pixel.r = src(temp_w+k, temp_h+j, 0)/255;
+                    pixel.g = src(temp_w+k, temp_h+j, 1)/255;
+                    pixel.b = src(temp_w+k, temp_h+j, 2)/255;
                     to_merge.push_back(pixel);
                 }
             }
