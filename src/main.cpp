@@ -218,7 +218,7 @@ int main (int argc, char *argv[]) {
     system(command.c_str());
     
     
-    //        std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
+    //std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
     std::vector<std::string> scenes = {"scenes/scene5.txt"};
     std::vector<int> sample_range = {5, 25};
     
