@@ -5,9 +5,9 @@
 
 std::string scene = "scenes/scene5.txt";
 double colour_bias = 1.0;
-double shadow_colour_bias = 1.0;
+double shadow_colour_bias = 0.25;
 double gamma_val = 1.0;
-int num_samples = 256;
+int num_samples = 25;
 #if antialiasing
 int aa_rad = 1;
 int aa_multi = aa_rad+2;
