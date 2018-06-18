@@ -3,9 +3,9 @@
 #include "sceneload.h" //The function that loads the scene. (This one includes all of the other classes.)
 
 //Set a few parameters
-std::string path = "/Users/mottelzirkind/Desktop/results/basic/"; /**< @brief Path to where files are saved. This will be created if it does not exist. */
+std::string path = "/Users/mottelzirkind/Desktop/results/junk/"; /**< @brief Path to where files are saved. This will be created if it does not exist. */
 double shadow_colour_bias = 0.25; /**< @brief Shadow bias helps tone down colours in shadow. */
-double gamma_val = 1.0; /**< @brief If not set to 1.0 applies a gamma effect which helps with contrast. See #Gammify. */
+double gamma_val = 1.0; /**< @brief If not set to 1.0 applies a gamma correction. See #Gammify. */
 
 //If anti aliasing is turned on,
 //Set the radius around the pixel.
@@ -75,7 +75,7 @@ void render_scene(const char* scene_name) { //If soft shadows are off, just give
     //If anti-alising is on, the z calculation requires using the aa multiplier.
     //Z is calculated here, because it's consistent per grid. (The lens never moves.)
 #if antialiasing
-    double grid_z = -(cam -> getFocal()*aa_multi - cam -> getPosition()); //Z = negative the focal length minus origin.
+    double grid_z = -(cam -> getFocal()*aa_multi - cam -> getPosition().z); //Z = negative the focal length minus origin.
 #else
     double grid_z = -(cam -> getFocal() - cam -> getPosition().z); //Z = negative the focal length minus origin.
 #endif
@@ -155,7 +155,7 @@ void render_scene(const char* scene_name) { //If soft shadows are off, just give
                         }
                     } //After looping through all of the objects for a given light.
                     glm::dvec3 new_colour(0.0); //The basic colour created outside the if statement.
-                    if (!in_shadow || typeid(*things[hit.thing]) == typeid(Sphere)) { //If we're not in shadow or this object is a sphere,
+                    if (!in_shadow) { //If we're not in shadow
                         new_colour = things[hit.thing] -> getColour(lights[i]->getColour(), lights[i] -> getPosition(), hit, cam ->getPosition()); //Calcualte colour.
                     } else {
                         new_colour = things[hit.thing] -> getColour() * lights[i] -> getColour() * shadow_colour_bias; //Colour is ambient times light colour (with a shadow bias.)
@@ -220,7 +220,7 @@ int main (int argc, char *argv[]) {
     
     //Our test cases
     std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
-    std::vector<int> sample_range = {5, 25};
+    std::vector<int> sample_range = {4, 8, 16, 32, 64, 128, 256};
     
 #if soft_shadow
     //If in soft shadow, draw based on sample range.
