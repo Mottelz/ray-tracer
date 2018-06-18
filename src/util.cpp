@@ -88,6 +88,7 @@ glm::dvec3 calculate_colour(glm::dvec3 lightPos, glm::dvec3 lightCol, glm::dvec3
     glm::dvec3 diff_fin = glm::max(theta, ZERO) * diffIn;
     
     //finally calculate, clip and return the colour
+//    glm::dvec3 colour = (ambIn + diff_fin + spec_fin) * lightCol;
     glm::dvec3 colour = (ambIn + diff_fin + spec_fin) * lightCol;
     
     return clip(colour, ZERO, 1.0);;

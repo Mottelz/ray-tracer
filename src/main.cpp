@@ -124,7 +124,7 @@ void render_scene(const char* scene_name) { //If soft shadows are off, just give
                         shadow_ray.dir = glm::normalize(shadow_ray.dir); //Normalize the direction.
                         for (int m = 0; m < things.size(); m++) { //Loop through objects and check if one is closer.
                             Intersect shadow_hit = things[m] -> intersect(shadow_ray); //Get the shadow ray intersection
-                            if (shadow_hit.contact) { //If there is an intersection,
+                            if (shadow_hit.contact && is_closer(lights[i] -> getPosition(), shadow_hit.pos, hit.pos)) { //If there is an intersection,
                                 in_shadow = true; //we're in shadow
                                 break; //stop checking if this sample point is in shadow.
                             }
@@ -149,7 +149,7 @@ void render_scene(const char* scene_name) { //If soft shadows are off, just give
                     
                     for (int m = 0; m < things.size(); m++) { //Loop through objects and check if one is closer.
                         Intersect shadow_hit = things[m] -> intersect(shadow_ray); //Get the shadow ray intersection
-                        if (shadow_hit.contact) { //If there is an intersection
+                        if (shadow_hit.contact && is_closer(lights[i] -> getPosition(), shadow_hit.pos, hit.pos)) { //If there is an intersection
                             in_shadow = true; //then we are in shadow.
                             break;
                         }
@@ -219,7 +219,8 @@ int main (int argc, char *argv[]) {
     system(command.c_str());
     
     //Our test cases
-    std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
+//    std::vector<std::string> scenes = {"scenes/scene1.txt", "scenes/scene2.txt", "scenes/scene3.txt", "scenes/scene4.txt", "scenes/scene5.txt"};
+ std::vector<std::string> scenes = {"scenes/scene5.txt"};
     std::vector<int> sample_range = {4, 8, 16, 32, 64, 128, 256};
     
 #if soft_shadow
