@@ -60,7 +60,7 @@ double clip(double in_val, double lo, double hi) {
 
 //returns true if p1 is closer to p0
 bool is_closer(const glm::dvec3 p0, const glm::dvec3 p1, const glm::dvec3 p2) {
-    if ((glm::distance(p0, p1) > glm::distance(p0, p2))) {
+    if (glm::distance(p0, p1) > glm::distance(p0, p2)) {
         return false;
     }
     return true;
